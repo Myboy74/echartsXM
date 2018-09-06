@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/rest.css">
+    <link rel="stylesheet" type="text/css" href="css/w_css.css"/>
+    <style>
+        body{
+            /* overflow:hidden; */
+        }
+        .dv{
+            width: 100%;
+            height: 100%;
+        }
+        #lbox{
+            width: 3840px;
+            height: 810px;
+            /*overflow:hidden;*/
+        }
+        .fl{
+            float: left;
+        }
+        .lebox{
+            width: 960px;
+            height:810px;
+        }
+        .lcen{
+            width: 960px;
+            height:810px;
+        }
+        .lecet{
+            width: 960px;
+            height: 260px;
+            background: url(img/切图-06.png) no-repeat center center;
+            /*background:url(img/lcen.png) 0 0 no-repeat;*/
+            overflow: hidden;
+            position: relative;
+            margin-top: 5px;
+
+        }
+        .leceb{
+            width: 920px;
+            height: 540px;
+            margin: 0 auto;
+        }
+        .cler{
+            overflow:hidden;
+        }
+
+        .rcens{
+            background: url(img/lcen.png)0 5px  no-repeat;
+        }
+
+        .w_bt{
+            width: 951px;
+            height: 261px;
+            background: url(img/切图-06.png) no-repeat center center;
+            background-size: 100% 100%;
+        }
+        .cler{
+            overflow:hidden;
+        }
+        #w_mainer canvas,#w_mainer11 canvas{
+            width: 240px!important;
+            height: 220px!important;
+            top:20px!important;
+        }
+        .progre span{
+            margin-left: 10px;
+        }
+        .f_img{
+            width: 476px;
+            height: 260px;
+            overflow: hidden;
+            background: url(img/smbg.png) no-repeat;
+        }
+        .f_htop{
+            color: white;
+            margin-top: 15px;
+            margin-left: 20px;
+            font-size: 18px;
+        }
+        .f_login{
+            position: absolute;
+            top: 20px;
+            left: 0;
+        }
+        .f_cityTitle h2{
+            width: 375px;
+            line-height: 25px;
+            padding: 5px 20px 0;
+            text-indent: 2em;
+        }
+        .data{
+            color: white;
+            position: absolute;
+            top: 95px;
+            left: 0;
+        }
+        .lwz{
+            color: white;
+            position: absolute;
+            top: 65px;
+            left: 55px;
+            font-size: 16px;
+        }
+        .date-tiem, .ltimes {
+            font-size: 25px;
+        }
+        .data-box, .date-s {
+            color: #307ec2 !important;
+            font-size: 22px;
+            text-shadow: 0 0 10px #265fac;
+        }
+        .w_newsRanking li a.f_chu:after{
+            content: "(已处理)";
+        }
+        /*给雷达图提示框设置样式*/
+        .f_cpu div:nth-child(2){
+            width: 240px;
+        }
+        .f_clock{
+            width: 70px;
+            display: block;
+            float: left;
+            padding: 0 5px;
+        }
+    </style>
+</head>
+<body>
+<div id="lbox cler" style="width:3840px;">
+    <div class="province">
+        <!--带宽，流量，请求响应-->
+        <div class="fl lcen">
+            <div class="lecet">
+                <div id="f_broadband" class="dv"></div>
+            </div>
+            <div class="w_bt">
+                <div id="f_flow" style="width: 98%;height:98%; margin: 10px auto;"></div>
+            </div>
+            <div class="w_bt">
+                <div id="f_request" style="width: 98%;height:98%; margin: 5px auto;"></div>
+            </div>
+        </div>
+        <!--服务器总体情况-->
+        <div class="fl lcen">
+            <!--服务器总体情况-->
+            <div class="w_smbg fl f_server" style="position: relative; margin-top:5px;">
+                <div class="w_title cler">
+                    <h4 class="fl f_title" style="left: 5%">服务器总体情况</h4>
+                </div>
+                <div class="f_sected">
+                    <p>总计 <span class="f_span" style="padding-left: 15px">527台</span> </p>
+                    <p>已使用 <span class="f_span">422台</span> </p>
+                    <p>使用率 <span class="f_span">80.1%</span> </p>
+                </div>
+            </div>
+            <!--内存 宽带  CPU  -->
+            <div class="w_smbg fl" style=" position: relative; margin:5px 0 0 10px">
+                <div id="f_serverSum" class="dv"></div>
+            </div>
+            <!--服务器使用情况-->
+            <div class="leceb rcens " style="width: 950px; margin-top: 268px; height: 535px; position: relative">
+                <span class="f_server" style="display: block; width: 95%; line-height: 20px;text-indent: 2em; position: absolute; top: 2%;left: 2%;font-size: 15px;">
+                     灯塔--党建在线综合管理服务云平台的建设，包括互联网区和VPN虚拟专网区（含节点区）,目前所有服务器都在安全稳定的运行。
+                    互联网区规划服务器222台，主要承担社会公众服务的内容，如党建和组织工作宣传等；
+                    VPN虚拟专网区规划服务器290台，其中节点区201台,承担非涉密的组织工作业务办理如发展党员网上记实、山东e支部等，为党员管理提供基础支撑。
+                </span>
+                <img src="img/f_fuwu.png" alt="" style="width: 96%;height: 85%;position: absolute;top: 13%;left: 2%;">
+            </div>
+        </div>
+
+        <!-- 安全运行时间 世界地图  攻击访问情况-->
+        <div class="fl lcen rcens">
+            <!--安全运行时间-->
+            <div class="leceb" style="position: relative; ">
+                <div class="f_login">
+                    <img src="img/dtdjs.png" alt="">
+                </div>
+                <div class="lwz">
+                    安全运营时间
+                </div>
+                <div class="data">
+                    <div class="data-box" id="dateShow1" data-date="2017/08/29 23:45:24">
+                        <span class="date-tiem d">00</span>天
+                        <span class="date-tiem h">00</span>时
+                        <span class="date-tiem m">00</span>分
+                        <span class="ltimes date-s s">00</span>秒
+                    </div>
+                </div>
+                <!--世界地图-->
+                <div id="f_nice" style="width: 90%; height:95%;position: absolute;top: 4%; right:0;"></div>
+                <!--饼图-->
+                <div id="f_chinaR" style="width: 36%; height:300px;position: absolute;bottom: 1%; left:0;"></div>
+            </div>
+            <!--四个雷达图（亚洲  大洋洲  南美洲 北美洲）-->
+            <div class="w_bt">
+                <div class="f_cpu fl" id="f_warning"></div>
+                <div class="f_cpu fl" id="f_warning1"></div>
+                <div class="f_cpu fl" id="f_warning2"></div>
+                <div class="f_cpu fl" id="f_warning3"></div>
+
+            </div>
+        </div>
+        <!--中国地图， 安全情况-->
+        <div class="fl lcen rcens" style="position: relative">
+            <!--拦截信息  中国地图  top10-->
+            <div class="leceb cler" >
+                <!--拦截信息 -->
+                <div class="f_login f_server f_cityTitle">
+                    <h2>
+                        近一月灯塔--党建在线平台遭受网络攻击66277次,其中来自国内的攻击65157次，占攻击总数98.3%。
+                        来自国外的攻击1120次，占攻击总数1.7%。攻击全部成功拦截 ,拦截率100%。
+                        <!--来自山东， 江苏，河南，湖南，浙江，其中山东省攻击数量最多，-->
+                        <!--合计攻击次数57322次。-->
+                    </h2>
+                </div>
+
+                <!--中国地图-->
+                <div id="f_city" style="width:80%;height: 520px;position: absolute;top: 5px; right: 2%;"></div>
+                <!--横向柱状图-->
+                <div id="f_cityAxis" style="width: 30%;height: 345px;position: absolute;bottom: 32%;left: 15px;"></div>
+            </div>
+            <!--安全威胁级别-->
+            <div class="f_img fl" id="f_an"></div>
+            <!--安全保障在进行  滚动-->
+            <div class="f_img fl" >
+                <div class="w_title cler">
+                    <h2 class="f_htop fl">安全保障在进行</h2>
+                </div>
+                <div id="scrollDiv1">
+                    <ul class="w_newsRanking">
+                        <li><span>1</span> 信息泄漏 <!--<span>信息泄漏</span>-->  <a class="red f_chu">发现37个风险</a></li>
+                        <li><span>2</span>点击劫持<a class="red">发现1个风险</a></li>
+                        <li><span>3</span> CSRF跨站请求伪造   <a class="red">发现1个风险</a></li>
+                        <li><span>4</span> 信息发现 <a class="red f_chu">发现18个风险</a></li>
+                        <li><span>5</span> 链接失效  <a class="red f_chu">发现13个风险</a> </li>
+                        <li><span>6</span>  网页篡改发现<a>未发现风险</a></li>
+                        <li><span>7</span>  网马发现<a>未发现风险</a></li>
+                        <li><span>8</span> 命令执行<a>未发现风险</a></li>
+                        <li><span>9</span>  暗链发现<a>未发现风险</a></li>
+                        <li><span class="w_spacile">10</span> WebShell发现<a>未发现风险</a></li>
+                        <li><span class="w_spacile">11</span>  越权访问<a>未发现风险</a></li>
+                        <li><span class="w_spacile">12</span>  远程密码修改<a>未发现风险</a></li>
+                        <li><span class="w_spacile">13</span> 文件上传<a>未发现风险</a></li>
+                        <li><span class="w_spacile">14</span>  未授权访问<a>未发现风险</a></li>
+                        <li><span class="w_spacile">15</span> 数据库发现<a>未发现风险</a></li>
+
+
+
+                    </ul></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="js/leftTime.js"></script>  <!--时间*/-->
+<script src="js/jq_scroll.js"></script>  <!--内容滚动-->
+<!--<script src="js/echarts.min.js"></script>-->
+<script src="https://cdn.bootcss.com/echarts/4.0.4/echarts-en.min.js"></script>
+<script src="http://gallery.echartsjs.com/dep/echarts/map/js/world.js"></script> <!--世界地图插件--->
+<script src="js/china.js"></script><!--地图echarts 插件*/-->
+<script src="js/yiping.js"></script>
+
+</body>
+</html>

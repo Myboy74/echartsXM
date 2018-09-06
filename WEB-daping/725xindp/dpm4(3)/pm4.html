@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/rest.css">
+    <link rel="stylesheet" type="text/css" href="css/w_css.css" />
+    <link rel="stylesheet" href="./css/fishBone.css">
+    <style>
+        body {
+            overflow: hidden;
+            padding-top: 3px;
+        }
+
+        #lbox {
+            width: 3840px;
+            height: 810px;
+            /*overflow:hidden;*/
+        }
+
+        .fl {
+            float: left;
+        }
+
+        .lebox {
+            width: 480px;
+            height: 540px;
+        }
+
+        .lcen {
+            width: 960px;
+            height: 810px;
+        }
+
+        .lecet {
+            width: 960px;
+            height: 540px;
+            background: url(img/lcen.png) 0 0 no-repeat;
+            overflow: hidden;
+            position: relative;
+
+        }
+
+        .f_jinan {
+            width: 10px;
+            height: 370px;
+            position: absolute;
+            bottom: 100px;
+            left: 100px;
+        }
+
+        .u_qingdao {
+            width: 10px;
+            height: 370px;
+            position: absolute;
+            bottom: 100px;
+            left: 137px;
+        }
+
+        .f_fanHui {
+            padding: 10px;
+            color: white;
+            position: absolute;
+            top: 30px;
+            right: 50px;
+            cursor: pointer;
+            z-index: 1;
+        }
+
+        .leceb {
+            width: 960px;
+            height: 270px;
+            margin: 0 auto;
+        }
+
+        .cler {
+            overflow: hidden;
+        }
+
+        .lrt {
+            width: 472px;
+            height: 260px;
+        }
+
+        #lect,
+        #lects,
+        #lect22,
+        #lect33,
+        #j_content {
+            width: 930px;
+            height: 508px;
+            margin: 10px auto 0;
+        }
+
+        #lkait {
+            position: absolute;
+            right: 60px;
+            top: 8px;
+
+        }
+
+        .lkt {
+            color: rgb(255, 255, 255);
+            font-family: '黑体';
+            font-size: 18px;
+        }
+
+        .lkts {
+            color: #31B0E5;
+            font-size: 50px;
+            /*font-family: '黑体';*/
+        }
+
+        .lecets {
+            width: 960px;
+            height: 540px;
+        }
+
+        .rcens {
+            background: url(img/lrih.png) no-repeat;
+        }
+
+        .data {
+            margin: 10px 0 0 80px;
+        }
+
+        .data-box,
+        .date-s {
+            color: #307ec2 !important;
+            font-size: 22px;
+            text-shadow: 0 0 10px #265fac;
+        }
+
+        .date-tiem,
+        .ltimes {
+            font-size: 35px;
+        }
+
+        .lwz {
+            font-size: 18px;
+            color: rgb(255, 255, 255);
+            margin-top: 10px;
+            font-family: '黑体';
+            text-align: center;
+
+        }
+
+        .liht {
+            position: relative;
+        }
+
+        .lws {
+            width: 400px;
+            margin: 31px auto 20px;
+        }
+
+        .s1,
+        .s2,
+        .s3,
+        .s4,
+        .s5,
+        .s6 {
+            position: absolute;
+            color: #31B0E5;
+            font-size: 16px;
+        }
+
+        .s1,
+        .s2,
+        .s3 {
+            top: 89px;
+        }
+
+        .s1 {
+            left: 76px;
+        }
+
+        .s2 {
+            left: 210px;
+        }
+
+        .s3 {
+            right: 75px;
+        }
+
+        .s4 {
+            left: 66px;
+            font-size: 20px;
+        }
+
+        .s5 {
+            left: 212px;
+            font-size: 20px;
+        }
+
+        .s6 {
+            right: 70px;
+            font-size: 20px;
+        }
+
+        #lyuan,
+        #lyu,
+        #lyuan12,
+        #lyu12 {
+            background: url(img/lks.png) 0 0 no-repeat;
+        }
+
+        .fr {
+            float: right;
+        }
+
+        #lect,
+        #lects,
+        #f_lects,
+        #u_lects,
+        #lect12,
+        #lects12 {
+            width: 930px;
+            height: 508px;
+            margin: 10px auto 0;
+        }
+
+        #u_lects,
+        #f_lects {
+            position: relative;
+            z-index: 1;
+        }
+
+        .w_bt {
+            width: 951px;
+            height: 261px;
+            background: url(img/切图-06.png) no-repeat center center;
+            background-size: 100% 100%;
+        }
+
+        .cler {
+            overflow: hidden;
+        }
+
+        #return {
+            color: #fff;
+            display: inline-block;
+            /* position: absolute; */
+            float: right;
+            margin-right: 45px;
+            margin-top: 450px;
+            right: 0;
+            top: 40px;
+            cursor: pointer;
+            display: none
+        }
+
+        #w_mainer canvas,
+        #w_mainer11 canvas {
+            width: 240px !important;
+            height: 220px !important;
+            top: 20px !important;
+            left: 13px !important;
+        }
+
+        .progre {
+            line-height: 6px;
+            margin-bottom: 5px;
+        }
+
+        .progre div {
+            float: left;
+        }
+
+        .progre span {
+            color: #fff;
+            font-size: 12px;
+            margin-left: 10px;
+        }
+
+        .tjsize {
+            display: inline-block;
+            color: #fff;
+            position: absolute;
+            left: 295px;
+            top: 225px;
+            font-size: 18px;
+        }
+
+        .tjsizes {
+            display: inline-block;
+            color: #fff;
+            position: absolute;
+            left: 775px;
+            top: 225px;
+            font-size: 18px;
+        }
+
+        .jinandatas {
+            display: none;
+        }
+
+        .overs {
+            width: 375px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            /*最多显示几行*/
+            /*-webkit-line-clamp:3;*/
+        }
+
+        .u_bt {
+            position: relative;
+        }
+
+        .ezb div {
+            position: absolute;
+            cursor: pointer;
+            height: 136px;
+            width: 11px;
+            top: 60px;
+        }
+
+        .ezb div:nth-child(1) {
+            left: 114px;
+        }
+
+        .ezb div:nth-child(2) {
+            left: 147px;
+        }
+
+        .ezb div:nth-child(3) {
+            left: 180px;
+        }
+
+        .ezb div:nth-child(4) {
+            left: 213px;
+        }
+
+        .ezb div:nth-child(5) {
+            left: 246px;
+        }
+
+        .ezb div:nth-child(6) {
+            left: 279px;
+        }
+
+        .ezb div:nth-child(7) {
+            left: 312px;
+        }
+
+        .ezb div:nth-child(8) {
+            left: 345px;
+        }
+
+        .ezb div:nth-child(9) {
+            left: 378px;
+        }
+
+        .ezb div:nth-child(10) {
+            left: 411px;
+        }
+
+        .ezb div:nth-child(11) {
+            left: 444px;
+        }
+
+        .ezb div:nth-child(12) {
+            left: 477px;
+        }
+
+        .ezb div:nth-child(13) {
+            left: 510px;
+        }
+
+        .ezb div:nth-child(14) {
+            left: 543px;
+        }
+
+        .ezb div:nth-child(15) {
+            left: 576px;
+        }
+
+        .ezb div:nth-child(16) {
+            left: 609px;
+        }
+
+        .ezb div:nth-child(17) {
+            left: 642px;
+        }
+
+        .ezb div:nth-child(18) {
+            left: 675px;
+        }
+
+        .ezb div:nth-child(19) {
+            left: 708px;
+        }
+
+        .ezb div:nth-child(20) {
+            left: 741px;
+        }
+
+        .ezb div:nth-child(21) {
+            left: 774px;
+        }
+
+        .ezb div:nth-child(22) {
+            left: 807px;
+        }
+
+        .ezb div:nth-child(23) {
+            left: 840px;
+        }
+
+        .u_fanhui {
+            cursor: pointer;
+            display: none;
+            right: 30px;
+            top: 40px;
+            position: absolute;
+            color: #ffffff;
+        }
+
+        .w_smbg h2.xc {
+            margin: 20px 30px 0px 30px;
+        }
+
+        .w_smbg {
+            float: left;
+        }
+
+        .j_smbg {
+            margin-left: 5px;
+        }
+
+        #lfbu {
+            width: 930px;
+            height: 508px;
+            margin: 10px auto 0;
+        }
+
+        .gx,
+        .gx2 {
+            position: absolute;
+            left: 4%;
+            top: 3%;
+            z-index: 10;
+        }
+
+        .gx p,
+        .gx2 p {
+            font-weight: bold;
+            color: #FFFFFF;
+            margin-bottom: 10px;
+            /*opacity: 0.7;*/
+        }
+
+        .qie {
+            margin-top: 50px;
+            border-radius: 6px;
+            width: 85px;
+            cursor: pointer;
+        }
+
+        .qie {
+            text-align: center;
+        }
+
+        .qie1,
+        .qie2 {
+            padding: 20px 10px 10px 10px;
+            height: 63px;
+            background: rgba(255, 255, 255, 0.1);
+            /*border: 1px solid #519FFC;*/
+            /*border-radius: 10px;*/
+        }
+
+        .qie1 p,
+        .qie2 p {
+            font-size: 15px;
+        }
+
+        .mb {
+            margin-bottom: 6px;
+        }
+
+        .blue {
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            background: #519FFC;
+            position: absolute;
+            left: 4%;
+            top: 36%;
+        }
+
+        .gxinfo {
+            opacity: 0.6;
+            font-family: PingFangSC-Regular;
+            font-size: 13px;
+            color: #FFFFFF;
+        }
+
+        .gxinfo2 {
+            color: #FFFFFF;
+            opacity: 0.4;
+        }
+
+        .qiecla {
+            background: rgba(255, 255, 255, 0.06);
+        }
+
+        .red {
+            left: 4%;
+            top: 73%;
+            position: absolute;
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            background: #EA4245;
+        }
+
+        .zong,
+        .zong2 {
+            display: none;
+            height: 530px;
+            width: 500px;
+            margin: 0 auto;
+            top: -93.5%;
+            left: 4.4%;
+            /* background-size: 100% 100%; */
+            margin-bottom: 31px;
+            position: relative;
+            overflow: hidden;
+            z-index: 0;
+        }
+
+        .dong1,
+        .dong11 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 500px;
+            height: 500px;
+            background: url(img/aaa.png) no-repeat center center;
+            background-size: 15% 15%;
+            opacity: 0;
+        }
+
+        .dong2,
+        .dong22 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 500px;
+            height: 500px;
+            background: url(img/aaa.png) no-repeat center center;
+            background-size: 15% 15%;
+            opacity: 0;
+        }
+
+        .dong3,
+        .dong33 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 500px;
+            height: 500px;
+            background: url(img/aaa.png) no-repeat center center;
+            background-size: 15% 15%;
+            opacity: 0;
+        }
+
+        .dong1 {
+            -webkit-animation: ani-circle-a 4.5s ease-out forwards infinite;
+            animation: ani-circle-a 4.5s ease-out forwards infinite;
+        }
+
+        .dong2 {
+            -webkit-animation: ani-circle-a 4.5s ease-out 1.5s forwards infinite;
+            animation: ani-circle-a 4.5s ease-out 1.5s forwards infinite;
+        }
+
+        .dong3 {
+            -webkit-animation: ani-circle-a 4.5s ease-out 3s forwards infinite;
+            animation: ani-circle-a 4.5s ease-out 3s forwards infinite;
+        }
+
+        @-webkit-keyframes ani-circle-a {
+            0% {
+                -webkit-transform: scale(3);
+                transform: scale(3);
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+            10% {
+                opacity: .7;
+                filter: alpha(opacity=70);
+            }
+            100% {
+                -webkit-transform: scale(0.8);
+                transform: scale(0.8);
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+        }
+
+        @keyframes ani-circle-a {
+            0% {
+                -webkit-transform: scale(3);
+                transform: scale(3);
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+            10% {
+                opacity: 1;
+                filter: alpha(opacity=70);
+            }
+            100% {
+                -webkit-transform: scale(0.8);
+                transform: scale(0.8);
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+        }
+
+        .dong11 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 500px;
+            height: 500px;
+            background: url(img/bbb.png) no-repeat center center;
+            background-size: 15% 15%;
+            opacity: 0;
+        }
+
+        .dong22 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 500px;
+            height: 500px;
+            background: url(img/bbb.png) no-repeat center center;
+            background-size: 15% 15%;
+            opacity: 0;
+        }
+
+        .dong33 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 500px;
+            height: 500px;
+            background: url(img/bbb.png) no-repeat center center;
+            background-size: 15% 15%;
+            opacity: 0;
+        }
+
+        .dong11 {
+            -webkit-animation: ani-circle-a 4.5s ease-out forwards infinite;
+            animation: ani-circle-a2 4.5s ease-out forwards infinite;
+        }
+
+        .dong22 {
+            -webkit-animation: ani-circle-a 4.5s ease-out 1.5s forwards infinite;
+            animation: ani-circle-a2 4.5s ease-out 1.5s forwards infinite;
+        }
+
+        .dong33 {
+            -webkit-animation: ani-circle-a 4.5s ease-out 3s forwards infinite;
+            animation: ani-circle-a2 4.5s ease-out 3s forwards infinite;
+        }
+
+        @-webkit-keyframes ani-circle-a2 {
+            0% {
+                -webkit-transform: scale(0.8);
+                transform: scale(0.8);
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+            10% {
+                opacity: .7;
+                filter: alpha(opacity=70);
+            }
+            100% {
+                -webkit-transform: scale(3);
+                transform: scale(3);
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+        }
+
+        @keyframes ani-circle-a2 {
+            0% {
+                -webkit-transform: scale(0.8);
+                transform: scale(0.8);
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+            10% {
+                opacity: 1;
+                filter: alpha(opacity=70);
+            }
+            100% {
+                -webkit-transform: scale(4);
+                transform: scale(4);
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+        }
+
+        .j_news {
+            width: 960px;
+            height: 260px;
+        }
+
+        .j_bt {
+            float: left;
+        }
+        .tit{
+            font-size: 16px !important;
+        }
+    </style>
+    <style>
+        .nation_rank .overs {
+            width: 119px;
+        }
+
+        .nation_rank li a {
+            width: 100px;
+            display: inline-block;
+            float: right;
+        }
+
+        .nation_rank li a:nth-last-child(2) {
+            text-align: right;
+        }
+        .screen4_1_1h{
+            padding:  20px 20px 5px;
+            font-size: 24px;
+            color: rgba(255,255,255,0.8);
+        }
+        .screen4_1_1{
+            padding: 8px 20px;
+            font-weight: bold;
+            text-indent: 2em;
+            font-size: 24px;
+        }
+    </style>
+    <!--列表-->
+    <style>
+        .dyList{
+            width: 248px;
+            float: left;
+            color: white;
+            margin-top: 50px;
+            color:rgba(255,255,255,.7);
+            position: absolute;
+            right: 25px;
+            bottom: 20px;
+        }
+        .dyList h4{
+            color: rgb(102, 102, 102);
+            background-color: #ccc;
+            font-size: 18px;
+            padding: 5px;
+        }
+        .dyListul{
+            padding: 0;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+        .dyListul li{
+            list-style: none;
+            line-height: 25px;
+        }
+        .dyListul li span {
+            display: block;float: left;
+            width: 25%;
+            text-align: center;
+        }
+
+        .dyListul li .dyListRank{
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            margin:7px 10px 0 0 ;
+            background-color: rgb(3,167,225);
+            color: white;
+            font-size: 14px;
+            text-align: center;
+            line-height: 18px;
+            margin-left: 3px;
+        }
+        .dyListul li .dyListRank3{
+            background-color: rgb(239,63,34);
+        }
+        .listPer{
+            display: inline-block;
+            float: right;
+        }
+        .listNum{
+            width: 114px;
+            display: inline-block;
+            float: right;
+        }
+        .scrollDiv0 {
+            float: left;
+        }
+    </style>
+    <!--弹窗-->
+    <style>
+        .layui-layer-setwin .layui-layer-close2 {
+            right: -15px !important;
+            top: -15px !important;
+        }
+        .layui-layer{
+            background: url(./img/bg.png) no-repeat !important;
+        }
+    </style>
+</head>
+<body>
+    <div id="lbox cler" style="width:3840px;">
+        <div class="fl lcen">
+            <div class="lecet">
+                <div class="fl cler" id="chinaMap" style="width: 80%;height: 100%;"></div>
+                <div class="dyList" >
+                    <h4 >地域排行榜Top10</h4>
+                    <ul class="dyListul cler">
+                        <li><span class="dyListRank dyListRank3">1</span><span >山东省</span> <span class="listPer">50.11%</span><span class="listNum">228篇</span></li>
+                        <li><span class="dyListRank dyListRank3">2</span><span>北京市</span><span class="listPer">26.81%</span><span class="listNum">122篇</span></li>
+                        <li><span class="dyListRank dyListRank3">3</span><span>安徽省</span><span class="listPer">3.08%</span><span class="listNum">14篇</span></li>
+                        <li><span class="dyListRank">4</span><span>广东省</span><span class="listPer">2.20%</span ><span class="listNum">10篇</span></li>
+                        <li><span class="dyListRank">5</span><span>福建省</span><span class="listPer">1.76%</span><span class="listNum">8篇</span></li>
+                        <li><span class="dyListRank">6</span><span>海南省</span><span class="listPer">1.76%</span><span class="listNum">8篇</span></li>
+                        <li><span class="dyListRank">7</span><span>重庆市</span><span class="listPer">1.76%</span><span class="listNum">8篇</span></li>
+                        <li><span class="dyListRank">8</span><span>湖南省</span><span class="listPer">1.54%</span><span class="listNum">7篇</span></li>
+                        <li><span class="dyListRank">9</span><span>浙江省</span><span class="listPer">1.54%</span><span class="listNum">7篇</span></li>
+                        <li><span class="dyListRank">10</span><span>江苏省</span><span class="listPer">1.54%</span><span class="listNum">7篇</span></li>
+                    </ul>
+                </div>
+            </div >
+            <div class="cler j_news">
+                <div class="w_smbg scrollbox" style="margin-bottom:0;margin-right: 10px">
+                    <div class="w_title cler">
+                        <h2 class="fl tit" style="color: rgba(255,255,255,.7)">新闻媒体传播时间轴</h2>
+                    </div>
+                    <div id="ciyun" style="width: 417px;
+    height: 196px;
+    margin-left: 24px;
+    background: url(./img/news_time.jpg);
+    background-size: 100% 100%;">
+                    </div>
+                </div>
+                <div class="w_smbg scrollbox3" style="margin-bottom:0;">
+                    <div class="w_title cler">
+                        <h2 class="fl tit" style="color: rgba(255,255,255,.7)">网民反响</h2>
+                    </div>
+                    <div id="scrollDiv6" class="wangchaos" style="height: 184px;    overflow: hidden;">
+                        <ul class="w_newsRanking" id="f_sifgzxw">
+                            <li class="cf">
+                                <span class="fl">1</span>
+                                <p class="overs fl">花轮和彦：不忘初心，牢记使命。</p>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">2</span>
+                                <p class="overs fl">孙春刚：不忘初心，牢记使命，高举中国特色社会主义伟大旗帜，决胜全面建成小康社会，夺取新时代中国特色社会主义伟大胜利，为实现中华民族伟大复兴的中国梦不懈奋斗！</p>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">3</span>
+                                <p class="overs fl">瞿：不渴望能够一跃千里，只希望每天能够前进一步。</p>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">4</span>
+                                <p class="overs fl">晨 曦：党章党规，学系列讲话，做新时代合格党员。</p>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">5</span>
+                                <p class="overs fl">先娟：不忘初心，牢记使命。党的十九大精神，理论联系实际，学懂弄通做实，争做优秀共产党员，牢记为人民服务的宗旨！</p>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">6</span>
+                                <p class="overs fl">相遇美丽：入党时的誓言犹在耳边。不忘初心，努力学习。</p>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">7</span>
+                                <p class="overs fl">朱德杰：三严三实要牢记，两学一做需用心。</p>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">8</span>
+                                <p class="overs fl">猴子：不忘初心，牢记使命，做一名合格的优秀共产党员。</p>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">9</span>
+                                <p class="overs fl">儒雅：学习永无止境，方式方法很好，确实增长了对党的理论知识的理解！</p>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">10</span>
+                                <p class="overs fl">SH.H：学通学懂，落实到行动当中去。！</p>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">11</span>
+                                <p class="overs fl">赵戈庄栾淑江：好好学习，天天向上！认真学习，提高为人民服务的本领！</p>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">12</span>
+                                <p class="overs fl">滨尚：党的十九大精神，理论联系实际，学懂弄通做实，争做合格党员，牢记为人民服务的宗旨！</p>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">13</span>
+                                <p class="overs fl">理想府：为中国人民谋幸福为中华民族谋兴。</p>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">14</span>
+                                <p class="overs fl">我是梁小迪～ ：不忘初心，牢记使命，好好学习！</p>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">15</span>
+                                <p class="overs fl">刘：努力学习，争做合格党员，争做优秀党员。</p>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">16</span>
+                                <p class="overs fl">丁世(宁)荣：认真学习，加以学以致用!。</p>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">17</span>
+                                <p class="overs fl">励精图治：贴心，美观。可以直接进入学习。</p>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">18</span>
+                                <p class="overs fl">为人民服务：活到老，学到老。</p>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">19</span>
+                                <p class="overs fl">々簡簡單單 々:好好学习，天天向上！</p>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">20</span>
+                                <p class="overs fl">大智卢浩 洪楼分校：不忘初心，牢记使命，高举中国特色社会主义伟大旗帜，决胜全面建成小康社会，夺取新时代中国特色社会主义伟大胜利，为实现中华民族伟大复兴的中国梦不懈奋斗！</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fl lcen">
+            <div class="w_bt j_bt" style="margin-bottom: 10px">
+                <style>
+                    .tab_icon {
+                        text-align: center;
+                    }
+                    .tab_list{
+                        width: 33%;
+                        float: left;
+                        color: #fff;
+                        font-size: 14px;
+                        display: inline-block;
+                        text-align: left;
+                        margin-top: 30px;
+                    }
+                    .tab_list img {
+                        width: 100px;
+                        padding-left: 10px;
+                        float: left;
+                        margin-right: 5px;
+                    }
+                    .tab_list .tab_title {
+                        margin-top: 22px;
+                        margin-bottom: 10px;
+                        font-size: 22px;
+                        font-weight: bold;
+                        text-align: center;
+                        color: rgba(255,255,255,.7);
+                    }
+                    .tab_list span{
+                        font-size: 16px;
+                    }
+                    .tab_list .icon{
+                        width: 5em;
+                        height: 5em;
+                        color: #4a89dc;
+                        display: block;
+                        margin: 0 auto;
+                    }
+                </style>
+                <div class="w_title cler" style="padding: 10px 45px 0;font-size: 18px">
+                    <h2 class="fl tit" style="margin-bottom: 10px;color:rgba(255,255,255,0.7)">媒体传播情况</h2>
+                </div>
+                <ul class="tab_icon cler" style="margin-top: 15px">
+                    <li class="tab_list">
+                        <svg class="icon" style="vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="10035"><path d="M8.677966 208.271186h1006.644068v815.728814H8.677966z" fill="#E7ECED" p-id="10036"></path><path d="M572.97139 26.172746l-18.501424 29.383593c101.028881 63.592136 294.547525 166.981424 296.49139 168.02278l16.331932-30.615865c-1.943864-1.024-194.369085-103.840542-294.321898-166.790508zM156.706712 192.963254l16.331932 30.615865c1.943864-1.041356 195.462508-104.430644 296.49139-168.02278l-18.501424-29.383593c-99.952814 62.93261-292.378034 165.766508-294.321898 166.790508z" fill="#7383BF" p-id="10037"></path><path d="M390.508475 485.966102m-17.355933 0a17.355932 17.355932 0 1 0 34.711865 0 17.355932 17.355932 0 1 0-34.711865 0Z" fill="#424A60" p-id="10038"></path><path d="M512 485.966102m-17.355932 0a17.355932 17.355932 0 1 0 34.711864 0 17.355932 17.355932 0 1 0-34.711864 0Z" fill="#424A60" p-id="10039"></path><path d="M633.491525 485.966102m-17.355932 0a17.355932 17.355932 0 1 0 34.711865 0 17.355932 17.355932 0 1 0-34.711865 0Z" fill="#424A60" p-id="10040"></path><path d="M754.983051 485.966102m-17.355932 0a17.355932 17.355932 0 1 0 34.711864 0 17.355932 17.355932 0 1 0-34.711864 0Z" fill="#424A60" p-id="10041"></path><path d="M876.474576 485.966102m-17.355932 0a17.355932 17.355932 0 1 0 34.711864 0 17.355932 17.355932 0 1 0-34.711864 0Z" fill="#424A60" p-id="10042"></path><path d="M147.525424 624.813559m-17.355932 0a17.355932 17.355932 0 1 0 34.711864 0 17.355932 17.355932 0 1 0-34.711864 0Z" fill="#EFCE4A" p-id="10043"></path><path d="M269.016949 624.813559m-17.355932 0a17.355932 17.355932 0 1 0 34.711864 0 17.355932 17.355932 0 1 0-34.711864 0Z" fill="#ED7161" p-id="10044"></path><path d="M147.525424 485.966102m-17.355932 0a17.355932 17.355932 0 1 0 34.711864 0 17.355932 17.355932 0 1 0-34.711864 0Z" fill="#949493" p-id="10045"></path><path d="M269.016949 485.966102m-17.355932 0a17.355932 17.355932 0 1 0 34.711864 0 17.355932 17.355932 0 1 0-34.711864 0Z" fill="#949493" p-id="10046"></path><path d="M390.508475 624.813559m-17.355933 0a17.355932 17.355932 0 1 0 34.711865 0 17.355932 17.355932 0 1 0-34.711865 0Z" fill="#424A60" p-id="10047"></path><path d="M512 624.813559m-17.355932 0a17.355932 17.355932 0 1 0 34.711864 0 17.355932 17.355932 0 1 0-34.711864 0Z" fill="#424A60" p-id="10048"></path><path d="M633.491525 624.813559m-17.355932 0a17.355932 17.355932 0 1 0 34.711865 0 17.355932 17.355932 0 1 0-34.711865 0Z" fill="#424A60" p-id="10049"></path><path d="M754.983051 624.813559m-17.355932 0a17.355932 17.355932 0 1 0 34.711864 0 17.355932 17.355932 0 1 0-34.711864 0Z" fill="#424A60" p-id="10050"></path><path d="M876.474576 624.813559m-17.355932 0a17.355932 17.355932 0 1 0 34.711864 0 17.355932 17.355932 0 1 0-34.711864 0Z" fill="#424A60" p-id="10051"></path><path d="M147.525424 746.305085m-17.355932 0a17.355932 17.355932 0 1 0 34.711864 0 17.355932 17.355932 0 1 0-34.711864 0Z" fill="#EFCE4A" p-id="10052"></path><path d="M269.016949 746.305085m-17.355932 0a17.355932 17.355932 0 1 0 34.711864 0 17.355932 17.355932 0 1 0-34.711864 0Z" fill="#ED7161" p-id="10053"></path><path d="M390.508475 746.305085m-17.355933 0a17.355932 17.355932 0 1 0 34.711865 0 17.355932 17.355932 0 1 0-34.711865 0Z" fill="#424A60" p-id="10054"></path><path d="M512 746.305085m-17.355932 0a17.355932 17.355932 0 1 0 34.711864 0 17.355932 17.355932 0 1 0-34.711864 0Z" fill="#424A60" p-id="10055"></path><path d="M633.491525 746.305085m-17.355932 0a17.355932 17.355932 0 1 0 34.711865 0 17.355932 17.355932 0 1 0-34.711865 0Z" fill="#424A60" p-id="10056"></path><path d="M754.983051 746.305085m-17.355932 0a17.355932 17.355932 0 1 0 34.711864 0 17.355932 17.355932 0 1 0-34.711864 0Z" fill="#424A60" p-id="10057"></path><path d="M876.474576 746.305085m-17.355932 0a17.355932 17.355932 0 1 0 34.711864 0 17.355932 17.355932 0 1 0-34.711864 0Z" fill="#424A60" p-id="10058"></path><path d="M754.983051 885.152542m-17.355932 0a17.355932 17.355932 0 1 0 34.711864 0 17.355932 17.355932 0 1 0-34.711864 0Z" fill="#949493" p-id="10059"></path><path d="M876.474576 885.152542m-17.355932 0a17.355932 17.355932 0 1 0 34.711864 0 17.355932 17.355932 0 1 0-34.711864 0Z" fill="#949493" p-id="10060"></path><path d="M147.525424 885.152542m-17.355932 0a17.355932 17.355932 0 1 0 34.711864 0 17.355932 17.355932 0 1 0-34.711864 0Z" fill="#EFCE4A" p-id="10061"></path><path d="M269.016949 885.152542m-17.355932 0a17.355932 17.355932 0 1 0 34.711864 0 17.355932 17.355932 0 1 0-34.711864 0Z" fill="#ED7161" p-id="10062"></path><path d="M390.508475 885.152542m-17.355933 0a17.355932 17.355932 0 1 0 34.711865 0 17.355932 17.355932 0 1 0-34.711865 0Z" fill="#424A60" p-id="10063"></path><path d="M512 885.152542m-17.355932 0a17.355932 17.355932 0 1 0 34.711864 0 17.355932 17.355932 0 1 0-34.711864 0Z" fill="#424A60" p-id="10064"></path><path d="M633.491525 885.152542m-17.355932 0a17.355932 17.355932 0 1 0 34.711865 0 17.355932 17.355932 0 1 0-34.711865 0Z" fill="#424A60" p-id="10065"></path><path d="M512 86.779661m-69.423729 0a69.423729 69.423729 0 1 0 138.847458 0 69.423729 69.423729 0 1 0-138.847458 0Z" fill="#F7E6A1" p-id="10066"></path><path d="M8.677966 208.271186h1006.644068v121.491526H8.677966z" fill="#424A60" p-id="10067"></path></svg>
+                        <!--<p class="tab_title">天</p>-->
+                        <!--<span>占比：74.45%</span>-->
+                        <span class="tab_title" style="margin-top: 35px;display: block">媒体传播：227天</span>
+                    </li>
+                    <li class="tab_list">
+                        <svg class="icon" style="vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1000"><path d="M673.9 736.2c-13.7 0-26.9-7.6-33.4-20.6-9.2-18.4-1.7-40.9 16.7-50.1l99.6-49.8c18.4-9.2 40.9-1.8 50.1 16.7 9.2 18.4 1.7 40.9-16.7 50.1l-99.6 49.8c-5.4 2.6-11.1 3.9-16.7 3.9zM673.9 586.8c-13.7 0-26.9-7.6-33.4-20.6-9.2-18.4-1.7-40.9 16.7-50.1l99.6-49.8c18.4-9.2 40.9-1.7 50.1 16.7 9.2 18.4 1.7 40.9-16.7 50.1l-99.6 49.8c-5.4 2.6-11.1 3.9-16.7 3.9zM673.9 437.5c-13.7 0-26.9-7.6-33.4-20.6-9.2-18.4-1.7-40.9 16.7-50.1l99.6-49.8c18.4-9.2 40.9-1.8 50.1 16.7 9.2 18.4 1.7 40.9-16.7 50.1l-99.6 49.8c-5.4 2.6-11.1 3.9-16.7 3.9zM362.7 723.7c-5.6 0-11.3-1.3-16.7-3.9L246.5 670c-18.4-9.2-25.9-31.6-16.7-50.1 9.2-18.4 31.7-25.9 50.1-16.7l99.6 49.8c18.4 9.2 25.9 31.6 16.7 50.1-6.6 13-19.8 20.6-33.5 20.6zM362.7 574.4c-5.6 0-11.3-1.3-16.7-3.9l-99.6-49.8c-18.4-9.2-25.9-31.6-16.7-50.1 9.2-18.4 31.7-25.9 50.1-16.7l99.6 49.8c18.4 9.2 25.9 31.6 16.7 50.1-6.5 13-19.7 20.6-33.4 20.6zM362.7 425c-5.6 0-11.3-1.3-16.7-3.9l-99.6-49.8c-18.4-9.2-25.9-31.6-16.7-50.1 9.2-18.4 31.7-25.9 50.1-16.7l99.6 49.8c18.4 9.2 25.9 31.6 16.7 50.1-6.5 13-19.7 20.6-33.4 20.6z" fill="#29CCB6" p-id="1001"></path><path d="M512.1 985.1c-10.5 0-20.8-3.3-29.5-9.7-12.8-9.4-20.3-24.3-20.3-40.1V213.4c0-21.8 14.1-41 34.9-47.5L895.5 41.4c15.1-4.7 31.6-2 44.3 7.4 12.8 9.4 20.3 24.3 20.3 40.1v721.9c0 21.8-14.1 41-34.9 47.5L526.9 982.8c-4.8 1.5-9.8 2.3-14.8 2.3zM561.9 250v617.5l298.7-93.3V156.7L561.9 250z" fill="#4585F5" p-id="1002"></path><path d="M512.1 985.1c-5 0-10-0.8-14.9-2.3L99 858.3c-20.8-6.4-35-25.7-35-47.5V89c0-15.8 7.5-30.7 20.3-40.1 12.8-9.4 29.2-12.1 44.3-7.4L526.9 166c20.8 6.5 34.9 25.7 34.9 47.5v721.9c0 15.8-7.5 30.7-20.3 40.1a49.7 49.7 0 0 1-29.4 9.6zM163.6 774.2l298.7 93.3V250l-298.7-93.3v617.5z" fill="#4585F5" p-id="1003"></path></svg>
+                        <!--<p class="tab_title">文章</p>-->
+                        <!--<span>占比：22.69%</span><br/>-->
+                        <span class="tab_title" style="margin-top: 35px;display: block">传播文章：455篇</span>
+                    </li>
+                    <li class="tab_list">
+                        <svg class="icon" style="vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1192"><path d="M636.210862 490.671364l-2.898481 0c57.605765-30.873738 96.711681-90.697436 96.711681-159.454357 0-100.402426-83.301595-181.787417-186.045969-181.787417-96.751652 0-176.295882 72.250882-185.170686 164.525673-23.498397-35.006226-63.937736-58.205345-109.957778-58.205345-72.772567 0-131.637962 57.564768-131.637962 128.641089 0 44.178256 22.838347 83.140683 57.530946 106.280356l-3.157786 0c-40.582829 0-73.453116 32.128243-73.453116 71.772243l0 231.42441c0 39.623501 32.870287 71.752769 73.453116 71.752769L636.210862 865.620787c40.542857 0 73.446966-32.129268 73.446966-71.752769L709.657828 562.443607C709.657828 522.798583 676.752693 490.671364 636.210862 490.671364M322.061888 490.671364c27.595012-18.224146 47.953046-46.079488 55.267917-78.9467 17.063934 33.648203 44.676369 61.083327 78.365569 78.9467L322.061888 490.671364zM414.134769 331.215982c0-70.052423 58.126426-126.799303 129.802326-126.799303 71.691274 0 129.777728 56.74688 129.877145 126.799303-0.099417 70.057548-58.185871 126.843375-129.877145 126.843375C472.261195 458.059357 414.134769 401.274555 414.134769 331.215982M543.937095 231.532027c-56.390207 0.077894-101.908037 44.636397-102.06485 99.68498 0.156813 55.068057 45.674643 99.570189 102.06485 99.668582 56.303089-0.098393 101.944934-44.600524 101.984906-99.668582C645.88203 276.167399 600.239159 231.609921 543.937095 231.532027M742.751548 636.614169 742.751548 734.983149 927.919159 829.734153 927.919159 533.388081Z" p-id="1193"></path></svg>
+                        <!--<p class="tab_title">论坛</p>-->
+                        <!--<span>占比：2.86%</span><br/>-->
+                        <span class="tab_title" style="margin-top: 35px;display: block">传播媒体：215家</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="w_bt j_bt" style="margin-bottom: 10px">
+                <div class="w_smbg" style=" position: relative;margin-right: 7px;background: none;">
+                    <div id="mtzb" style="width:430px;height:100%;margin-left: 20px"></div>
+                </div>
+                <div class="w_smbg scrollbox" style="margin-bottom:0;background: none;" id="tableList"></div>
+            </div>
+            <div class="j_bt">
+                <!--<div class="w_smbg" style="margin-right: 5px">
+                    <div class="w_title cler">
+                        <h2 class="fl" style="margin-right: 0;color:rgba(255,255,255,0.7)">媒介传播分布情况</h2>
+                        <ul class="fl cler w_tipbar" >
+                            <li class="active_bar">微信</li>
+                            <li>自媒体</li>
+                            <li>论坛</li>
+                        </ul>
+                    </div>
+                    <div id="scrollDiv0" class="wangchaos">
+                        <div id="xinwen" style="width: 430px;height: 200px;float: left"></div>
+                    </div>
+                    <div id="scrollDiv0" class="wangchaos w_hide">
+                        <div id="zimeiti" style="width: 430px;height: 200px;float: left"></div>
+                    </div>
+                    <div id="scrollDiv0" class="wangchaos w_hide">
+                        <div id="luntan" style="width: 430px;height: 200px;float: left"></div>
+                    </div>
+                </div>-->
+                <div class= "w_bt j_bt">
+                    <div id="saihou" style="width: 920px;height: 240px;margin: 0 auto;margin-top: 3px;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="fl lcen">
+            <div class="w_bt j_bt" style="margin-bottom: 10px;position: relative">
+                <div id="joinRate" style="width: 100%;height: 100%;"></div>
+                <span  style="position: absolute;color: rgba(255,255,255,.7);font-size: 14px;font-weight: bold;top: 15px;left: 176px;">党支部总数：<span style="color:#da4453">278,405</span>个&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;党支部参与数：<span style="color:#da4453;">257,790</span>个&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;参与率：<span style="color:#da4453">92.60%</span></span>
+            </div>
+            <div class="w_bt j_bt tabs_2">
+                <!--<ul class="fl cler w_tipbar1" style="position: relative;z-index: 2">
+                    <li class="active_bar">满分率</li>
+                    <li class="">平均分</li>
+                </ul>-->
+                <div class="wangchaos" style="position: relative">
+                    <div id="score" style="width: 930px;height: 260px;"></div>
+                    <span  style="position: absolute;color: rgba(255,255,255,.7);font-size: 14px;font-weight: bold;top: 15px;left: 176px;">党员总数：<span style="color:#da4453">6,549,281</span>人&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;党员参与数：<span style="color:#da4453">5,085,734</span>人&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;参与率：<span style="color:#da4453">77.65%</span></span>
+                </div>
+                <!--<div  class="wangchaos w_hide" style="width: 930px; height: 260px;margin: 10px auto 0;">
+                    <div id="score2" style="width: 930px; height: 260px;"></div>
+                </div>-->
+            </div>
+            <div class="w_bt j_bt" style="width: 930px; height: 260px;margin-top: 10px">
+                <div id="makeTime" style="width: 930px; height: 260px;"></div>
+            </div>
+        </div>
+        <div class="fl lcen">
+            <div class="w_bt j_bt" style="margin-bottom: 10px;">
+                <div class="navbars" style="color: #fff;font-size: 20px; padding: 20px 42px;text-indent: 2em;line-height: 40px;">
+                    自2017年12月11日6:00至2018年6月3日24:00，省远程教育中心共向全省广大基层党组织和党员干部群众推送相关学习资料200多篇，发布题目1053道。全省共有257,790个党支部参与学习竞赛，占党支部总数的92.60%；参与学习竞赛总人数达到5,305,088人，其中党员5,085,734人，占全省党员总数的77.65%；参与学习竞赛累计达到181,193,946人次，日均3,294,435人次；获得满分的达到94,046,688人次，占总竞答人次的60%。
+                </div>
+            </div>
+            <div class="w_bt j_bt" style="margin-bottom: 10px;">
+                <div class="fishBone"></div>
+            </div>
+            <div class="w_bt j_bt tabs_3" style="position: relative">
+                <div class="w_title cler" style="margin-bottom: 0px">
+                    <h2 class="fl tit"  style="color:rgba(255,255,255,0.7);margin: 20px 25px;">参与线上竞赛党员对比分析</h2>
+                    <ul class="fl cler w_tipbar"  style="position: absolute;top: -10px;right: 25px">
+                        <li class="active_bar">学历</li>
+                        <li>岗位</li>
+                        <li>年龄</li>
+                    </ul>
+                </div>
+                <div class="wangchaos">
+                    <div id="gyt_edu" class="navbars" style="width:900px;height:200px;margin-left: 20px"></div>
+                </div>
+                <div class="wangchaos w_hide">
+                    <div id="gyt_job" class="navbars" style="width:900px;height:200px;margin-left: 20px"></div>
+                </div>
+                <div class="wangchaos w_hide">
+                    <div id="gyt_age" class="navbars" style="width:900px;height:200px;margin-left: 20px"></div>
+                </div>
+
+            </div>
+            <div class="w_smbg scrollbox2" style="margin-left:5px; display: none">
+                <div class="w_title cler">
+                    <h2 class="fl" style="margin-right: 0;color:rgba(255,255,255,0.7)">参与线上竞赛党员对比分析</h2>
+                    <ul class="fl cler w_tipbar" >
+                        <li class="active_bar">年龄</li>
+                        <li>学历</li>
+                        <li>岗位</li>
+                        <li>性别</li>
+                    </ul>
+                </div>
+                <div id="scrollDiv0" class="wangchaos">
+                    <div id="gyt_age" class="navbars" style="width:430px;height:200px;margin-left: 20px"></div>
+                </div>
+                <div id="scrollDiv0" class="wangchaos  w_hide">
+                    <div id="gyt_edu" class="navbars" style="width:430px;height:200px;margin-left: 20px"></div>
+                </div>
+                <div id="scrollDiv0" class="wangchaos w_hide">
+                    <div id="gyt_job" class="navbars" style="width:430px;height:200px;margin-left: 20px"></div>
+                </div>
+                <div id="scrollDiv0" class="wangchaos  w_hide">
+                    <div id="gyt_sex" class="navbars" style="width:430px;height:200px;margin-left: 20px"></div>
+                </div>
+
+            </div>
+            <div class="lecet" style="display: none">
+                <div id="lect">
+                    <div id="joinRate" style="width: 100%;height: 100%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="layerchart1 w_hide">
+        <div id="daylayer" class="tit3 tit" style="position:absolute"></div>
+        <div class="chart" id="chart22" style="height: 655px;width: 1500px">
+            <div id="sdMap" style="width: 1500px;height: 700px"></div>
+        </div>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.countup.min.js"></script>
+    <script type="text/javascript" src="js/w_all.js"></script>
+    <script src="https://cdn.bootcss.com/echarts/4.0.4/echarts-en.min.js"></script>
+    <script src="js/echarts-wordcloud.js"></script>
+    <script src="js/china.js"></script>
+    <script src="js/jq_scroll.js"></script>
+    <script src="js/leftTime.js"></script>
+    <script src="./layui/layui.all.js"></script>
+    <script src="js/index4.js"></script>
+    <script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="js/fishBone.js"></script>
+    <script>
+    var data = [
+		{
+			'审理时间':'2017年12月',
+			'参与竞赛总人次':'6,298,783',
+			'党员参与人次':'6,090,613',
+			'群众参与人次':'208,170'
+		},
+		{
+			'审理时间':'2018年1月',
+            '参与竞赛总人次':'28,260,502',
+            '党员参与人次':'28,054,389',
+            '群众参与人次':'206,113'
+		},
+		{
+			'审理时间':'2018年2月',
+            '参与竞赛总人次':'19,946,636',
+            '党员参与人次':'19,869,006',
+            '群众参与人次':'77,630'
+		},
+		{
+			'审理时间':'2018年3月',
+            '参与竞赛总人次':'41,191,197',
+            '党员参与人次':'41,056,679',
+            '群众参与人次':'134,518'
+		},
+		{
+			'审理时间':'2018年4月',
+            '参与竞赛总人次':'40,786,785',
+            '党员参与人次':'40,666,082',
+            '群众参与人次':'120,703'
+		},
+		{
+			'审理时间':'2018年5月',
+            '参与竞赛总人次':'37,187,548',
+            '党员参与人次':'37,037,334',
+            '群众参与人次':'150,214'
+		},
+		{
+			'审理时间':'2018年6月',
+            '参与竞赛总人次':'7,522,495',
+            '党员参与人次':'7,500,771',
+            '群众参与人次':'21,724 '
+		}
+	];
+	// $(function() {
+		//创建案件历史
+		$(".fishBone").fishBone(data);
+	// });
+    </script>
+</body>
+
+</html>

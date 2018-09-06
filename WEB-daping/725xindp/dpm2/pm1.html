@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/rest.css">
+    <link rel="stylesheet" type="text/css" href="css/w_css.css"/>
+    <style>
+        body{
+            /* overflow:hidden; */
+        }
+        .dv{
+            width: 100%;
+            height: 100%;
+        }
+        #lbox{
+            width: 3840px;
+            height: 810px;
+            /*overflow:hidden;*/
+        }
+        .fl{
+            float: left;
+        }
+        .lebox{
+            width: 960px;
+            height:810px;
+        }
+        .lcen{
+            width: 960px;
+            height:810px;
+        }
+        .lecet{
+            width: 960px;
+            height: 260px;
+            background: url(img/切图-06.png) no-repeat center center;
+            /*background:url(img/lcen.png) 0 0 no-repeat;*/
+            overflow: hidden;
+            position: relative;
+            margin-top: 5px;
+
+        }
+        .leceb{
+            width: 920px;
+            height: 540px;
+            margin: 0 auto;
+        }
+        .cler{
+            overflow:hidden;
+        }
+
+        .rcens{
+            background: url(img/lcen.png)0 5px  no-repeat;
+        }
+
+        .w_bt{
+            width: 951px;
+            height: 261px;
+            background: url(img/切图-06.png) no-repeat center center;
+            background-size: 100% 100%;
+        }
+        .cler{
+            overflow:hidden;
+        }
+        #w_mainer canvas,#w_mainer11 canvas{
+            width: 240px!important;
+            height: 220px!important;
+            top:20px!important;
+        }
+        .progre span{
+            margin-left: 10px;
+        }
+        .f_img{
+            width: 476px;
+            height: 260px;
+            overflow: hidden;
+            background: url(img/smbg.png) no-repeat;
+        }
+        .f_htop{
+            color: white;
+            margin-top: 15px;
+            margin-left: 20px;
+            font-size: 18px;
+        }
+        .f_login{
+            position: absolute;
+            top: 20px;
+            left: 15px;
+        }
+        .f_cityTitle h2{
+            width: 375px;
+            line-height: 25px;
+            padding: 5px 20px 0;
+            text-indent: 2em;
+        }
+        .data{
+            color: white;
+            position: absolute;
+            top: 95px;
+            left: 20px;
+        }
+        .lwz{
+            color: white;
+            position: absolute;
+            top: 65px;
+            left: 55px;
+            font-size: 16px;
+        }
+        .date-tiem, .ltimes {
+            font-size: 25px;
+        }
+        .data-box, .date-s {
+            color: #307ec2 !important;
+            font-size: 22px;
+            text-shadow: 0 0 10px #265fac;
+        }
+        .w_newsRanking li a.f_chu:after{
+            content: "(已处理)";
+        }
+        .f_fuwu img{
+            width: 93%;
+            height: 93%;
+            position: absolute;
+            top: 5%;
+            left: 4%;
+        }
+        .f_fuwu p.f_blocks{
+            width: 50px;
+            height: 115px;
+            /*background: red;*/
+            position: absolute;
+            top: 312px;
+            left: 54px;
+            transform: rotate(-72deg);
+
+        }
+        .f_fuwu p.f_blo{
+            width: 50px;
+            height: 233px;
+            position: absolute;
+            top: 330px;
+            left: 232px;
+            transform: rotate(-72deg);
+        }
+        .f_srverUsea{
+            display: none;
+        }
+        /*给雷达图提示框设置样式**/
+        .f_cpu div:nth-child(2){
+            width: 240px;
+        }
+        .f_clock{
+            width: 70px;
+            display: block;
+            float: left;
+            padding: 0 5px;
+        }
+
+    </style>
+</head>
+<body>
+<div id="lbox cler" style="width:3840px;">
+    <div class="province">
+        <!--带宽，流量，请求响应-->
+        <div class="fl lcen">
+            <div class="lecet">
+                <div id="f_broadband" style="width: 98%;height:98%; margin: 0 auto;"></div>
+            </div>
+            <div class="w_bt">
+                <div id="f_flow" style="width: 98%;height:98%; margin: 10px auto;"></div>
+            </div>
+            <div class="w_bt">
+                <div id="f_request" style="width: 98%;height:98%; margin: 5px auto;"></div>
+            </div>
+        </div>
+        <!--服务器总体情况-->
+        <div class="fl lcen">
+            <!--服务器总体情况-->
+            <div class="w_smbg fl f_server" style="position: relative; margin-top:5px;">
+                <div class="w_title cler">
+                    <h4 class="fl f_title" style="left: 5%">服务器总体情况</h4>
+                </div>
+                <div class="f_sected">
+                    <p>总计 <span class="f_span" style="padding-left: 15px">527台</span> </p>
+                    <p>已使用 <span class="f_span">422台</span> </p>
+                    <p>使用率 <span class="f_span">80.1%</span> </p>
+                </div>
+            </div>
+            <!--内存 宽带  CPU  -->
+            <div class="w_smbg fl" style=" position: relative; margin:5px 0 0 10px">
+                <div id="f_serverSum" class="dv"></div>
+            </div>
+            <!--服务器使用情况-->
+            <div class="leceb rcens f_fuwu" style="width: 950px; margin-top: 268px; height: 535px; position: relative">
+                <img src="img/f_4.png" alt="" class="">
+                <img src="img/f_3.png" alt="" class="f_serverUsea">
+                <img src="img/f_2.png" alt="" class="f_serverUsea">
+                <p class="f_blocks"></p>
+                <p class="f_blo"></p>
+            </div>
+        </div>
+
+        <!-- 安全运行时间 世界地图  攻击访问情况-->
+        <div class="fl lcen rcens">
+            <div class="leceb" style="position: relative; ">
+                <!--世界地图-->
+                <!--<h2 class="f_server" style="width:300px;line-height:20px;text-indent: 2em;position: absolute;top:30px;">-->
+                    <!--国外攻击情况 2018年7月1日至今遭受攻击1120次，全部拦截.-->
+                <!--</h2>-->
+                <div id="f_nice" style="width: 100%; height:90%;"></div>
+                <!--饼图-->
+                <div id="f_chinaR" style="width: 34%; height:360px;position: absolute;bottom: 1%; left:0;"></div>
+            </div>
+            <!--四个雷达图（亚洲  大洋洲  南美洲 北美洲）-->
+            <div class="w_bt">
+                <div class="f_cpu fl" id="f_warning"></div>
+                <div class="f_cpu fl" id="f_warning1"></div>
+                <div class="f_cpu fl" id="f_warning2"></div>
+                <div class="f_cpu fl" id="f_warning3"></div>
+
+            </div>
+        </div>
+        <!--中国地图， 安全情况-->
+        <div class="fl lcen rcens" style="position: relative">
+            <!--拦截信息  中国地图  top10-->
+            <div class="leceb cler" >
+                <!--时间 -->
+                <div class="f_login">
+                    <img src="img/dtdjs.png" alt="">
+                </div>
+                <div class="lwz">
+                    安全运营时间
+                </div>
+                <div class="data">
+                    <div class="data-box" id="dateShow1" data-date="2017/08/29 23:45:24">
+                        <span class="date-tiem d">00</span>天
+                        <span class="date-tiem h">00</span>时
+                        <span class="date-tiem m">00</span>分
+                        <span class="ltimes date-s s">00</span>秒
+                    </div>
+                    <h2 class="f_server" style="width: 300px;line-height: 20px;margin-top: 30px;text-indent: 2em;">
+                        2018年7月1日至今,平台遭受国内攻击次数65157次，全部拦截，系统运行安全平稳.
+                    </h2>
+                </div>
+
+                <!--中国地图-->
+                <div id="f_city" style="width:80%;height: 520px;position: absolute;top: 5px; right: 2%;"></div>
+                <!--横向柱状图-->
+                <div id="f_cityAxis" style="width: 30%;height: 345px;position: absolute;bottom: 32%;left: 15px;"></div>
+            </div>
+            <!--安全威胁级别-->
+            <div class="f_img fl" id="f_an"></div>
+            <!--安全保障在进行  滚动-->
+            <div class="f_img fl" >
+                <div class="w_title cler">
+                    <h2 class="f_htop fl">安全保障在进行</h2>
+                </div>
+                <div id="scrollDiv1">
+                    <ul class="w_newsRanking">
+                        <li><span>1</span> 信息泄漏 <!--<span>信息泄漏</span>-->  <a>未发现风险</a></li>
+                        <li><span>2</span>点击劫持<a class="red">发现1个潜在风险</a></li>
+                        <li><span>3</span> CSRF跨站请求伪造   <a class="red">发现1个潜在风险</a></li>
+                        <li><span>4</span> 信息发现 <a>未发现风险</a></li>
+                        <li><span>5</span> 链接失效  <a class="red f_chu">发现8个潜在风险</a> </li>
+                        <li><span>6</span>  网页篡改发现<a>未发现风险</a></li>
+                        <li><span>7</span>  网马发现<a>未发现风险</a></li>
+                        <li><span>8</span> 命令执行<a>未发现风险</a></li>
+                        <li><span>9</span>  暗链发现<a>未发现风险</a></li>
+                        <li><span class="w_spacile">10</span> WebShell发现<a>未发现风险</a></li>
+                        <li><span class="w_spacile">11</span>  越权访问<a>未发现风险</a></li>
+                        <li><span class="w_spacile">12</span>  远程密码修改<a>未发现风险</a></li>
+                        <li><span class="w_spacile">13</span> 文件上传<a>未发现风险</a></li>
+                        <li><span class="w_spacile">14</span>  未授权访问<a>未发现风险</a></li>
+                        <li><span class="w_spacile">15</span> 数据库发现<a>未发现风险</a></li>
+                    </ul></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="js/leftTime.js"></script>  <!--时间*/-->
+<script src="js/jq_scroll.js"></script>  <!--内容滚动-->
+<!--<script src="js/echarts.min.js"></script>-->
+<script src="https://cdn.bootcss.com/echarts/4.0.4/echarts-en.min.js"></script>
+<script src="http://gallery.echartsjs.com/dep/echarts/map/js/world.js"></script> <!--世界地图插件--->
+<script src="js/china.js"></script><!--地图echarts 插件*/-->
+<script src="js/yiping.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--<link rel="stylesheet" href="css/rest.css">-->
+    <link rel="stylesheet" href="css/j_rest.css">
+    <link rel="stylesheet" type="text/css" href="css/w_css.css" />
+    <style>
+        body {
+            overflow: hidden;
+            padding-top: 3px;
+        }
+
+        #lbox {
+            width: 3840px;
+            height: 810px;
+            /*overflow:hidden;*/
+        }
+
+        .fl {
+            float: left;
+        }
+
+        .lebox {
+            width: 480px;
+            height: 540px;
+        }
+
+        .lcen {
+            width: 960px;
+            height: 810px;
+        }
+
+        .lecet {
+            width: 960px;
+            height: 540px;
+            background: url(img/lcen.png) 0 0 no-repeat;
+            overflow: hidden;
+            position: relative;
+
+        }
+
+        .f_jinan {
+            width: 10px;
+            height: 370px;
+            position: absolute;
+            bottom: 100px;
+            left: 100px;
+        }
+
+        .u_qingdao {
+            width: 10px;
+            height: 370px;
+            position: absolute;
+            bottom: 100px;
+            left: 137px;
+        }
+
+        .f_fanHui {
+            z-index: 5;
+            position: absolute;
+            top: 40px;
+            right: 40px;
+            color: #ccc;
+            padding: 5px 10px;
+            border: 1px solide #CCCCCC;
+            border-radius: 15px;
+            background: #1C93D0;
+            display: none;
+            cursor: pointer;
+        }
+
+        .leceb {
+            width: 960px;
+            height: 270px;
+            margin: 0 auto;
+        }
+
+        .cler {
+            overflow: hidden;
+        }
+
+        .lrt {
+            width: 472px;
+            height: 260px;
+        }
+
+        #lect,
+        #lects,
+        #lect22,
+        #lect33 {
+            width: 930px;
+            height: 508px;
+            margin: 10px auto 0;
+        }
+
+        #lkait {
+            position: absolute;
+            right: 60px;
+            top: 8px;
+
+        }
+
+        .lkt {
+            color: rgb(255, 255, 255);
+            font-family: '黑体';
+            font-size: 18px;
+        }
+
+        .lkts {
+            color: #31B0E5;
+            font-size: 50px;
+            /*font-family: '黑体';*/
+        }
+
+        .lecets {
+            width: 960px;
+            height: 540px;
+        }
+
+        .rcens {
+            background: url(img/lrih.png) no-repeat;
+        }
+
+        .data {
+            margin: 10px 0 0 80px;
+        }
+
+        .data-box,
+        .date-s {
+            color: #307ec2 !important;
+            font-size: 22px;
+            text-shadow: 0 0 10px #265fac;
+        }
+
+        .date-tiem,
+        .ltimes {
+            font-size: 35px;
+        }
+
+        .lwz {
+            font-size: 18px;
+            color: rgb(255, 255, 255);
+            margin-top: 10px;
+            font-family: '黑体';
+            text-align: center;
+
+        }
+
+        .liht {
+            position: relative;
+        }
+
+        .lws {
+            width: 400px;
+            margin: 31px auto 20px;
+        }
+
+        .s1,
+        .s2,
+        .s3,
+        .s4,
+        .s5,
+        .s6 {
+            position: absolute;
+            color: #31B0E5;
+            font-size: 16px;
+        }
+
+        .s1,
+        .s2,
+        .s3 {
+            top: 89px;
+        }
+
+        .s1 {
+            left: 76px;
+        }
+
+        .s2 {
+            left: 210px;
+        }
+
+        .s3 {
+            right: 75px;
+        }
+
+        .s4 {
+            left: 66px;
+            font-size: 20px;
+        }
+
+        .s5 {
+            left: 212px;
+            font-size: 20px;
+        }
+
+        .s6 {
+            right: 70px;
+            font-size: 20px;
+        }
+
+        #lyuan,
+        #lyu,
+        #lyuan12,
+        #lyu12 {
+            background: url(img/smbg.png) 0 0 no-repeat;
+        }
+
+        .fr {
+            float: right;
+        }
+
+        #lect,
+        #lects,
+        #f_lects,
+        #u_lects,
+        #lect12,
+        #lects12,
+        #j_content {
+            width: 930px;
+            height: 508px;
+            margin: 10px auto 0;
+        }
+
+        #u_lects,
+        #f_lects {
+            position: relative;
+            z-index: 1;
+        }
+
+        .w_bt {
+            width: 951px;
+            height: 261px;
+            background: url(img/切图-06.png) no-repeat center center;
+            background-size: 100% 100%;
+        }
+
+        .cler {
+            overflow: hidden;
+        }
+
+        #return {
+            color: #fff;
+            display: inline-block;
+            /* position: absolute; */
+            float: right;
+            margin-right: 45px;
+            margin-top: 450px;
+            right: 0;
+            top: 40px;
+            cursor: pointer;
+            display: none
+        }
+
+        #w_mainer canvas,
+        #w_mainer11 canvas {
+            width: 240px !important;
+            height: 220px !important;
+            top: 20px !important;
+            left: 13px !important;
+        }
+
+        .progre {
+            line-height: 6px;
+            margin-bottom: 5px;
+            margin-left: 20px;
+        }
+
+        .progre div {
+            float: left;
+        }
+
+        .progre span {
+            color: #fff;
+            font-size: 12px;
+            margin-left: 10px;
+        }
+
+        .tjsize {
+            display: inline-block;
+            color: rgba(255, 255, 255, 0.8);
+            position: absolute;
+            left: 265px;
+            top: 225px;
+            font-size: 18px;
+        }
+
+        .tjsizes {
+            display: inline-block;
+            color: rgba(255, 255, 255, 0.8);
+            position: absolute;
+            left: 740px;
+            top: 225px;
+            font-size: 18px;
+        }
+
+        .jinandatas {
+            display: none;
+        }
+
+        .overs {
+            width: 360px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            /*最多显示几行*/
+            /*-webkit-line-clamp:3;*/
+        }
+
+        .u_bt {
+            position: relative;
+        }
+
+        .ezb div {
+            position: absolute;
+            cursor: pointer;
+            height: 136px;
+            width: 11px;
+            top: 60px;
+        }
+
+        .ezb div:nth-child(1) {
+            left: 114px;
+        }
+
+        .ezb div:nth-child(2) {
+            left: 147px;
+        }
+
+        .ezb div:nth-child(3) {
+            left: 180px;
+        }
+
+        .ezb div:nth-child(4) {
+            left: 213px;
+        }
+
+        .ezb div:nth-child(5) {
+            left: 246px;
+        }
+
+        .ezb div:nth-child(6) {
+            left: 279px;
+        }
+
+        .ezb div:nth-child(7) {
+            left: 312px;
+        }
+
+        .ezb div:nth-child(8) {
+            left: 345px;
+        }
+
+        .ezb div:nth-child(9) {
+            left: 378px;
+        }
+
+        .ezb div:nth-child(10) {
+            left: 411px;
+        }
+
+        .ezb div:nth-child(11) {
+            left: 444px;
+        }
+
+        .ezb div:nth-child(12) {
+            left: 477px;
+        }
+
+        .ezb div:nth-child(13) {
+            left: 510px;
+        }
+
+        .ezb div:nth-child(14) {
+            left: 543px;
+        }
+
+        .ezb div:nth-child(15) {
+            left: 576px;
+        }
+
+        .ezb div:nth-child(16) {
+            left: 609px;
+        }
+
+        .ezb div:nth-child(17) {
+            left: 642px;
+        }
+
+        .ezb div:nth-child(18) {
+            left: 675px;
+        }
+
+        .ezb div:nth-child(19) {
+            left: 708px;
+        }
+
+        .ezb div:nth-child(20) {
+            left: 741px;
+        }
+
+        .ezb div:nth-child(21) {
+            left: 774px;
+        }
+
+        .ezb div:nth-child(22) {
+            left: 807px;
+        }
+
+        .ezb div:nth-child(23) {
+            left: 840px;
+        }
+
+        .u_fanhui {
+            z-index: 5;
+            position: absolute;
+            top: 40px;
+            right: 40px;
+            color: #ccc;
+            padding: 5px 10px;
+            border: 1px solide #CCCCCC;
+            border-radius: 15px;
+            background: #1C93D0;
+            display: none;
+            cursor: pointer;
+        }
+
+        .w_smbg h2.xc {
+            /* margin: 15px 30px 0px 30px; */
+        }
+
+        .w_smbg {
+            float: left;
+        }
+
+        .j_smbg h2.xc {
+            /*margin: 15px 30px 0px 30px;*/
+            color: #fff;
+            display: inline-block;
+            margin: 20px 30px;
+        }
+.w_red{
+	color: red;
+}
+        .j_smbg {
+            float: left;
+            height: 260px;
+            margin: 5px 0px 0px 3px;
+        }
+
+        #lfbu {
+            width: 930px;
+            height: 508px;
+            margin: 10px auto 0;
+        }
+
+        .gx,
+        .gx2 {
+            position: absolute;
+            left: 4%;
+            top: 3%;
+            z-index: 10;
+        }
+
+        .gx p,
+        .gx2 p {
+            font-weight: bold;
+            color: #FFFFFF;
+            margin-bottom: 10px;
+            /*opacity: 0.7;*/
+        }
+
+        .qie {
+            margin-top: 50px;
+            border-radius: 6px;
+            width: 85px;
+            cursor: pointer;
+        }
+
+        .qie {
+            text-align: center;
+        }
+
+        .qie1,
+        .qie2 {
+            padding: 20px 10px 10px 10px;
+            height: 63px;
+            background: rgba(255, 255, 255, 0.1);
+            /*border: 1px solid #519FFC;*/
+            /*border-radius: 10px;*/
+        }
+
+        .qie1 p,
+        .qie2 p {
+            font-size: 15px;
+        }
+
+        .mb {
+            margin-bottom: 6px;
+        }
+
+        .blue {
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            background: #519FFC;
+            position: absolute;
+            left: 4%;
+            top: 36%;
+        }
+
+        .gxinfo {
+            opacity: 0.6;
+            font-family: PingFangSC-Regular;
+            font-size: 13px;
+            color: #FFFFFF;
+        }
+
+        .gxinfo2 {
+            color: #FFFFFF;
+            opacity: 0.4;
+        }
+
+        .qiecla {
+            background: rgba(255, 255, 255, 0.06);
+        }
+
+        .red {
+            left: 4%;
+            top: 73%;
+            position: absolute;
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            background: #EA4245;
+        }
+
+        .zong,
+        .zong2 {
+            display: none;
+            height: 530px;
+            width: 500px;
+            margin: 0 auto;
+            top: -93.5%;
+            left: 4.4%;
+            /* background-size: 100% 100%; */
+            margin-bottom: 31px;
+            position: relative;
+            overflow: hidden;
+            z-index: 0;
+        }
+
+        .dong1,
+        .dong11 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 500px;
+            height: 500px;
+            background: url(img/aaa.png) no-repeat center center;
+            background-size: 15% 15%;
+            opacity: 0;
+        }
+
+        .dong2,
+        .dong22 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 500px;
+            height: 500px;
+            background: url(img/aaa.png) no-repeat center center;
+            background-size: 15% 15%;
+            opacity: 0;
+        }
+
+        .dong3,
+        .dong33 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 500px;
+            height: 500px;
+            background: url(img/aaa.png) no-repeat center center;
+            background-size: 15% 15%;
+            opacity: 0;
+        }
+
+        .dong1 {
+            -webkit-animation: ani-circle-a 4.5s ease-out forwards infinite;
+            animation: ani-circle-a 4.5s ease-out forwards infinite;
+        }
+
+        .dong2 {
+            -webkit-animation: ani-circle-a 4.5s ease-out 1.5s forwards infinite;
+            animation: ani-circle-a 4.5s ease-out 1.5s forwards infinite;
+        }
+
+        .dong3 {
+            -webkit-animation: ani-circle-a 4.5s ease-out 3s forwards infinite;
+            animation: ani-circle-a 4.5s ease-out 3s forwards infinite;
+        }
+
+        @-webkit-keyframes ani-circle-a {
+            0% {
+                -webkit-transform: scale(3);
+                transform: scale(3);
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+            10% {
+                opacity: .7;
+                filter: alpha(opacity=70);
+            }
+            100% {
+                -webkit-transform: scale(0.8);
+                transform: scale(0.8);
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+        }
+
+        @keyframes ani-circle-a {
+            0% {
+                -webkit-transform: scale(3);
+                transform: scale(3);
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+            10% {
+                opacity: 1;
+                filter: alpha(opacity=70);
+            }
+            100% {
+                -webkit-transform: scale(0.8);
+                transform: scale(0.8);
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+        }
+
+        .dong11 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 500px;
+            height: 500px;
+            background: url(img/bbb.png) no-repeat center center;
+            background-size: 15% 15%;
+            opacity: 0;
+        }
+
+        .dong22 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 500px;
+            height: 500px;
+            background: url(img/bbb.png) no-repeat center center;
+            background-size: 15% 15%;
+            opacity: 0;
+        }
+
+        .dong33 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 500px;
+            height: 500px;
+            background: url(img/bbb.png) no-repeat center center;
+            background-size: 15% 15%;
+            opacity: 0;
+        }
+
+        .dong11 {
+            -webkit-animation: ani-circle-a 4.5s ease-out forwards infinite;
+            animation: ani-circle-a2 4.5s ease-out forwards infinite;
+        }
+
+        .dong22 {
+            -webkit-animation: ani-circle-a 4.5s ease-out 1.5s forwards infinite;
+            animation: ani-circle-a2 4.5s ease-out 1.5s forwards infinite;
+        }
+
+        .dong33 {
+            -webkit-animation: ani-circle-a 4.5s ease-out 3s forwards infinite;
+            animation: ani-circle-a2 4.5s ease-out 3s forwards infinite;
+        }
+
+        @-webkit-keyframes ani-circle-a2 {
+            0% {
+                -webkit-transform: scale(0.8);
+                transform: scale(0.8);
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+            10% {
+                opacity: .7;
+                filter: alpha(opacity=70);
+            }
+            100% {
+                -webkit-transform: scale(3);
+                transform: scale(3);
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+        }
+
+        @keyframes ani-circle-a2 {
+            0% {
+                -webkit-transform: scale(0.8);
+                transform: scale(0.8);
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+            10% {
+                opacity: 1;
+                filter: alpha(opacity=70);
+            }
+            100% {
+                -webkit-transform: scale(4);
+                transform: scale(4);
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+        }
+
+        .j_news {
+            width: 960px;
+            height: 530px;
+        }
+
+        .j_bt {
+            float: left;
+            margin-top: 10px;
+        }
+
+        /* #j_option1{
+     height: 210px;
+     width: 330px;
+ } */
+
+        .spanbox {
+            width: 951px;
+            height: 261px;
+        }
+
+        .w_newsRanking li span {
+            margin-top: 4px;
+        }
+
+        .w_newsRanking li p,
+        .w_newsRanking li a {
+            opacity: 0.8;
+        }
+
+        .j_ml {
+            margin-left: 5px;
+        }
+
+        .j_ot {
+            opacity: 0.8;
+        }
+ .j_kuang{ 
+    z-index: 30; position: absolute; top: 10px; left:-50px ; width: 200px; height: 150px; background: rgba(40,40,40,0.7); border-radius:
+8px; padding: 15px; display: none; } .j_kuang li{ float: left; color: #FFFFFF; font-size: 14px; width: 240px; line-height:
+25px; }
+.j_hover{
+    width: 110px;
+    height: 70px;
+    top: 120px;
+    left: 180px;
+    z-index: 10;
+    position: absolute;
+    /* display: none; */
+}
+.w_rel{
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.w_tit{
+	color: rgba(255,255,255,0.8);
+	font-size: 18px;
+	position: absolute;
+	font-weight: bolder;
+	top: 19px;
+	left: 30px;
+}
+ .j_news,.j_works,.j_rads {
+            /* width: 960px;
+            height: 530px; */
+        }
+    .j_mat{
+        margin-top: 5px;
+    }
+    .tab_icon {
+                        text-align: center;
+                    }
+                    .tab_list{
+                        width: 33%;
+                        float: left;
+                        color: #fff;
+                        font-size: 14px;
+                        display: inline-block;
+                        text-align: left;
+                        margin-top: 30px;
+                    }
+                    .tab_list img {
+                        width: 100px;
+                        padding-left: 10px;
+                        float: left;
+                        margin-right: 5px;
+                    }
+                    .tab_list .tab_title {
+                        margin-top: 22px;
+                        margin-bottom: 10px;
+                        font-size: 22px;
+                        font-weight: bold;
+                        text-align: center;
+                        color: rgba(255,255,255,.7);
+                    }
+                    .tab_list span{
+                        font-size: 16px;
+                    }
+                    .tab_list .icon{
+                        width: 5em;
+                        height: 5em;
+                        color: #4a89dc;
+                        display: block;
+                        margin: 0 auto;
+                    }
+                    .f_login img{
+			margin-left: 110px;
+			margin-top: 60px;
+		}
+		.f_span{
+			font-size: 75px;
+			font-weight: bolder;
+			position: absolute;
+			top: 110px;
+			left: 307px;
+		}
+		.f_spans{
+			position: absolute;
+			top: 110px;
+			left: 615px;
+		}
+
+    </style>
+</head>
+
+<body>
+    <div id="lbox cler" style="width:3840px;">
+        <!--<div class="fl lcen">
+            <div>
+                <div class="lecet">
+                    <div id="j_content"></div>
+                </div>
+            </div>
+            <div class="w_smbg j_ml scrollbox" style="margin-bottom:0;">
+                <div class="w_title cler">
+                    <h2 class="fl xc">各栏目信息发布分布情况(单位:篇)</h2>
+
+                    <div class="fl w_visits">
+<div id="j_noc" style="width:500px;height:230px;"></div>
+                       
+                    </div>
+
+                </div>
+                <div class="navbar"></div>
+                <div class="navbar w_hide"></div>
+                <div class="navbar w_hide"></div>
+            </div>
+            <div class="w_smbg j_ml scrollbox" style="margin-bottom:0;">
+                <div class="w_title cler">
+                    <h2 class="fl xc">三端发布浏览TOP10</h2>
+                  
+                </div>
+
+                <div id="scrollDiv1" class="wangchaos">
+<div id="j_top" style="width:460px;height:230px; margin-top: -20px;"></div>
+                    
+                </div>
+            </div>
+        </div>-->
+              <div class="fl lcen" style=" margin-top: 1px;">
+			<div class=" w_bt u_bt " style="float:left; clear: both; margin-bottom: 10px;position: relative;">
+
+				<h2 class="fl xc w_hui" style="position: absolute;margin-left:40px;margin-top: 8px;color: rgba(255,255,255,0.7); 
+				font-size: 18px;font-weight: bolder;font-family: '黑体';">全省管理人员情况</h2>
+				<!--<div style="width: 50px;height:100%;float: left;"></div>-->
+				<div id="w_allz" style="width: 31%;height: 96%; position: absolute;left: 20px; margin-top: 30px;"></div>
+				<span class="lkt f_span">=</span>
+				<div id="w_kaitong" style=" width: 31%;height: 96%;position: absolute;left:335px;  margin-top: 30px;"></div>
+				<span class="lkt f_span f_spans">+</span>
+				<div id="w_bilv" style=" width: 31%;height: 96%;position: absolute;right: 20px;  margin-top: 30px;"></div>
+		
+
+			</div>
+		
+			<div class="lecet " style="float:left;">
+				
+				<div id="lfbu" style="width: 98%;height: 98%;">
+
+				</div>
+				
+			</div>
+		</div>
+        
+        <div class="fl lcen">
+            <div class="leceb cler" style="position:relative">
+                <div class="fl lrt" id="lyuan" style="margin-right:5px;">
+
+                </div>
+                <div class="tjsize" id="f_qszc">
+                    转出总计:651624
+                </div>
+                <div class="fl lrt" id="lyu">
+
+                </div>
+                <div class="tjsizes" id="f_qszr">
+                    转入总计:663409
+                </div>
+            </div>
+            <div class="lecet">
+                <div id="lects">
+
+                </div>
+                <div id="f_lects" class="jinandatas">
+
+                </div>
+                <div id="u_lects" class="jinandatas">
+
+                </div>
+                <div class="zong">
+                    <div class="dong1"></div>
+                    <div class="dong2"></div>
+                    <div class="dong3"></div>
+                </div>
+                <div class="zong2">
+                    <div class="dong11"></div>
+                    <div class="dong22"></div>
+                    <div class="dong33"></div>
+                </div>
+                <!--点击济南跳转到济南的《济南党组织关系转接迁徙模拟图》-->
+                <p class="f_jinan"></p>
+                <p class="u_qingdao"></p>
+                <p class="f_fanHui jinandatas" style="display: none">
+                    返回
+                </p>
+                <!--jinandatas 隐藏-->
+                <!--济南党组织关系转接迁徙模拟图  切换的部分-->
+                <div class="gx jinandatas">
+                    <!--<p>济南党组织关系转接迁徙模拟图</p>-->
+                    <ul class="qie">
+                        <li class="qie1 qiecla">
+                            <div class="mb">
+                                <div class="blue left"></div>
+                                <span class="gxinfo">转入</span>
+                                <span class="left gxinfo2"> > </span>
+                            </div>
+                            <!--<p>8.3%</p>-->
+                            <p>30167</p>
+                        </li>
+                        <li class="qie2">
+                            <div class="mb">
+                                <div class="red left"></div>
+                                <span class="left gxinfo">转出</span>
+                                <span class="left gxinfo2"> > </span>
+                            </div>
+                            <!--<p>12.7%</p>-->
+                            <p>28871</p>
+                        </li>
+                    </ul>
+                </div>
+                <!--青岛党组织关系转接迁徙模拟图  切换的部分-->
+                <div class="gx2 jinandatas">
+                    <!--<p>青岛党组织关系转接迁徙模拟图</p>-->
+                    <ul class="qie">
+                        <li class="qie1 qiecla">
+                            <div class="mb">
+                                <div class="blue left"></div>
+                                <span class="gxinfo">转入</span>
+                                <span class="left gxinfo2"> > </span>
+                            </div>
+                            <!--<p>8.3%</p>-->
+                            <p>96925</p>
+                        </li>
+                        <li class="qie2">
+                            <div class="mb">
+                                <div class="red left"></div>
+                                <span class="left gxinfo">转出</span>
+                                <span class="left gxinfo2"> > </span>
+                            </div>
+                            <!--<p>12.7%</p>-->
+                            <p>95449</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="fl lcen">
+             <div class="w_bt j_bt w_rel" style="margin-top: 0;">
+             	<div class="w_tit">平台开通以来内容发布情况</div>
+                <ul class="tab_icon cler" style="margin-top: 50px;">
+                    <li class="tab_list">
+                            <svg class="icon" style="vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="705"><path d="M275.692308 275.692308v472.615384h472.615384V275.692308H275.692308z m0-39.384616h472.615384a39.384615 39.384615 0 0 1 39.384616 39.384616v472.615384a39.384615 39.384615 0 0 1-39.384616 39.384616H275.692308a39.384615 39.384615 0 0 1-39.384616-39.384616V275.692308a39.384615 39.384615 0 0 1 39.384616-39.384616zM630.153846 512a39.384615 39.384615 0 1 0 0-78.769231 39.384615 39.384615 0 0 0 0 78.769231z m0 39.384615a78.769231 78.769231 0 1 1 0-157.538461 78.769231 78.769231 0 0 1 0 157.538461zM334.769231 433.230769a19.692308 19.692308 0 0 1 0-39.384615h157.538461a19.692308 19.692308 0 0 1 0 39.384615h-157.538461z m0 118.153846a19.692308 19.692308 0 0 1 0-39.384615h157.538461a19.692308 19.692308 0 0 1 0 39.384615h-157.538461z m-1.772308 118.153847C323.111385 669.538462 315.076923 660.716308 315.076923 649.846154s8.034462-19.692308 17.92-19.692308h358.006154c9.885538 0 17.92 8.822154 17.92 19.692308s-8.034462 19.692308-17.92 19.692308h-358.006154z" p-id="706"></path></svg>
+                        <!-- <img class="icon" src="./img/j_works.svg" width="100" height="100"/> -->
+                        <!-- <svg class="icon" style="vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="10035"><path d="M8.677966 208.271186h1006.644068v815.728814H8.677966z" fill="#E7ECED" p-id="10036"></path><path d="M572.97139 26.172746l-18.501424 29.383593c101.028881 63.592136 294.547525 166.981424 296.49139 168.02278l16.331932-30.615865c-1.943864-1.024-194.369085-103.840542-294.321898-166.790508zM156.706712 192.963254l16.331932 30.615865c1.943864-1.041356 195.462508-104.430644 296.49139-168.02278l-18.501424-29.383593c-99.952814 62.93261-292.378034 165.766508-294.321898 166.790508z" fill="#7383BF" p-id="10037"></path><path d="M390.508475 485.966102m-17.355933 0a17.355932 17.355932 0 1 0 34.711865 0 17.355932 17.355932 0 1 0-34.711865 0Z" fill="#424A60" p-id="10038"></path><path d="M512 485.966102m-17.355932 0a17.355932 17.355932 0 1 0 34.711864 0 17.355932 17.355932 0 1 0-34.711864 0Z" fill="#424A60" p-id="10039"></path><path d="M633.491525 485.966102m-17.355932 0a17.355932 17.355932 0 1 0 34.711865 0 17.355932 17.355932 0 1 0-34.711865 0Z" fill="#424A60" p-id="10040"></path><path d="M754.983051 485.966102m-17.355932 0a17.355932 17.355932 0 1 0 34.711864 0 17.355932 17.355932 0 1 0-34.711864 0Z" fill="#424A60" p-id="10041"></path><path d="M876.474576 485.966102m-17.355932 0a17.355932 17.355932 0 1 0 34.711864 0 17.355932 17.355932 0 1 0-34.711864 0Z" fill="#424A60" p-id="10042"></path><path d="M147.525424 624.813559m-17.355932 0a17.355932 17.355932 0 1 0 34.711864 0 17.355932 17.355932 0 1 0-34.711864 0Z" fill="#EFCE4A" p-id="10043"></path><path d="M269.016949 624.813559m-17.355932 0a17.355932 17.355932 0 1 0 34.711864 0 17.355932 17.355932 0 1 0-34.711864 0Z" fill="#ED7161" p-id="10044"></path><path d="M147.525424 485.966102m-17.355932 0a17.355932 17.355932 0 1 0 34.711864 0 17.355932 17.355932 0 1 0-34.711864 0Z" fill="#949493" p-id="10045"></path><path d="M269.016949 485.966102m-17.355932 0a17.355932 17.355932 0 1 0 34.711864 0 17.355932 17.355932 0 1 0-34.711864 0Z" fill="#949493" p-id="10046"></path><path d="M390.508475 624.813559m-17.355933 0a17.355932 17.355932 0 1 0 34.711865 0 17.355932 17.355932 0 1 0-34.711865 0Z" fill="#424A60" p-id="10047"></path><path d="M512 624.813559m-17.355932 0a17.355932 17.355932 0 1 0 34.711864 0 17.355932 17.355932 0 1 0-34.711864 0Z" fill="#424A60" p-id="10048"></path><path d="M633.491525 624.813559m-17.355932 0a17.355932 17.355932 0 1 0 34.711865 0 17.355932 17.355932 0 1 0-34.711865 0Z" fill="#424A60" p-id="10049"></path><path d="M754.983051 624.813559m-17.355932 0a17.355932 17.355932 0 1 0 34.711864 0 17.355932 17.355932 0 1 0-34.711864 0Z" fill="#424A60" p-id="10050"></path><path d="M876.474576 624.813559m-17.355932 0a17.355932 17.355932 0 1 0 34.711864 0 17.355932 17.355932 0 1 0-34.711864 0Z" fill="#424A60" p-id="10051"></path><path d="M147.525424 746.305085m-17.355932 0a17.355932 17.355932 0 1 0 34.711864 0 17.355932 17.355932 0 1 0-34.711864 0Z" fill="#EFCE4A" p-id="10052"></path><path d="M269.016949 746.305085m-17.355932 0a17.355932 17.355932 0 1 0 34.711864 0 17.355932 17.355932 0 1 0-34.711864 0Z" fill="#ED7161" p-id="10053"></path><path d="M390.508475 746.305085m-17.355933 0a17.355932 17.355932 0 1 0 34.711865 0 17.355932 17.355932 0 1 0-34.711865 0Z" fill="#424A60" p-id="10054"></path><path d="M512 746.305085m-17.355932 0a17.355932 17.355932 0 1 0 34.711864 0 17.355932 17.355932 0 1 0-34.711864 0Z" fill="#424A60" p-id="10055"></path><path d="M633.491525 746.305085m-17.355932 0a17.355932 17.355932 0 1 0 34.711865 0 17.355932 17.355932 0 1 0-34.711865 0Z" fill="#424A60" p-id="10056"></path><path d="M754.983051 746.305085m-17.355932 0a17.355932 17.355932 0 1 0 34.711864 0 17.355932 17.355932 0 1 0-34.711864 0Z" fill="#424A60" p-id="10057"></path><path d="M876.474576 746.305085m-17.355932 0a17.355932 17.355932 0 1 0 34.711864 0 17.355932 17.355932 0 1 0-34.711864 0Z" fill="#424A60" p-id="10058"></path><path d="M754.983051 885.152542m-17.355932 0a17.355932 17.355932 0 1 0 34.711864 0 17.355932 17.355932 0 1 0-34.711864 0Z" fill="#949493" p-id="10059"></path><path d="M876.474576 885.152542m-17.355932 0a17.355932 17.355932 0 1 0 34.711864 0 17.355932 17.355932 0 1 0-34.711864 0Z" fill="#949493" p-id="10060"></path><path d="M147.525424 885.152542m-17.355932 0a17.355932 17.355932 0 1 0 34.711864 0 17.355932 17.355932 0 1 0-34.711864 0Z" fill="#EFCE4A" p-id="10061"></path><path d="M269.016949 885.152542m-17.355932 0a17.355932 17.355932 0 1 0 34.711864 0 17.355932 17.355932 0 1 0-34.711864 0Z" fill="#ED7161" p-id="10062"></path><path d="M390.508475 885.152542m-17.355933 0a17.355932 17.355932 0 1 0 34.711865 0 17.355932 17.355932 0 1 0-34.711865 0Z" fill="#424A60" p-id="10063"></path><path d="M512 885.152542m-17.355932 0a17.355932 17.355932 0 1 0 34.711864 0 17.355932 17.355932 0 1 0-34.711864 0Z" fill="#424A60" p-id="10064"></path><path d="M633.491525 885.152542m-17.355932 0a17.355932 17.355932 0 1 0 34.711865 0 17.355932 17.355932 0 1 0-34.711865 0Z" fill="#424A60" p-id="10065"></path><path d="M512 86.779661m-69.423729 0a69.423729 69.423729 0 1 0 138.847458 0 69.423729 69.423729 0 1 0-138.847458 0Z" fill="#F7E6A1" p-id="10066"></path><path d="M8.677966 208.271186h1006.644068v121.491526H8.677966z" fill="#424A60" p-id="10067"></path></svg> -->
+                        <!--<p class="tab_title">天</p>-->
+                        <!--<span>占比：74.45%</span>-->
+                        <span class="tab_title" style="margin-top: 35px;display: block">新闻信息：39,699</span>
+                    </li>
+                    <li class="tab_list">
+                            <svg class="icon" style="vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="815"><path d="M236.662154 334.769231L236.307692 727.197538C236.307692 782.966154 280.339692 827.076923 334.690462 827.076923L728.615385 827.076923a98.461538 98.461538 0 0 0 98.461538-98.461538v-21.267693a19.692308 19.692308 0 1 0-39.384615 0v21.267693a59.076923 59.076923 0 0 1-59.076923 59.076923l-393.846154 0.039384a59.076923 59.076923 0 0 1-59.076923-57.895384l0.354461-395.027693a59.076923 59.076923 0 0 1 59.076923-59.076923L807.384615 275.692308a19.692308 19.692308 0 1 0 0-39.384616H335.123692c-55.217231 0.905846-98.461538 44.622769-98.461538 98.461539zM708.923077 590.769231a78.769231 78.769231 0 1 0 0-157.538462 78.769231 78.769231 0 0 0 0 157.538462z m0 39.384615a118.153846 118.153846 0 1 1 0-236.307692 118.153846 118.153846 0 0 1 0 236.307692zM374.153846 433.230769h157.538462a19.692308 19.692308 0 0 1 0 39.384616h-157.538462a19.692308 19.692308 0 0 1 0-39.384616z m0 157.538462h157.538462a19.692308 19.692308 0 0 1 0 39.384615h-157.538462a19.692308 19.692308 0 0 1 0-39.384615z" p-id="816"></path></svg>
+                        <!-- <svg class="icon" style="vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1000"><path d="M673.9 736.2c-13.7 0-26.9-7.6-33.4-20.6-9.2-18.4-1.7-40.9 16.7-50.1l99.6-49.8c18.4-9.2 40.9-1.8 50.1 16.7 9.2 18.4 1.7 40.9-16.7 50.1l-99.6 49.8c-5.4 2.6-11.1 3.9-16.7 3.9zM673.9 586.8c-13.7 0-26.9-7.6-33.4-20.6-9.2-18.4-1.7-40.9 16.7-50.1l99.6-49.8c18.4-9.2 40.9-1.7 50.1 16.7 9.2 18.4 1.7 40.9-16.7 50.1l-99.6 49.8c-5.4 2.6-11.1 3.9-16.7 3.9zM673.9 437.5c-13.7 0-26.9-7.6-33.4-20.6-9.2-18.4-1.7-40.9 16.7-50.1l99.6-49.8c18.4-9.2 40.9-1.8 50.1 16.7 9.2 18.4 1.7 40.9-16.7 50.1l-99.6 49.8c-5.4 2.6-11.1 3.9-16.7 3.9zM362.7 723.7c-5.6 0-11.3-1.3-16.7-3.9L246.5 670c-18.4-9.2-25.9-31.6-16.7-50.1 9.2-18.4 31.7-25.9 50.1-16.7l99.6 49.8c18.4 9.2 25.9 31.6 16.7 50.1-6.6 13-19.8 20.6-33.5 20.6zM362.7 574.4c-5.6 0-11.3-1.3-16.7-3.9l-99.6-49.8c-18.4-9.2-25.9-31.6-16.7-50.1 9.2-18.4 31.7-25.9 50.1-16.7l99.6 49.8c18.4 9.2 25.9 31.6 16.7 50.1-6.5 13-19.7 20.6-33.4 20.6zM362.7 425c-5.6 0-11.3-1.3-16.7-3.9l-99.6-49.8c-18.4-9.2-25.9-31.6-16.7-50.1 9.2-18.4 31.7-25.9 50.1-16.7l99.6 49.8c18.4 9.2 25.9 31.6 16.7 50.1-6.5 13-19.7 20.6-33.4 20.6z" fill="#29CCB6" p-id="1001"></path><path d="M512.1 985.1c-10.5 0-20.8-3.3-29.5-9.7-12.8-9.4-20.3-24.3-20.3-40.1V213.4c0-21.8 14.1-41 34.9-47.5L895.5 41.4c15.1-4.7 31.6-2 44.3 7.4 12.8 9.4 20.3 24.3 20.3 40.1v721.9c0 21.8-14.1 41-34.9 47.5L526.9 982.8c-4.8 1.5-9.8 2.3-14.8 2.3zM561.9 250v617.5l298.7-93.3V156.7L561.9 250z" fill="#4585F5" p-id="1002"></path><path d="M512.1 985.1c-5 0-10-0.8-14.9-2.3L99 858.3c-20.8-6.4-35-25.7-35-47.5V89c0-15.8 7.5-30.7 20.3-40.1 12.8-9.4 29.2-12.1 44.3-7.4L526.9 166c20.8 6.5 34.9 25.7 34.9 47.5v721.9c0 15.8-7.5 30.7-20.3 40.1a49.7 49.7 0 0 1-29.4 9.6zM163.6 774.2l298.7 93.3V250l-298.7-93.3v617.5z" fill="#4585F5" p-id="1003"></path></svg> -->
+                        <!--<p class="tab_title">文章</p>-->
+                        <!--<span>占比：22.69%</span><br/>-->
+                        <span class="tab_title" style="margin-top: 35px;display: block">工作信息:37,281</span>
+                    </li>
+                    <li class="tab_list">
+                        <svg class="icon icon2" style="width: 4.2em; margin-top: 8px;
+                        height: 4.2em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1192"><path d="M636.210862 490.671364l-2.898481 0c57.605765-30.873738 96.711681-90.697436 96.711681-159.454357 0-100.402426-83.301595-181.787417-186.045969-181.787417-96.751652 0-176.295882 72.250882-185.170686 164.525673-23.498397-35.006226-63.937736-58.205345-109.957778-58.205345-72.772567 0-131.637962 57.564768-131.637962 128.641089 0 44.178256 22.838347 83.140683 57.530946 106.280356l-3.157786 0c-40.582829 0-73.453116 32.128243-73.453116 71.772243l0 231.42441c0 39.623501 32.870287 71.752769 73.453116 71.752769L636.210862 865.620787c40.542857 0 73.446966-32.129268 73.446966-71.752769L709.657828 562.443607C709.657828 522.798583 676.752693 490.671364 636.210862 490.671364M322.061888 490.671364c27.595012-18.224146 47.953046-46.079488 55.267917-78.9467 17.063934 33.648203 44.676369 61.083327 78.365569 78.9467L322.061888 490.671364zM414.134769 331.215982c0-70.052423 58.126426-126.799303 129.802326-126.799303 71.691274 0 129.777728 56.74688 129.877145 126.799303-0.099417 70.057548-58.185871 126.843375-129.877145 126.843375C472.261195 458.059357 414.134769 401.274555 414.134769 331.215982M543.937095 231.532027c-56.390207 0.077894-101.908037 44.636397-102.06485 99.68498 0.156813 55.068057 45.674643 99.570189 102.06485 99.668582 56.303089-0.098393 101.944934-44.600524 101.984906-99.668582C645.88203 276.167399 600.239159 231.609921 543.937095 231.532027M742.751548 636.614169 742.751548 734.983149 927.919159 829.734153 927.919159 533.388081Z" p-id="1193"></path></svg>
+                        <!--<p class="tab_title">论坛</p>-->
+                        <!--<span>占比：2.86%</span><br/>-->
+                        <span class="tab_title" style="margin-top: 35px;display: block">视频课件:8,120</span>
+                    </li>
+                </ul>
+
+
+            </div>
+            <div class="w_bt j_bt w_rel">
+                <h2 class="w_tit">信息发布分类来源</h2>
+                <div class="fl" style="margin-top: 50px;">
+                <div  class="j_news fl" id="j_news" style="width:315px;height:230px;" ></div>
+                <div  class="j_works fl" id="j_works" style="width:315px;height:230px;"></div>
+                <div  class="j_rads fl" id="j_rads" style="width:315px;height:230px;"></div>
+                </div>
+            </div>
+            <div class="w_bt j_bt w_rel">
+            	<div class="w_tit">工作类信息发布情况(单位：篇)累计：<span class="w_red">37,281</span>篇</div>
+                <div id="j_content" style="width:950px;height:250px;"></div>
+            </div>
+        </div>
+       
+
+		<div class="fl lcen">
+			<div class="w_bt j_bt w_rel"style="margin-top: 0px;">
+				<div class="w_tit">
+					虚拟专网覆盖情况：<span class="w_red">296,446</span>个     &nbsp; 总覆盖率 <span class="w_red">94%</span>
+				</div>
+                <div id="j_vpn" style="width: 98%;height:90%; margin: 25px auto 0; ">
+
+                </div>
+            </div>
+            <div class="w_bt j_bt w_rel">
+            	<div class="w_tit">
+					手机客户端安装总量: <span class="w_red">7,432,346</span>个
+				</div>
+                <div id="j_app" style="width: 98%;height:90%; margin: 25px auto 0; ">
+
+                </div>
+            </div>
+            <div class="w_bt j_bt w_rel">
+            	<div class="w_tit">
+					微信公众号关注总量：<span class="w_red">1,589,310</span>人
+				</div>
+                <div id="j_weixin" style="width: 98%;height:90%; margin: 25px auto 0;">
+
+                </div>
+            </div>
+		</div>
+
+
+
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+
+
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.countup.min.js"></script>
+    <script>
+        $('.w_visit').countUp();
+    </script>
+    <script type="text/javascript" src="js/w_all.js"></script>
+    <script src="https://cdn.bootcss.com/echarts/4.0.4/echarts-en.min.js"></script>
+    <script src="js/jq_scroll.js"></script>
+    <script src="js/leftTime.js"></script>
+    <script src="js/j_javascript.js"></script>
+    <!-- <script src="js/jinan.js"></script> -->
+<script type="text/javascript">
+ $(".j_hover").mouseover(function () { $("#dsk").show(); }).mouseout(function () { $("#dsk").hide(); });
+    </script>
+</body>
+
+</html>

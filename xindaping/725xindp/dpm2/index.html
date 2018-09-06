@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/rest.css">
+    <style>
+        body {
+             overflow: scroll; 
+            padding-top: 3px;
+            /*color: ;*/
+        }
+        .cf::after,.cf::before{
+            content:"";/*设置内容为空*/
+        　　　　　　height:0;/*高度为0*/
+        　　　　　　line-height:0;/*行高为0*/
+        　　　　　　display:block;/*将文本转为块级元素*/
+        　　　　　　visibility:hidden;/*将元素隐藏*/
+        　　　　　　clear:both;/*清除浮动*/}
+
+        　.cf{zoom:1;/**为了兼容IE*/}
+        #lbox {
+            width: 3840px;
+            height: 810px;
+            /* overflow: hidden; */
+        }
+
+        .fl {
+            float: left;
+        }
+
+        .lebox {
+            width: 480px;
+            height: 810px;
+        }
+
+        .lcen {
+            width: 960px;
+            height: 810px;
+        }
+
+        .lecet {
+            width: 960px;
+            height: 540px;
+            background: url(img/lcen.png) 0 0 no-repeat;
+            overflow: hidden;
+            position: relative;
+
+        }
+        .f_jinan {
+            width: 10px;
+            height: 370px;
+            position: absolute;
+            bottom: 100px;
+            left: 100px;
+        }
+        .u_qingdao{
+            width: 10px;
+            height: 370px;
+            position: absolute;
+            bottom: 100px;
+            left: 137px;
+        }
+        .f_fanHui{
+            padding: 10px;
+            color: white;
+            position: absolute;
+            top: 30px;
+            right: 50px;
+            cursor: pointer;
+            z-index: 1;
+        }
+        .leceb {
+            width: 960px;
+            height: 270px;
+            margin: 0 auto;
+        }
+
+        .cler {
+            overflow: hidden;
+        }
+
+        .lrt {
+            width: 472px;
+            height: 260px;
+        }
+        .lrt1{
+            width: 455px;
+            height: 270px;
+        }
+        #lect,#lects,#f_lects,#u_lects,#lect12,#lects12 {
+            width: 930px;
+            height: 508px;
+            margin: 10px auto 0;
+        }
+
+        #u_lects,#f_lects{
+            position: relative;
+            z-index: 1;
+        }
+        #lkait {
+            position: absolute;
+            right: 60px;
+            top: 8px;
+
+        }
+
+        .lkt {
+            color: rgba(255, 255, 255, 0.7);
+            font-family: '黑体';
+            font-size: 18px;
+        }
+
+        .lkts {
+            color: #31B0E5;
+            font-size: 50px;
+            font-family: '黑体';
+        }
+
+        .lecets {
+            width: 960px;
+            height: 540px;
+        }
+
+        .data {
+            margin: 10px 0 0 95px;
+        }
+
+        .data-box,
+        .date-s {
+            color: #307ec2 !important;
+            font-size: 22px;
+            text-shadow: 0 0 10px #265fac;
+        }
+
+        .date-tiem,
+        .ltimes {
+            font-size: 35px;
+        }
+
+        .lwz {
+            font-size: 18px;
+            color: rgb(255, 255, 255);
+            margin-top: 10px;
+            text-align: center;
+
+        }
+
+        .liht {
+            position: relative;
+        }
+
+        .lws {
+            width: 400px;
+            margin: 31px auto 20px;
+        }
+        .s1,.s2,.s3,.s4,.s5,.s6{
+            position: absolute;
+            color:#31B0E5;
+            font-size: 16px;
+        }
+        .s1,.s2,.s3{
+            top: 89px;
+        }
+        .s1{
+            left: 76px;
+        }
+        .s2{
+            left: 210px;
+        }
+        .s3{
+            right:75px;
+        }
+        .s4{
+            left: 66px;
+            font-size: 20px;
+        }
+        .s5{
+            left: 212px;
+            font-size: 20px;
+        }
+        .s6{
+            right: 70px;
+            font-size: 20px;
+        }
+        #lyuan,#lyu,#lyuan12,#lyu12 {
+            background: url(img/lks.png) 0 0 no-repeat;
+        }
+
+        .bgrecen {
+            background: url(img/lrih.png) no-repeat;
+        }
+
+        .bgtitle {
+            background: url(img/lks.png) 0 0 no-repeat;
+        }
+
+        #w_pies canvas,#w_pies12 canvas {
+            top: -30px !important;
+            left: 30px !important;
+        }
+
+        .lrtss {
+            width: 920px;
+            height: 270px;
+        }
+.tjsize{
+    display: inline-block;
+    color: #fff;
+    position: absolute;
+    left: 295px;
+    top: 225px;
+    font-size: 18px;
+}
+.tjsizes{
+    display: inline-block;
+    color: #fff;
+    position: absolute;
+    left: 775px;
+    top: 225px;
+    font-size: 18px;
+}
+.jinandatas{
+    display: none;
+}
+
+        .gx,.gx2{
+            position: absolute;
+            left: 4%;
+            top: 3%;
+            z-index: 10;
+        }
+        .gx p,.gx2 p{
+            font-weight: bold;
+            color: #FFFFFF;
+            margin-bottom: 10px;
+            /*opacity: 0.7;*/
+        }
+        .qie{
+            margin-top: 50px;
+            border-radius: 6px;
+            width: 85px;
+            cursor: pointer;
+        }
+        .qie{
+            text-align: center;
+        }
+        .qie1,.qie2{
+            padding: 20px 10px 10px 10px;
+            height: 63px;
+            background: rgba(255,255,255,0.1);
+            /*border: 1px solid #519FFC;*/
+            /*border-radius: 10px;*/
+        }
+        .qie1 p,.qie2 p{
+            font-size: 15px;
+        }
+        .mb{
+            margin-bottom: 6px;
+        }
+        .blue{
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            background: #519FFC;
+            position: absolute;
+            left: 4%;
+            top: 36%;
+        }
+        .gxinfo{
+            opacity: 0.6;
+            font-family: PingFangSC-Regular;
+            font-size: 13px;
+            color: #FFFFFF;
+        }
+        .gxinfo2{
+            color: #FFFFFF;
+            opacity: 0.4;
+        }
+        .qiecla{
+            background: rgba(255,255,255,0.06);
+        }
+
+        .red{
+            left: 4%;
+            top: 73%;
+            position: absolute;
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            background: #EA4245;
+        }
+
+
+        .zong,.zong2{
+            height: 530px;
+            width: 500px;
+            margin: 0 auto;
+            top: -93.5%;
+            left: 4.4%;
+            /* background-size: 100% 100%; */
+            margin-bottom: 31px;
+            position: relative;
+            overflow: hidden;
+            z-index: 0;
+        }
+        .dong1,.dong11 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 500px;
+            height: 500px;
+            background: url(img/aaa.png) no-repeat center center;
+            background-size: 15% 15%;
+            opacity: 0;
+        }
+        .dong2,.dong22 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 500px;
+            height: 500px;
+            background: url(img/aaa.png) no-repeat center center;
+            background-size: 15% 15%;
+            opacity: 0;
+        }
+        .dong3,.dong33 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 500px;
+            height: 500px;
+            background: url(img/aaa.png) no-repeat center center;
+            background-size: 15% 15%;
+            opacity: 0;
+        }
+        .dong1 {
+            -webkit-animation: ani-circle-a 4.5s ease-out forwards infinite;
+            animation: ani-circle-a 4.5s ease-out forwards infinite;
+        }
+
+        .dong2 {
+            -webkit-animation: ani-circle-a 4.5s ease-out 1.5s forwards infinite;
+            animation: ani-circle-a 4.5s ease-out 1.5s forwards infinite;
+        }
+
+        .dong3 {
+            -webkit-animation: ani-circle-a 4.5s ease-out 3s forwards infinite;
+            animation: ani-circle-a 4.5s ease-out 3s forwards infinite;
+        }
+        @-webkit-keyframes ani-circle-a {
+            0% {
+                -webkit-transform: scale(3);
+                transform: scale(3);
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+            10% {
+                opacity: .7;
+                filter: alpha(opacity=70);
+            }
+            100% {
+                -webkit-transform: scale(0.8);
+                transform: scale(0.8);
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+        }
+
+        @keyframes ani-circle-a {
+            0% {
+                -webkit-transform: scale(3);
+                transform: scale(3);
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+            10% {
+                opacity: 1;
+                filter: alpha(opacity=70);
+            }
+            100% {
+                -webkit-transform: scale(0.8);
+                transform: scale(0.8);
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+        }
+
+
+
+        .dong11 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 500px;
+            height: 500px;
+            background: url(img/bbb.png) no-repeat center center;
+            background-size: 15% 15%;
+            opacity: 0;
+        }
+        .dong22 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 500px;
+            height: 500px;
+            background: url(img/bbb.png) no-repeat center center;
+            background-size: 15% 15%;
+            opacity: 0;
+        }
+        .dong33 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 500px;
+            height: 500px;
+            background: url(img/bbb.png) no-repeat center center;
+            background-size: 15% 15%;
+            opacity: 0;
+        }
+        .dong11 {
+            -webkit-animation: ani-circle-a 4.5s ease-out forwards infinite;
+            animation: ani-circle-a2 4.5s ease-out forwards infinite;
+        }
+
+        .dong22 {
+            -webkit-animation: ani-circle-a 4.5s ease-out 1.5s forwards infinite;
+            animation: ani-circle-a2 4.5s ease-out 1.5s forwards infinite;
+        }
+
+        .dong33 {
+            -webkit-animation: ani-circle-a 4.5s ease-out 3s forwards infinite;
+            animation: ani-circle-a2 4.5s ease-out 3s forwards infinite;
+        }
+        @-webkit-keyframes ani-circle-a2 {
+            0% {
+                -webkit-transform: scale(0.8);
+                transform: scale(0.8);
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+            10% {
+                opacity: .7;
+                filter: alpha(opacity=70);
+            }
+            100% {
+                -webkit-transform: scale(3);
+                transform: scale(3);
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+        }
+
+        @keyframes ani-circle-a2 {
+            0% {
+                -webkit-transform: scale(0.8);
+                transform: scale(0.8);
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+            10% {
+                opacity: 1;
+                filter: alpha(opacity=70);
+            }
+            100% {
+                -webkit-transform: scale(4);
+                transform: scale(4);
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div id="lbox">
+        <!--省-->
+        <div class="province">
+
+        <div class="fl lcen rcens">
+            <div class="leceb cler">
+                <div class="fl lrtss" style="background: url(img/切图-06.png);width:951px;height:261px;">
+                    <div id="w_maintt" style="width: 96%; height: 100%; margin: 0 auto;">
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="lecet">
+
+                <div id="lect">
+
+                </div>
+            </div>
+        </div>
+        <div class="fl lcen rcens">
+            <div class="leceb cler" style="position:relative">
+                <div class="fl lrt" id="lyuan" style="margin-right:5px;">
+                   
+                </div>
+                <div class="tjsize" id="f_qszc">
+                        转出总计:619539
+                </div>
+                <div class="fl lrt" id="lyu">
+                        
+                </div>
+                <div class="tjsizes" id="f_qszr">
+                        转入总计:628167
+                </div>
+            </div>
+            <div class="lecet">
+                <div id="lects">
+
+                </div>
+                <div id="f_lects" class="jinandatas">
+
+                </div>
+                <div id="u_lects" class="jinandatas">
+
+                </div>
+                <div class="zong">
+                    <div class="dong1"></div>
+                    <div class="dong2"></div>
+                    <div class="dong3"></div>
+                </div>
+                <div class="zong2">
+                    <div class="dong11"></div>
+                    <div class="dong22"></div>
+                    <div class="dong33"></div>
+                </div>
+                <!--点击济南跳转到济南的《济南党组织关系转接迁徙模拟图》-->
+                <p class="f_jinan"></p>
+                <p class="u_qingdao"></p>
+                <p class="f_fanHui jinandatas">返回</p>
+                <!--jinandatas 隐藏-->
+                <!--济南党组织关系转接迁徙模拟图  切换的部分-->
+                <div  class="gx jinandatas">
+                    <!--<p>济南党组织关系转接迁徙模拟图</p>-->
+                    <ul class="qie">
+                        <li class="qie1 qiecla">
+                            <div class="mb">
+                                <div class="blue left"></div>
+                                <span class="gxinfo">转入</span><span class="left gxinfo2"> > </span>
+                            </div>
+                            <!--<p>8.3%</p>-->
+                            <p>27705</p>
+                        </li>
+                        <li class="qie2">
+                            <div class="mb">
+                                <div class="red left"></div>
+                                <span class="left gxinfo">转出</span><span class="left gxinfo2"> > </span>
+                            </div>
+                            <!--<p>12.7%</p>-->
+                            <p>26843</p>
+                        </li>
+                    </ul>
+                </div>
+                <!--青岛党组织关系转接迁徙模拟图  切换的部分-->
+                <div  class="gx2 jinandatas">
+                    <!--<p>青岛党组织关系转接迁徙模拟图</p>-->
+                    <ul class="qie">
+                        <li class="qie1 qiecla">
+                            <div class="mb">
+                                <div class="blue left"></div>
+                                <span class="gxinfo">转入</span><span class="left gxinfo2"> > </span>
+                            </div>
+                            <!--<p>8.3%</p>-->
+                            <p>92118</p>
+                        </li>
+                        <li class="qie2">
+                            <div class="mb">
+                                <div class="red left"></div>
+                                <span class="left gxinfo">转出</span><span class="left gxinfo2"> > </span>
+                            </div>
+                            <!--<p>12.7%</p>-->
+                            <p>91358</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="fl lcen rcens">
+            <div class="leceb cler">
+                <div class="fl lrt w_smbg">
+                    <div class="w_title cler">
+                        <h2 class="fl">管理人员注册总量</h2>
+                    </div>
+                    <h4 style="color:#fff;padding-left:100px;margin-top:50px;font-weight:normal;"></h4>
+                    <div class="w_visit">
+                        <span class="counter" id="f_glzl">293,666</span><span style="font-size:30px;"> 人</span>
+                    </div>
+                </div>
+                <div class="fl lrt w_smbg">
+
+                    <div class="w_title cler">
+                        <h2 class="fl">管理人员类型</h2>
+                    </div>
+                    <div id="w_pies" style="width:400px;height:230px;"></div>
+
+                </div>
+
+            </div>
+            <div style="height: 529px; width: 951px; background: url(img/lcen.png)no-repeat center center;">
+                <div id="w_maintts" style="width: 95%; height: 508px;">
+
+                </div>
+            </div>
+        </div>
+        
+    </div>
+        <!--济南市-->
+        <div class="jinandatas">
+            
+                    <div class="fl lcen rcens">
+                        <div class="leceb cler">
+                            <div class="fl lrtss" style="background: url(img/切图-06.png);width:951px;height:261px;">
+                                <div id="w_mainttss" style="width: 951px; height: 261px; margin: 0 auto;">
+            
+                                </div>
+                            </div>
+            
+                        </div>
+                        <div class="lecet">
+            
+                            <div id="lect12">
+            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fl lcen rcens">
+                        <div class="leceb cler" style="position:relative">
+                            <div class="fl lrt" id="lyuan12" style="margin-right:5px;">
+                               
+                            </div>
+                            <div class="tjsize">
+                                    转出总计:18006
+                                </div>
+                            <div class="fl lrt" id="lyu12">
+                                    
+                            </div>
+                            <div class="tjsizes">
+                                    转入总计:18439
+                                </div>
+                        </div>
+                        <div class="lecet">
+                            <div  class="gx jinandatas">
+                                <!--<p>济南党组织关系转接迁徙模拟图</p>-->
+                                <ul class="qie">
+                                    <li class="qie1 qiecla">
+                                        <div class="mb">
+                                            <div class="blue left"></div>
+                                            <span class="gxinfo">转入</span><span class="left gxinfo2"> > </span>
+                                        </div>
+                                        <!--<p>8.3%</p>-->
+                                        <p>18439</p>
+                                    </li>
+                                    <li class="qie2">
+                                        <div class="mb">
+                                            <div class="red left"></div>
+                                            <span class="left gxinfo">转出</span><span class="left gxinfo2"> > </span>
+                                        </div>
+                                        <!--<p>12.7%</p>-->
+                                        <p>18006</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="lects12">
+            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fl lcen rcens">
+                        <div class="leceb cler">
+                            <div class="fl lrt w_smbg">
+                                <div class="w_title cler">
+                                    <h2 class="fl">管理人员注册总量</h2>
+                                </div>
+                                <h4 style="color:#fff;padding-left:100px;margin-top:50px;font-weight:normal;"></h4>
+                                <div class="w_visit">
+                                    <span class="counter">20,337</span><span style="font-size:30px;"> 人</span>
+                                </div>
+                            </div>
+                            <div class="fl lrt w_smbg">
+            
+                                <div class="w_title cler">
+                                    <h2 class="fl">管理人员类型</h2>
+                                </div>
+                                <div id="w_pies12" style="width:400px;height:230px;"></div>
+            
+                            </div>
+            
+                        </div>
+                        <div style="height: 529px; width: 951px; background: url(img/lcen.png)no-repeat center center;">
+                            <div id="w_mainttsqq" style="width: 951px; height: 508px;">
+            
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+        <!--地图切换-->
+        <div class="fl lcen rcens bgrecen">
+            <div class="leceb cler">
+
+                <div class="fl lrt">
+                    <div style="text-align: center;margin-top:10px;">
+                        <img src="dtdjs.png" alt="">
+                    </div>
+                    <div class="lwz" style="margin-top:40px;">
+                        安全运行时间
+                    </div>
+                    <div class="data">
+                        <div class="data-box" id="dateShow1" data-date="2017/08/29 23:45:24">
+                            <span class="date-tiem d">00</span>天
+                            <span class="date-tiem h">00</span>时
+                            <span class="date-tiem m">00</span>分
+                            <span class="ltimes date-s s">00</span>秒
+                        </div>
+                    </div>
+                </div>
+                <div class="fl lrt1 liht">
+                    <span class="s1">72%</span>
+                    <span class="s2">43%</span>
+                    <span class="s3">35%</span>
+                    <div class="lws">
+                        <img src="img/yuan.png" alt="">
+                        <img src="img/yuan.png" alt="">
+                        <img src="img/yuan.png" alt="">
+                    </div>
+                    <span class="s4">并发量</span>
+                    <span class="s5">内存</span>
+                    <span class="s6">带宽</span>
+                </div>
+            </div>
+            <div class="lecets">
+                <div class=" scrollbox">
+                    <div id="map_bg">
+                        <a id="mapChange">济南市</a>
+                        <a id="weifang"></a>
+                        <a id="zaozhuang"></a>
+                        <a id="qingdao"></a>
+                        <a id="zibo"></a>
+                    </div>
+                    <a id="return" style="color:#fff;">返回</a>
+                    <div class="map_bg">
+                    </div>
+                    <div class="zibo">
+                    </div>
+                    <div class="weifang">
+                    </div>
+                    <div class="qingdao">
+                    </div>
+                    <div class="zaozhuang">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+<!--<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>-->
+<script src="js/jquery-3.2.1.min.js"></script>
+
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/4.0.4/echarts-en.common.js"></script>-->
+<script src="https://cdn.bootcss.com/echarts/4.0.4/echarts-en.min.js"></script>
+<!-- <script src="js/jq_scroll.js"></script> -->
+<script src="js/leftTime.js"></script>
+<!-- <script src="js/ljs1.js"></script> -->
+<script src="js/w_javascript.js"></script>
+<script src="js/jinan.js"></script>
+<!-- <script src="js/jquery.waypoints.min.js"></script> -->
+<!-- <script src="js/jquery.countup.min.js"></script> -->
+
+</html>

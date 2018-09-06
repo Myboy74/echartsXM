@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/rest.css">
+    <link rel="stylesheet" type="text/css" href="css/w_css.css"/>
+    <style>
+        body{
+            /* overflow:hidden; */
+        }
+        .dv{
+            width: 100%;
+            height: 100%;
+        }
+        #lbox{
+            width: 3840px;
+            height: 810px;
+            /*overflow:hidden;*/
+        }
+        .fl{
+            float: left;
+        }
+        .lebox{
+            width: 960px;
+            height:810px;
+        }
+        .lcen{
+            width: 960px;
+            height:810px;
+        }
+        .lecet{
+            width: 960px;
+            height: 260px;
+            background: url(img/切图-06.png) no-repeat center center;
+            /*background:url(img/lcen.png) 0 0 no-repeat;*/
+            overflow: hidden;
+            position: relative;
+            margin-top: 5px;
+
+        }
+        .leceb{
+            width: 920px;
+            height: 540px;
+            margin: 0 auto;
+        }
+        .cler{
+            overflow:hidden;
+        }
+
+        .rcens{
+            background: url(img/lcen.png)0 5px  no-repeat;
+        }
+
+        .w_bt{
+            width: 951px;
+            height: 261px;
+            background: url(img/切图-06.png) no-repeat center center;
+            background-size: 100% 100%;
+        }
+        #w_mainer canvas,#w_mainer11 canvas{
+            width: 240px!important;
+            height: 220px!important;
+            top:20px!important;
+        }
+        .progre span{
+            margin-left: 10px;
+        }
+        /*.f_img{*/
+            /*width: 476px;*/
+            /*height: 260px;*/
+            /*overflow: hidden;*/
+            /*background: url(img/smbg.png) no-repeat;*/
+        /*}*/
+        /*.f_htop{*/
+            /*color: white;*/
+            /*margin-top: 15px;*/
+            /*margin-left: 20px;*/
+            /*font-size: 18px;*/
+        /*}*/
+        .f_login{
+            position: absolute;
+            top: 20px;
+            left: 15px;
+        }
+        .f_cityTitle h2{
+            width: 375px;
+            line-height: 25px;
+            padding: 5px 20px 0;
+            text-indent: 2em;
+        }
+        .data{
+            color: white;
+            position: absolute;
+            top: 95px;
+            left: 20px;
+        }
+        .lwz{
+            color: white;
+            position: absolute;
+            top: 65px;
+            left: 55px;
+            font-size: 16px;
+        }
+        .date-tiem, .ltimes {
+            font-size: 25px;
+        }
+        .data-box, .date-s {
+            color: #307ec2 !important;
+            font-size: 22px;
+            text-shadow: 0 0 10px #265fac;
+        }
+
+        .f_fuwu img{
+            width: 80%;
+            height: 40%;
+            position: absolute;
+            top: 5%;
+            left: 10%;
+        }
+        .f_fuwu p.f_blocks{
+            width: 35px;
+            height: 75px;
+            position: absolute;
+            top: 135px;
+            left: 121px;
+            transform: rotate(-72deg);
+
+        }
+        .f_fuwu p.f_blo{
+            width: 55px;
+            height: 130px;
+            position: absolute;
+            top: 130px;
+            left: 255px;
+            transform: rotate(-72deg);
+        }
+        .f_srverUsea{
+            display: none;
+        }
+    .w_tipbar{
+        position: absolute;
+        right:20px;
+        z-index: 999;
+    }
+    </style>
+</head>
+<body>
+<div id="lbox cler" style="width:3840px;">
+    <div class="province">
+        <!--带宽，流量，请求响应-->
+        <div class="fl lcen">
+            <div class="w_smbg fl f_server" style="position: relative; margin-top:5px;">
+                    <div class="f_login">
+                        <img src="img/dtdjs.png" alt="">
+                    </div>
+                    <div class="lwz">
+                        安全运营时间
+                    </div>
+                    <div class="data">
+                        <div class="data-box" id="dateShow1" data-date="2017/08/29 23:45:24">
+                            <span class="date-tiem d">00</span>天
+                            <span class="date-tiem h">00</span>时
+                            <span class="date-tiem m">00</span>分
+                            <span class="ltimes date-s s">00</span>秒
+                        </div>
+                    </div>
+            </div>
+            <!--内存 宽带  CPU  -->
+            <div class="w_smbg fl" style=" position: relative; margin:5px 0 0 10px">
+                <div id="f_serverSum" class="dv"></div>
+            </div>
+
+            <div class="w_bt fl">
+                <div class="f_fuwu" style="width: 950px; height: 535px; position: relative">
+                    <img src="img/f_4.png" alt="" class="">
+                    <img src="img/f_3.png" alt="" class="f_serverUsea">
+                    <img src="img/f_2.png" alt="" class="f_serverUsea">
+                    <p class="f_blocks"></p>
+                    <p class="f_blo"></p>
+                </div>
+
+            </div>
+
+            <div class="w_bt fl scrollbox" style="position: relative">
+                <ul class="fl cler w_tipbar" >
+                    <li class="active_bar">带宽</li>
+                    <li>学历</li>
+                    <li>岗位</li>
+                </ul>
+                    <div id="f_broadband" style="width: 932px;height:217px;margin-top: 44px" class="wangchaos" ></div>
+                    <div id="f_flow" style=" width: 932px;height:217px;margin-top: 44px" class="wangchaos w_hide"></div>
+                    <div id="f_request" style="width: 932px;height:217px;margin-top: 44px" class="wangchaos w_hide"></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="js/leftTime.js"></script>  <!--时间*/-->
+<script src="js/jq_scroll.js"></script>  <!--内容滚动-->
+<!--<script src="js/echarts.min.js"></script>-->
+<script src="https://cdn.bootcss.com/echarts/4.0.4/echarts-en.min.js"></script>
+<!--<script src="http://gallery.echartsjs.com/dep/echarts/map/js/world.js"></script> &lt;!&ndash;世界地图插件-&ndash;&gt;-->
+<!--<script src="js/china.js"></script>&lt;!&ndash;地图echarts 插件*/&ndash;&gt;-->
+<script src="js/yiping1.js"></script>
+<script>
+    $('.w_tipbar li').mouseover(function(){
+        $(this).addClass('active_bar').siblings().removeClass('active_bar');
+        var sum=$(this).index();
+        $('.scrollbox .wangchaos').eq(sum).stop(true,true).show().siblings('.wangchaos').hide()
+    })
+</script>
+</body>
+</html>

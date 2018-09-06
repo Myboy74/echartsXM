@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/rest.css">
+    <link rel="stylesheet" type="text/css" href="css/w_css.css"/>
+    <style>
+        body{
+            /* overflow:hidden; */
+        }
+        .dv{
+            width: 100%;
+            height: 100%;
+        }
+        #lbox{
+            width: 3840px;
+            height: 810px;
+            /*overflow:hidden;*/
+        }
+        .fl{
+            float: left;
+        }
+        .lebox{
+            width: 960px;
+            height:810px;
+        }
+        .lcen{
+            width: 960px;
+            height:810px;
+        }
+        .lecet{
+            width: 960px;
+            height: 260px;
+            background: url(img/切图-06.png) no-repeat center center;
+            /*background:url(img/lcen.png) 0 0 no-repeat;*/
+            overflow: hidden;
+            position: relative;
+            margin-top: 5px;
+
+        }
+        .leceb{
+            width: 920px;
+            height: 540px;
+            margin: 0 auto;
+        }
+        .cler{
+            overflow:hidden;
+        }
+
+        .rcens{
+            background: url(img/lcen.png)0 5px  no-repeat;
+        }
+
+        .w_bt{
+            width: 951px;
+            height: 261px;
+            background: url(img/切图-06.png) no-repeat center center;
+            background-size: 100% 100%;
+        }
+        .cler{
+            overflow:hidden;
+        }
+        #w_mainer canvas,#w_mainer11 canvas{
+            width: 240px!important;
+            height: 220px!important;
+            top:20px!important;
+        }
+        .progre span{
+            margin-left: 10px;
+        }
+        .f_img{
+            width: 476px;
+            height: 260px;
+            overflow: hidden;
+            background: url(img/smbg.png) no-repeat;
+        }
+        .f_htop{
+            color: white;
+            margin-top: 12px;
+            margin-left: 20px;
+        }
+        #f_nice{
+            background: url(img/f_zs.png) no-repeat;
+            background-size: 760px 260px;
+            background-position: 110px 0;
+        }
+        .f_login{
+            position: absolute;
+            top: 30px;
+            left: 20px;
+        }
+        .data{
+            color: white;
+            position: absolute;
+            top: 110px;
+            left: 50px;
+        }
+        .lwz{
+            color: white;
+            position: absolute;
+            top: 75px;
+            left: 60px;
+            font-size: 16px;
+        }
+        .date-tiem, .ltimes {
+            font-size: 25px;
+        }
+        .data-box, .date-s {
+            color: #307ec2 !important;
+            font-size: 22px;
+            text-shadow: 0 0 10px #265fac;
+        }
+    </style>
+</head>
+<body>
+<div id="lbox cler" style="width:3840px;">
+    <div class="province">
+        <div class="fl lcen">
+            <div class="lecet">
+                <div class="dv" id="f_nice"></div>
+                <span style="    position: absolute;font-weight: bold; color: #FFF;top: 10px;right: 45px;">业务系统分布情况</span>
+            </div>
+            <div class="w_bt">
+                <div id="f_warning" style="width: 98%;height:98%; margin: 10px auto;"></div>
+            </div>
+            <div class="w_bt" style="margin-top: 5px">
+                <ul class="f_citys">
+                    <li>
+                        <p>
+                            <span>pv(并发)</span>
+                            <span>响应时间</span>
+                            <span>时间成功率</span>
+                        </p>
+                        <p id="f_eight" class="f_eight"> <span></span></p>
+                    </li>
+                    <li>
+                        <p>
+                            <span>pv(并发)</span>
+                            <span>响应时间</span>
+                            <span>时间成功率</span>
+                        </p>
+                        <p id="f_eight1" class="f_eight">
+                            <span></span>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span>pv(并发)</span>
+                            <span>响应时间</span>
+                            <span>时间成功率</span>
+                        </p>
+                        <p id="f_eight2" class="f_eight"> <span></span></p>
+                    </li>
+                    <li>
+                        <p>
+                            <span>pv(并发)</span>
+                            <span>响应时间</span>
+                            <span>时间成功率</span>
+                        </p>
+                        <p id="f_eight3" class="f_eight"> <span></span></p>
+                    </li>
+                    <li>
+                        <p>
+                            <span>pv(并发)</span>
+                            <span>响应时间</span>
+                            <span>时间成功率</span>
+                        </p>
+                        <p id="f_eight4" class="f_eight"> <span></span></p>
+                    </li>
+                    <li>
+                        <p>
+                            <span>pv(并发)</span>
+                            <span>响应时间</span>
+                            <span>时间成功率</span>
+                        </p>
+                        <p id="f_eight5" class="f_eight">
+                            <span></span>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span>pv(并发)</span>
+                            <span>响应时间</span>
+                            <span>时间成功率</span>
+                        </p>
+                        <p id="f_eight6" class="f_eight"> <span></span></p>
+                    </li>
+                    <li>
+                        <p>
+                            <span>pv(并发)</span>
+                            <span>响应时间</span>
+                            <span>时间成功率</span>
+                        </p>
+                        <p id="f_eight7" class="f_eight"> <span></span></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="fl lcen">
+            <div class="lecet">
+                <div  id="f_jdq" class="dv"></div>
+            </div>
+            <div class="w_bt">
+                <div id="f_vpn" style="width: 98%;height:98%; margin: 10px auto;"></div>
+            </div>
+            <div class="w_bt">
+                <div id="f_dk" style="width: 98%;height:98%; margin: 5px auto;"></div>
+            </div>
+        </div>
+
+        <div class="lebox fl" >
+            <div class="w_smbg fl f_server" style="margin-top:5px;">
+                <div class="w_title cler">
+                    <h4 class="fl">服务器总体情况</h4>
+                </div>
+                <div class="f_sected">
+                    <p>总计 <span class="f_span" style="padding-left: 15px">527台</span> </p>
+                    <p>已使用 <span class="f_span">422台</span> </p>
+                    <p>使用率 <span class="f_span">80.07%</span> </p>
+                </div>
+            </div>
+            <div class="w_smbg fl" style=" position: relative; margin:5px 0 0 10px">
+                <div id="f_serverSum" class="dv"></div>
+            </div>
+            <div class="w_smbg f_zlg" style=" position: relative; clear: both">
+                <div class="f_cpu fl" id="f_cpu"></div>
+                <div class="f_cpu fl" id="f_nc"></div>
+                <div class="f_cpu fl" id="f_cc"></div>
+                <div class="f_cpu cler" id="f_kd"></div>
+            </div>
+            <div class="w_smbg f_zlg" style="margin-bottom:0;">
+                <div id="f_application" class="dv"></div>
+            </div>
+        </div>
+    </div>
+    <div class="fl lcen rcens" style="position: relative">
+        <div class="leceb cler" >
+            <div class="f_login">
+                <img src="img/dtdjs.png" alt="">
+            </div>
+            <div class="lwz">
+                安全运营时间
+            </div>
+            <div class="data">
+                <div class="data-box" id="dateShow1" data-date="2017/08/29 23:45:24">
+                    <span class="date-tiem d">00</span>天
+                    <span class="date-tiem h">00</span>时
+                    <span class="date-tiem m">00</span>分
+                    <span class="ltimes date-s s">00</span>秒
+                </div>
+            </div>
+            <!--世界地图-->
+            <div id="f_city" style="width:75%;height: 520px;position: absolute;top: 5px; right: 2%;"></div>
+            <!--横向柱状图-->
+            <div id="f_cityAxis" style="width:40%;height: 295px;position: absolute;bottom:35%; left: 0;"></div>
+    </div>
+        <div class="f_img fl" id="f_an"></div>
+        <div class="f_img fl" >
+            <div class="w_title cler">
+                <h2 class="f_htop fl">检测概况</h2>
+            </div>
+            <div id="scrollDiv1">
+                <ul class="w_newsRanking">
+                    <li><span>1</span> 信息泄漏 <!--<span>信息泄漏</span>-->  <a class="red">发现37个风险</a></li>
+                    <li><span>2</span>点击劫持<a class="red">发现1个风险</a></li>
+                    <li><span>3</span> CSRF跨站请求伪造   <a class="red">发现1个风险</a></li>
+                    <li><span>4</span> 信息发现 <a class="red">发现18个风险</a></li>
+                    <li><span>5</span> 链接失效  <a class="red">发现13个风险</a> </li>
+                    <li><span>6</span>  网页篡改发现<a>未发现风险</a></li>
+                    <li><span>7</span>  网马发现<a>未发现风险</a></li>
+                    <li><span>8</span> 命令执行<a>未发现风险</a></li>
+                    <li><span>9</span>  暗链发现<a>未发现风险</a></li>
+                    <li><span class="w_spacile">10</span> WebShell发现<a>未发现风险</a></li>
+                    <li><span class="w_spacile">11</span>  越权访问<a>未发现风险</a></li>
+                    <li><span class="w_spacile">12</span>  远程密码修改<a>未发现风险</a></li>
+                    <li><span class="w_spacile">13</span> 文件上传<a>未发现风险</a></li>
+                    <li><span class="w_spacile">14</span>  未授权访问<a>未发现风险</a></li>
+                    <li><span class="w_spacile">15</span> 数据库发现<a>未发现风险</a></li>
+
+
+
+            </ul></div>
+
+
+
+        </div>
+
+    </div>
+</div>
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="js/leftTime.js"></script>  <!--时间*/-->
+<script src="js/jq_scroll.js"></script>  <!--内容滚动-->
+<!--<script src="js/echarts.min.js"></script>-->
+<script src="https://cdn.bootcss.com/echarts/4.0.4/echarts-en.min.js"></script>
+<script src="http://gallery.echartsjs.com/dep/echarts/map/js/world.js"></script>
+<script src="js/china.js"></script><!--echarts 插件*/-->
+<script src="js/moment.js"></script><!--echarts 插件*/-->
+<script src="js/yiping.js"></script>
+
+</body>
+</html>

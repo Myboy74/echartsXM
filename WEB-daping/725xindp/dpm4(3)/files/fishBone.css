@@ -1,0 +1,178 @@
+.fishBone *{
+	margin: 0;
+	padding: 0;
+}
+
+.top{
+	bottom: -45px;
+}
+
+.bottom{
+	bottom: 45px;
+}
+
+.fishBone ul{
+	overflow: visible!important;	
+}
+.fishBone ul,li{
+	list-style: none;
+	line-height: 1.9em
+}
+.fishBone{
+color: #767676;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	font-size: 12px;
+}
+.fishBone .wrapper{
+  padding: 0 10px;
+  margin: auto;
+  overflow: hidden;
+}
+.fishBone .wrapper .bd {
+	overflow: hidden;
+}
+.fishBone .item{
+	position: relative;
+	width: 150px;
+	height: 350px;
+	display: inline-block;
+	margin-left:20px;
+	
+}
+.fishBone .item .first{
+	line-height:2em;
+}
+.fishBone .item .title{
+	border-left:none;
+}
+.fishBone .item .title .title-left,
+.fishBone .item .title .title-center,
+.fishBone .item .title .title-right
+{
+	display:inline-block;
+	line-height: 2em;
+	font-size: 14px;
+	font-weight:bold;
+	font-family:'Î¢ÈíÑÅºÚ';
+	color: white;
+}
+
+.fishBone .item .title .title-center{
+	 display: inline-block;
+    text-align: center;
+    height: 60px;
+    width: 250px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 16px;
+}
+
+.fishBone .item .title .title-center:hover{
+	 opacity: .9;
+}
+
+
+.fishBone .item .title{
+	display: block;
+	position: relative;
+	left: -33px;
+	background: url(../image/chart/line-point.png) no-repeat 12px -212px;
+}
+.fishBone .item.top .title{
+}
+.fishBone .item.bottom .title{
+	bottom: 0;
+}
+.fishBone .item .content{
+	padding-left: 13px;
+	position: absolute;
+	z-index: 99;
+}
+.fishBone .item.top .content{
+	padding-top: 5px;
+	top: -33px;
+	padding-bottom: 13px;
+}
+.fishBone .item.bottom .content{
+	bottom: -35px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+.fishBone .item.bottom{
+}
+
+.fishBone .item .content ul{}
+.fishBone .item .content ul li{
+	padding-left:13px;
+}
+.fishBone .item .content ul li.line-first{
+	position: relative;
+	padding-left: 19px;
+	left: -4px;
+	border-left: 0!important;
+	background: url(../image/chart/line-first.png) no-repeat 0px 0px;
+	font-size: 14px;
+	font-family:'Î¢ÈíÑÅºÚ';
+	font-weight: 550;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 330px;
+}
+.fishBone .item .content ul li.line-last{
+	border-left:none;
+}
+.fishBone .item.top .content ul li .name{}
+.fishBone .item.top .content ul li .text{}
+/**prev next*/
+.fishBone .prevscroll {
+	position: absolute;
+	top: 154px;
+	left: 0;
+	display: inline-block;
+	width: 20px;
+	height: 40px;
+	background: url(../image/chart/arrow.png) no-repeat -1px 13px;
+	z-index:5;
+}
+.fishBone .prevscroll:hover{
+cursor: pointer;
+background-position-y: -28px;
+}
+.fishBone .nextscroll:hover{
+cursor: pointer;
+background-position-y: -28px;
+}
+.fishBone .nextscroll {
+	position: absolute;
+	top: 154px;
+	right: 0;
+	display: inline-block;
+	width: 20px;
+	height: 40px;
+	background: url(../image/chart/arrow.png) no-repeat -19px 13px;
+	z-index:5;
+}
+/**line**/
+.fishBone .line {
+	position: absolute;
+	top: 374px;
+	height: 1px;
+	width: 100%;
+	border-bottom: 4px dashed #7E899D;
+	z-index: 1;
+}
+.fishBone .item .line-point {
+	position: absolute;
+	left: 4px;
+	bottom: -4px;
+	display: block;
+	height: 18px;
+	width: 18px;
+	background: url(./line-point.png) no-repeat 0px 0px;
+}
+.fishBone .item.bottom .line-point {
+	top: -6px
+}

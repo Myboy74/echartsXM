@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--<link rel="stylesheet" href="css/rest.css">-->
+    <link rel="stylesheet" href="css/j_rest.css">
+    <link rel="stylesheet" type="text/css" href="css/w_css.css" />
+    <style>
+        body {
+            overflow: scroll;
+            padding-top: 3px;
+        }
+
+        #lbox {
+            width: 3840px;
+            height: 810px;
+            /*overflow:hidden;*/
+        }
+
+        .fl {
+            float: left;
+        }
+
+        .lebox {
+            width: 480px;
+            height: 540px;
+        }
+
+        .lcen {
+            width: 960px;
+            height: 810px;
+        }
+
+        .lecet {
+            width: 960px;
+            height: 540px;
+            background: url(img/lcen.png) 0 0 no-repeat;
+            overflow: hidden;
+            position: relative;
+
+        }
+
+        .f_jinan {
+            width: 10px;
+            height: 370px;
+            position: absolute;
+            bottom: 100px;
+            left: 100px;
+        }
+
+        .u_qingdao {
+            width: 10px;
+            height: 370px;
+            position: absolute;
+            bottom: 100px;
+            left: 137px;
+        }
+
+        .f_fanHui {
+            z-index: 5;
+            position: absolute;
+            top: 40px;
+            right: 40px;
+            color: #ccc;
+            padding: 5px 10px;
+            border: 1px solide #CCCCCC;
+            border-radius: 15px;
+            background: #1C93D0;
+            display: none;
+            cursor: pointer;
+        }
+
+        .leceb {
+            width: 960px;
+            height: 270px;
+            margin: 0 auto;
+        }
+
+        .cler {
+            overflow: hidden;
+        }
+
+        .lrt {
+            width: 472px;
+            height: 260px;
+        }
+
+        #lect,
+        #lects,
+        #lect22,
+        #lect33 {
+            width: 930px;
+            height: 508px;
+            margin: 10px auto 0;
+        }
+
+        #lkait {
+            position: absolute;
+            right: 60px;
+            top: 8px;
+
+        }
+
+        .lkt {
+            color: rgb(255, 255, 255);
+            font-family: '黑体';
+            font-size: 18px;
+        }
+
+        .lkts {
+            color: #31B0E5;
+            font-size: 50px;
+            /*font-family: '黑体';*/
+        }
+
+        .lecets {
+            width: 960px;
+            height: 540px;
+        }
+
+        .rcens {
+            background: url(img/lrih.png) no-repeat;
+        }
+
+        .data {
+            margin: 10px 0 0 80px;
+        }
+
+        .data-box,
+        .date-s {
+            color: #307ec2 !important;
+            font-size: 22px;
+            text-shadow: 0 0 10px #265fac;
+        }
+
+        .date-tiem,
+        .ltimes {
+            font-size: 35px;
+        }
+
+        .lwz {
+            font-size: 18px;
+            color: rgb(255, 255, 255);
+            margin-top: 10px;
+            font-family: '黑体';
+            text-align: center;
+
+        }
+
+        .liht {
+            position: relative;
+        }
+
+        .lws {
+            width: 400px;
+            margin: 31px auto 20px;
+        }
+
+        .s1,
+        .s2,
+        .s3,
+        .s4,
+        .s5,
+        .s6 {
+            position: absolute;
+            color: #31B0E5;
+            font-size: 16px;
+        }
+
+        .s1,
+        .s2,
+        .s3 {
+            top: 89px;
+        }
+
+        .s1 {
+            left: 76px;
+        }
+
+        .s2 {
+            left: 210px;
+        }
+
+        .s3 {
+            right: 75px;
+        }
+
+        .s4 {
+            left: 66px;
+            font-size: 20px;
+        }
+
+        .s5 {
+            left: 212px;
+            font-size: 20px;
+        }
+
+        .s6 {
+            right: 70px;
+            font-size: 20px;
+        }
+
+        #lyuan,
+        #lyu,
+        #lyuan12,
+        #lyu12 {
+            background: url(img/smbg.png) 0 0 no-repeat;
+        }
+
+        .fr {
+            float: right;
+        }
+
+        #lect,
+        #lects,
+        #f_lects,
+        #u_lects,
+        #lect12,
+        #lects12,
+        #j_content {
+            width: 930px;
+            height: 508px;
+            margin: 10px auto 0;
+        }
+
+        #u_lects,
+        #f_lects {
+            position: relative;
+            z-index: 1;
+        }
+
+        .w_bt {
+            width: 951px;
+            height: 261px;
+            background: url(img/切图-06.png) no-repeat center center;
+            background-size: 100% 100%;
+        }
+
+        .cler {
+            overflow: hidden;
+        }
+
+        #return {
+            color: #fff;
+            display: inline-block;
+            /* position: absolute; */
+            float: right;
+            margin-right: 45px;
+            margin-top: 450px;
+            right: 0;
+            top: 40px;
+            cursor: pointer;
+            display: none
+        }
+
+        #w_mainer canvas,
+        #w_mainer11 canvas {
+            width: 240px !important;
+            height: 220px !important;
+            top: 20px !important;
+            left: 13px !important;
+        }
+
+        .progre {
+            line-height: 6px;
+            margin-bottom: 5px;
+            margin-left: 20px;
+        }
+
+        .progre div {
+            float: left;
+        }
+
+        .progre span {
+            color: #fff;
+            font-size: 12px;
+            margin-left: 10px;
+        }
+
+        .tjsize {
+            display: inline-block;
+            color: rgba(255, 255, 255, 0.8);
+            position: absolute;
+            left: 265px;
+            top: 225px;
+            font-size: 18px;
+        }
+
+        .tjsizes {
+            display: inline-block;
+            color: rgba(255, 255, 255, 0.8);
+            position: absolute;
+            left: 740px;
+            top: 225px;
+            font-size: 18px;
+        }
+
+        .jinandatas {
+            display: none;
+        }
+
+        .overs {
+            width: 360px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            /*最多显示几行*/
+            /*-webkit-line-clamp:3;*/
+        }
+
+        .u_bt {
+            position: relative;
+        }
+
+        .ezb div {
+            position: absolute;
+            cursor: pointer;
+            height: 136px;
+            width: 11px;
+            top: 60px;
+        }
+
+        .ezb div:nth-child(1) {
+            left: 114px;
+        }
+
+        .ezb div:nth-child(2) {
+            left: 147px;
+        }
+
+        .ezb div:nth-child(3) {
+            left: 180px;
+        }
+
+        .ezb div:nth-child(4) {
+            left: 213px;
+        }
+
+        .ezb div:nth-child(5) {
+            left: 246px;
+        }
+
+        .ezb div:nth-child(6) {
+            left: 279px;
+        }
+
+        .ezb div:nth-child(7) {
+            left: 312px;
+        }
+
+        .ezb div:nth-child(8) {
+            left: 345px;
+        }
+
+        .ezb div:nth-child(9) {
+            left: 378px;
+        }
+
+        .ezb div:nth-child(10) {
+            left: 411px;
+        }
+
+        .ezb div:nth-child(11) {
+            left: 444px;
+        }
+
+        .ezb div:nth-child(12) {
+            left: 477px;
+        }
+
+        .ezb div:nth-child(13) {
+            left: 510px;
+        }
+
+        .ezb div:nth-child(14) {
+            left: 543px;
+        }
+
+        .ezb div:nth-child(15) {
+            left: 576px;
+        }
+
+        .ezb div:nth-child(16) {
+            left: 609px;
+        }
+
+        .ezb div:nth-child(17) {
+            left: 642px;
+        }
+
+        .ezb div:nth-child(18) {
+            left: 675px;
+        }
+
+        .ezb div:nth-child(19) {
+            left: 708px;
+        }
+
+        .ezb div:nth-child(20) {
+            left: 741px;
+        }
+
+        .ezb div:nth-child(21) {
+            left: 774px;
+        }
+
+        .ezb div:nth-child(22) {
+            left: 807px;
+        }
+
+        .ezb div:nth-child(23) {
+            left: 840px;
+        }
+
+        .u_fanhui {
+            z-index: 5;
+            position: absolute;
+            top: 40px;
+            right: 40px;
+            color: #ccc;
+            padding: 5px 10px;
+            border: 1px solide #CCCCCC;
+            border-radius: 15px;
+            background: #1C93D0;
+            display: none;
+            cursor: pointer;
+        }
+
+        .w_smbg h2.xc {
+            /* margin: 15px 30px 0px 30px; */
+        }
+
+        .w_smbg {
+            float: left;
+        }
+
+        .j_smbg h2.xc {
+            /*margin: 15px 30px 0px 30px;*/
+            color: #fff;
+            display: inline-block;
+            margin: 20px 30px;
+        }
+
+        .j_smbg {
+            float: left;
+            height: 260px;
+            margin: 5px 0px 0px 3px;
+        }
+
+        #lfbu {
+            width: 930px;
+            height: 508px;
+            margin: 10px auto 0;
+        }
+
+        .gx,
+        .gx2 {
+            position: absolute;
+            left: 4%;
+            top: 3%;
+            z-index: 10;
+        }
+
+        .gx p,
+        .gx2 p {
+            font-weight: bold;
+            color: #FFFFFF;
+            margin-bottom: 10px;
+            /*opacity: 0.7;*/
+        }
+
+        .qie {
+            margin-top: 50px;
+            border-radius: 6px;
+            width: 85px;
+            cursor: pointer;
+        }
+
+        .qie {
+            text-align: center;
+        }
+
+        .qie1,
+        .qie2 {
+            padding: 20px 10px 10px 10px;
+            height: 63px;
+            background: rgba(255, 255, 255, 0.1);
+            /*border: 1px solid #519FFC;*/
+            /*border-radius: 10px;*/
+        }
+
+        .qie1 p,
+        .qie2 p {
+            font-size: 15px;
+        }
+
+        .mb {
+            margin-bottom: 6px;
+        }
+
+        .blue {
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            background: #519FFC;
+            position: absolute;
+            left: 4%;
+            top: 36%;
+        }
+
+        .gxinfo {
+            opacity: 0.6;
+            font-family: PingFangSC-Regular;
+            font-size: 13px;
+            color: #FFFFFF;
+        }
+
+        .gxinfo2 {
+            color: #FFFFFF;
+            opacity: 0.4;
+        }
+
+        .qiecla {
+            background: rgba(255, 255, 255, 0.06);
+        }
+
+        .red {
+            left: 4%;
+            top: 73%;
+            position: absolute;
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            background: #EA4245;
+        }
+
+        .zong,
+        .zong2 {
+            display: none;
+            height: 530px;
+            width: 500px;
+            margin: 0 auto;
+            top: -93.5%;
+            left: 4.4%;
+            /* background-size: 100% 100%; */
+            margin-bottom: 31px;
+            position: relative;
+            overflow: hidden;
+            z-index: 0;
+        }
+
+        .dong1,
+        .dong11 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 500px;
+            height: 500px;
+            background: url(img/aaa.png) no-repeat center center;
+            background-size: 15% 15%;
+            opacity: 0;
+        }
+
+        .dong2,
+        .dong22 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 500px;
+            height: 500px;
+            background: url(img/aaa.png) no-repeat center center;
+            background-size: 15% 15%;
+            opacity: 0;
+        }
+
+        .dong3,
+        .dong33 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 500px;
+            height: 500px;
+            background: url(img/aaa.png) no-repeat center center;
+            background-size: 15% 15%;
+            opacity: 0;
+        }
+
+        .dong1 {
+            -webkit-animation: ani-circle-a 4.5s ease-out forwards infinite;
+            animation: ani-circle-a 4.5s ease-out forwards infinite;
+        }
+
+        .dong2 {
+            -webkit-animation: ani-circle-a 4.5s ease-out 1.5s forwards infinite;
+            animation: ani-circle-a 4.5s ease-out 1.5s forwards infinite;
+        }
+
+        .dong3 {
+            -webkit-animation: ani-circle-a 4.5s ease-out 3s forwards infinite;
+            animation: ani-circle-a 4.5s ease-out 3s forwards infinite;
+        }
+
+        @-webkit-keyframes ani-circle-a {
+            0% {
+                -webkit-transform: scale(3);
+                transform: scale(3);
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+            10% {
+                opacity: .7;
+                filter: alpha(opacity=70);
+            }
+            100% {
+                -webkit-transform: scale(0.8);
+                transform: scale(0.8);
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+        }
+
+        @keyframes ani-circle-a {
+            0% {
+                -webkit-transform: scale(3);
+                transform: scale(3);
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+            10% {
+                opacity: 1;
+                filter: alpha(opacity=70);
+            }
+            100% {
+                -webkit-transform: scale(0.8);
+                transform: scale(0.8);
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+        }
+
+        .dong11 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 500px;
+            height: 500px;
+            background: url(img/bbb.png) no-repeat center center;
+            background-size: 15% 15%;
+            opacity: 0;
+        }
+
+        .dong22 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 500px;
+            height: 500px;
+            background: url(img/bbb.png) no-repeat center center;
+            background-size: 15% 15%;
+            opacity: 0;
+        }
+
+        .dong33 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 500px;
+            height: 500px;
+            background: url(img/bbb.png) no-repeat center center;
+            background-size: 15% 15%;
+            opacity: 0;
+        }
+
+        .dong11 {
+            -webkit-animation: ani-circle-a 4.5s ease-out forwards infinite;
+            animation: ani-circle-a2 4.5s ease-out forwards infinite;
+        }
+
+        .dong22 {
+            -webkit-animation: ani-circle-a 4.5s ease-out 1.5s forwards infinite;
+            animation: ani-circle-a2 4.5s ease-out 1.5s forwards infinite;
+        }
+
+        .dong33 {
+            -webkit-animation: ani-circle-a 4.5s ease-out 3s forwards infinite;
+            animation: ani-circle-a2 4.5s ease-out 3s forwards infinite;
+        }
+
+        @-webkit-keyframes ani-circle-a2 {
+            0% {
+                -webkit-transform: scale(0.8);
+                transform: scale(0.8);
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+            10% {
+                opacity: .7;
+                filter: alpha(opacity=70);
+            }
+            100% {
+                -webkit-transform: scale(3);
+                transform: scale(3);
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+        }
+
+        @keyframes ani-circle-a2 {
+            0% {
+                -webkit-transform: scale(0.8);
+                transform: scale(0.8);
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+            10% {
+                opacity: 1;
+                filter: alpha(opacity=70);
+            }
+            100% {
+                -webkit-transform: scale(4);
+                transform: scale(4);
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+        }
+
+        .j_news {
+            width: 960px;
+            height: 530px;
+        }
+
+        .j_bt {
+            float: left;
+            margin-top: 10px;
+        }
+
+        /* #j_option1{
+     height: 210px;
+     width: 330px;
+ } */
+
+        .spanbox {
+            width: 951px;
+            height: 261px;
+        }
+
+        .w_newsRanking li span {
+            margin-top: 4px;
+        }
+
+        .w_newsRanking li p,
+        .w_newsRanking li a {
+            opacity: 0.8;
+        }
+
+        .j_ml {
+            margin-left: 5px;
+        }
+
+        .j_ot {
+            opacity: 0.8;
+        }
+ .j_kuang{ 
+    z-index: 30; position: absolute; top: 10px; left:-50px ; width: 200px; height: 150px; background: rgba(40,40,40,0.7); border-radius:
+8px; padding: 15px; display: none; } .j_kuang li{ float: left; color: #FFFFFF; font-size: 14px; width: 240px; line-height:
+25px; }
+.j_hover{
+    width: 110px;
+    height: 70px;
+    top: 120px;
+    left: 180px;
+    z-index: 10;
+    position: absolute;
+    /* display: none; */
+}
+    </style>
+</head>
+
+<body>
+    <div id="lbox cler" style="width:3840px;">
+        <div class="fl lcen">
+            <div>
+                <div class="lecet">
+                    <div id="j_content"></div>
+                </div>
+            </div>
+            <div class="w_smbg j_ml scrollbox" style="margin-bottom:0;">
+                <div class="w_title cler">
+                    <h2 class="fl xc">各栏目信息发布分布情况(单位:篇)</h2>
+
+                    <div class="fl w_visits">
+<div id="j_noc" style="width:500px;height:230px;"></div>
+                        <!-- <h4>党建和组织工作宣传网
+                        </h4>
+                        <div class="progre cler">
+                            <div class="w_lineOne w_line"></div>
+                            <span>2083</span>
+                        </div>
+
+                        <h4>基层党组织建设网
+                        </h4>
+                        <div class="progre cler">
+                            <div class="w_lineTwo w_line"></div>
+                            <span>1984</span>
+                        </div>
+                        <h4>党员队伍建设网
+                        </h4>
+                        <div class="progre cler">
+                            <div class="w_lineFor w_line"></div>
+                            <span>759</span>
+                        </div>
+
+                        <h4>干部工作网
+                        </h4>
+                        <div class="progre cler">
+                            <div class="w_lineFive w_line"></div>
+                            <span>701</span>
+                        </div>
+
+                        <h4>第一书记管理服务网
+                        </h4>
+                        <div class="progre cler">
+                            <div class="w_lineSix w_line"></div>
+                            <span>337</span>
+                        </div> -->
+
+
+
+                        <!-- <h4>加强基层党组织建设</h4>
+                        <div class="progre cler">
+                            <div class="w_lineSeven w_line"></div>
+                            <span>11868327</span>
+                        </div>
+                        <h4>开展专项整治、落实巡视整改</h4>
+                        <div class="progre cler">
+                            <div class="w_lineEight w_line"></div>
+                            <span>10864520</span>
+                        </div>
+
+                        <h4>经济建设怎么走</h4>
+                        <div class="progre cler">
+                            <div class="w_lineNine w_line"></div>
+                            <span>9810240</span>
+                        </div>
+
+                        <h4>组织学习交流会议</h4>
+                        <div class="progre cler">
+                            <div class="j_twent w_line"></div>
+                            <span>917319</span>
+                        </div>
+                        <h4>走基层</h4>
+                        <div class="progre cler">
+                            <div class="j_twento w_line"></div>
+                            <span>2195933</span>
+                        </div>
+
+                        <h4>技术监督与信息</h4>
+                        <div class="progre cler">
+                            <div class="j_twentt w_line"></div>
+                            <span>1655713</span>
+                        </div>
+
+                        <h4>第一书记</h4>
+                        <div class="progre cler">
+                            <div class="j_twentt1 w_line"></div>
+                            <span>917319</span>
+                        </div> -->
+                    </div>
+
+                </div>
+                <div class="navbar"></div>
+                <div class="navbar w_hide"></div>
+                <div class="navbar w_hide"></div>
+            </div>
+            <div class="w_smbg j_ml scrollbox" style="margin-bottom:0;">
+                <div class="w_title cler">
+                    <h2 class="fl xc">三端发布浏览TOP10</h2>
+                    <!--<ul class="fl cler w_tipbar1" style="margin-left:75px;">-->
+
+                    <!--<li>新闻信息</li>-->
+                    <!--<li>政策页面</li>-->
+                    <!--</ul>-->
+                </div>
+
+                <div id="scrollDiv1" class="wangchaos">
+<div id="j_top" style="width:460px;height:230px; margin-top: -20px;"></div>
+                    <!-- <ul class="w_newsRanking"> -->
+                        <!-- <li class="cf">
+                            <span class="fl">1</span>
+                            <p class="overs fl"> “灯塔-党建在线”党的十九大精神学习竞赛活动开始啦！
+                            </p>
+                            <a>济南</a>
+                        </li>
+                        <li class="cf">
+                            <span class="fl">2</span>
+                            <p class="overs fl">山东省全面展开新旧动能转换 聚焦聚力高质量发展
+                            </p>
+                            <a>青岛</a>
+                        </li>
+                        <li class="cf">
+                            <span class="fl">3</span>
+                            <p class="overs fl">“​灯塔-党建在线”十九大精神学习竞赛活动启动
+                            </p>
+                            <a>莱芜</a>
+                        </li>
+                        <li class="cf">
+                            <span class="fl">4</span>
+                            <p class="overs fl">关于“灯塔-党建在线”党的十九大精神第三期学习竞赛调整时间安排等有关事项的通知
+                            </p>
+                            <a>枣庄</a>
+                        </li>
+                        <li class="cf">
+                            <span class="fl">5</span>
+                            <p class="overs fl">“灯塔-党建在线”主题曲《你是灯塔》
+                            </p>
+                            <a>济宁</a>
+                        </li>
+                        <li class="cf">
+                            <span class="fl">6</span>
+                            <p class="overs fl">学习竞赛活动线上初赛第五期正式开始竞赛答题
+                            </p>
+                            <a>菏泽</a>
+                        </li>
+                        <li class="cf">
+                            <span class="w_spacile fl">7</span>
+                            <p class="overs fl">中国共产党章程（2017年修改）
+                            </p>
+                            <a>泰安</a>
+                        </li>
+                        <li class="cf">
+                            <span class="fl">8</span>
+                            <p class="overs fl">习近平：以永远在路上的执着把从严治党引向深入
+                            </p>
+                            <a>临沂</a>
+                        </li>
+                        <li class="cf">
+                            <span class="fl">9</span>
+                            <p class="overs fl">纪念马克思诞辰200周年大会在京举行 习近平发表重要讲话
+                            </p>
+                            <a>滨州</a>
+                        </li>
+                        <li class="cf">
+                            <span class="fl">10</span>
+                            <p class="overs fl">习近平在山东考察时强调 切实把新发展理念落到实处 不断增强经济社会发展创新力
+                            </p>
+                            <a>淄博</a>
+                        </li> -->
+                        <!-- <li class="cf">
+                            <span class="fl">11</span>
+                            <p class="overs fl"> “灯塔-党建在线”党的十九大精神学习竞赛活动开始啦！ </p>
+                            <a>济南</a>
+                        </li>
+                        <li class="cf">
+                            <span class="fl">12</span>
+                            <p class="overs fl">“灯塔-党建在线”党的十九大精神学习竞赛活动线上初赛第二期开始竞赛答题</p>
+                            <a>青岛</a>
+                        </li>
+                        <li class="cf">
+                            <span class="fl">13</span>
+                            <p class="overs fl">山东省全面展开新旧动能转换 聚焦聚力高质量发展</p>
+                            <a>莱芜</a>
+                        </li>
+                        <li class="cf">
+                            <span class="fl">14</span>
+                            <p class="overs fl">聚焦全国两会</p>
+                            <a>枣庄</a>
+                        </li>
+                        <li class="cf">
+                            <span class="fl">15</span>
+                            <p class="overs fl">第四期学习竞赛活动开始，学习重点公布！</p>
+                            <a>济宁</a>
+                        </li>
+                        <li class="cf">
+                            <span class="fl">16</span>
+                            <p class="overs fl">学习竞赛活动线上初赛第五期正式开始竞赛答题</p>
+                            <a>菏泽</a>
+                        </li>
+                        <li class="cf">
+                            <span class="w_spacile fl">17</span>
+                            <p class="overs fl">习近平：以永远在路上的执着把从严治党引向深入</p>
+                            <a>泰安</a>
+                        </li>
+                        <li class="cf">
+                            <span class="fl">18</span>
+                            <p class="overs fl">纪念马克思诞辰200周年大会举行 习近平发表重要讲话</p>
+                            <a>临沂</a>
+                        </li>
+                        <li class="cf">
+                            <span class="fl">19</span>
+                            <p class="overs fl">习近平出席博鳌亚洲论坛2018年年会开幕式并发表主旨演讲</p>
+                            <a>滨州</a>
+                        </li>
+                        <li class="cf">
+                            <span class="fl">20</span>
+                            <p class="overs fl">【学习竞赛】今天，你答题了吗？学习竞赛活动正刷爆朋友圈！</p>
+                            <a>淄博</a>
+                        </li> -->
+                    <!-- </ul>
+                </div> -->
+
+                <!--<div id="scrollDiv2" class="wangchaos w_hide">-->
+                <!--<ul class="w_newsRanking">-->
+                <!--<li>-->
+                <!--<span class="fl">1</span>-->
+                <!--<p class="overs fl">聘任制公务员管理规定（试行）</p>-->
+
+                <!--<a>245073</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--<span class="fl">2</span>-->
+                <!--<p class="overs fl">互联网新闻信息服务单位内容管理从业人员管理办法</p>-->
+
+                <!--<a>225155</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--<span class="fl">3</span>-->
+                <!--<p class="overs fl">宗教事务条例</p>-->
+
+                <!--<a>219545</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--<span class="fl">4</span>-->
+                <!--<p class="overs fl">中国共产党章程（2017年修改）</p>-->
+
+                <!--<a>198920</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--<span class="fl">5</span>-->
+                <!--<p class="overs fl">关于加强干部选拔任用工作监督的意见</p>-->
+
+                <!--<a>178021</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--<span class="fl">6</span>-->
+                <!--<p class="overs fl">山东省省直机关基层党组织党建活动经费管理办法</p>-->
+
+                <!--<a>150124</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--<span class="fl">7</span>-->
+                <!--<p class="overs fl">互联网群组信息服务管理规定</p>-->
+
+                <!--<a>140540</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--<span class="fl">8</span>-->
+                <!--<p class="overs fl">中央和国家机关基层党组织党建活动经费管理办法</p>-->
+
+                <!--<a>138116</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--<span class="fl">9</span>-->
+                <!--<p class="overs fl">党组织可否安排非中共党员人员向党员收取党费？</p>-->
+
+                <!--<a>126584</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--<span class="fl">10</span>-->
+                <!--<p class="overs fl">怎样正确把握党费的使用范围？</p>-->
+
+                <!--<a>119325</a>-->
+                <!--</li>-->
+                <!--</ul>-->
+                </div>
+            </div>
+        </div>
+        <div class="fl lcen">
+            <div class="leceb cler" style="position:relative">
+                <div class="fl lrt" id="lyuan" style="margin-right:5px;">
+
+                </div>
+                <div class="tjsize" id="f_qszc">
+                    转出总计:651624
+                </div>
+                <div class="fl lrt" id="lyu">
+
+                </div>
+                <div class="tjsizes" id="f_qszr">
+                    转入总计:663409
+                </div>
+            </div>
+            <div class="lecet">
+                <div id="lects">
+
+                </div>
+                <div id="f_lects" class="jinandatas">
+
+                </div>
+                <div id="u_lects" class="jinandatas">
+
+                </div>
+                <div class="zong">
+                    <div class="dong1"></div>
+                    <div class="dong2"></div>
+                    <div class="dong3"></div>
+                </div>
+                <div class="zong2">
+                    <div class="dong11"></div>
+                    <div class="dong22"></div>
+                    <div class="dong33"></div>
+                </div>
+                <!--点击济南跳转到济南的《济南党组织关系转接迁徙模拟图》-->
+                <p class="f_jinan"></p>
+                <p class="u_qingdao"></p>
+                <p class="f_fanHui jinandatas" style="display: none">
+                    返回
+                </p>
+                <!--jinandatas 隐藏-->
+                <!--济南党组织关系转接迁徙模拟图  切换的部分-->
+                <div class="gx jinandatas">
+                    <!--<p>济南党组织关系转接迁徙模拟图</p>-->
+                    <ul class="qie">
+                        <li class="qie1 qiecla">
+                            <div class="mb">
+                                <div class="blue left"></div>
+                                <span class="gxinfo">转入</span>
+                                <span class="left gxinfo2"> > </span>
+                            </div>
+                            <!--<p>8.3%</p>-->
+                            <p>27705</p>
+                        </li>
+                        <li class="qie2">
+                            <div class="mb">
+                                <div class="red left"></div>
+                                <span class="left gxinfo">转出</span>
+                                <span class="left gxinfo2"> > </span>
+                            </div>
+                            <!--<p>12.7%</p>-->
+                            <p>26843</p>
+                        </li>
+                    </ul>
+                </div>
+                <!--青岛党组织关系转接迁徙模拟图  切换的部分-->
+                <div class="gx2 jinandatas">
+                    <!--<p>青岛党组织关系转接迁徙模拟图</p>-->
+                    <ul class="qie">
+                        <li class="qie1 qiecla">
+                            <div class="mb">
+                                <div class="blue left"></div>
+                                <span class="gxinfo">转入</span>
+                                <span class="left gxinfo2"> > </span>
+                            </div>
+                            <!--<p>8.3%</p>-->
+                            <p>92118</p>
+                        </li>
+                        <li class="qie2">
+                            <div class="mb">
+                                <div class="red left"></div>
+                                <span class="left gxinfo">转出</span>
+                                <span class="left gxinfo2"> > </span>
+                            </div>
+                            <!--<p>12.7%</p>-->
+                            <p>91358</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="fl lcen">
+            <div class="lecet">
+                <div id="lkait">
+                    <!-- <div class="lkt">
+                        e支部开通总数
+                    </div>
+                    <div class="lkts" id="f_ezs">
+                        265,989
+                        <span style='font-size:22px;'>个</span>
+                    </div> -->
+                </div>
+                <div id="lect">
+
+                </div>
+            </div>
+            <div class="w_bt u_bt">
+                <div id="j_main" style="width: 98%;height:98%; margin: 0px auto;">
+                </div>
+                <div id="w_maintt" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+                <div id="w_maintt2" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+                <div id="w_maintt3" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+                <div id="w_maintt4" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+                <div id="w_maintt5" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+                <div id="w_maintt6" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+                <div id="w_maintt7" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+                <div id="w_maintt8" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+                <div id="w_maintt9" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+                <div id="w_maintt10" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+                <div id="w_maintt11" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+                <div id="w_maintt12" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+                <div id="w_maintt13" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+                <div id="w_maintt14" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+                <div id="w_maintt15" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+                <div id="w_maintt16" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+                <div id="w_maintt17" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+                <div id="w_maintt18" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+                <div id="w_maintt19" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+                <div id="w_maintt20" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+                <div id="w_maintt21" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+                <div id="w_maintt22" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+                <div id="w_maintt23" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+                <div class="ezb">
+                    <div class="jinan_ezb"></div>
+                    <div class="qd_ezb"></div>
+                    <div class="zb_ezb"></div>
+                    <div class="zz_ezb"></div>
+                    <div class="dy_ezb"></div>
+                    <div class="yt_ezb"></div>
+                    <div class="wf_ezb"></div>
+                    <div class="jn_ezb"></div>
+                    <div class="tn_ezb"></div>
+                    <div class="wh_ezb"></div>
+                    <div class="rz_ezb"></div>
+                    <div class="lw_ezb"></div>
+                    <div class="lx_ezb"></div>
+                    <div class="dz_ezb"></div>
+                    <div class="lc_ezb"></div>
+                    <div class="bz_ezb"></div>
+                    <div class="hz_ezb"></div>
+                    <div class="jggw_ezb"></div>
+                    <div class="jwgw_ezb"></div>
+                    <div class="gzw_ezb"></div>
+                    <div class="slyt_ezb"></div>
+                    <div class="qlsh_ezb"></div>
+                    <div class="hsj_ezb"></div>
+                </div>
+                <a class="u_fanhui">
+                    返回
+                </a>
+            </div>
+        </div>
+        <div class="fl lcen">
+            <div class="spanbox fl">
+                <div class="w_smbg" id="nmsd" style=" position: relative;">
+<ul class="j_kuang" id="dsk">
+    <li>30岁以下:582451 (9.43%)</li>
+    <li>31岁-40岁：1068117 (17.2%)</li>
+    <li>41岁-50岁：1331202 (21.6%)</li>
+    <li>51岁-60岁：1264913 (20.5%)</li>
+    <li>61岁及以上：1928362 (31.2%)</li>
+    <!-- <li>本专科教育：170532 (57.62%)</li>
+    <li>研究生教育：19654 (6.64%)</li> -->
+</ul>
+                    <div class="w_title cler">
+                        <h2 class="fl orgNum">党员注册总数:6175045</h2>
+                        <ul class="fl cler w_tipbar" style="margin-left:5px;">
+                            <li>年龄</li>
+                            <li>性别</li>
+                            <li>学历</li>
+                        </ul>
+<div class="j_hover"></div>                        
+
+
+                    </div>
+                    <div id="lsex2" class="navbar " style="width:400px;height:230px;"></div>
+                    <div id="lsex1" class="navbar w_hide" style="width:400px;height:230px;"></div>
+                    <div id="lsex3" class="navbar w_hide" style="width:400px;height:230px;margin-top: -20px"></div>
+                    <div id="" class="navbars" style="width:430px;height:230px;margin-left: 20px"></div>
+                </div>
+                <div class="w_smbg j_ml" style=" position: relative;">
+<h2 class="fl orgNum">基层党组织采集数:332137</h2>
+                    <div id="orgCate" style="width:480px;height:250px;"></div>
+                </div>
+
+
+            </div>
+            <div class="w_bt j_bt">
+                <div id="j_res" style="width: 98%;height:98%; margin: 0px auto;"></div>
+            </div>
+            <div class="w_bt j_bt">
+                <div id="j_renewal" style="width: 98%;height:98%; margin: 0px auto;">
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+
+
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.countup.min.js"></script>
+    <script>
+        $('.w_visit').countUp();
+    </script>
+    <script type="text/javascript" src="js/w_all.js"></script>
+    <script src="https://cdn.bootcss.com/echarts/4.0.4/echarts-en.min.js"></script>
+    <script src="js/jq_scroll.js"></script>
+    <script src="js/leftTime.js"></script>
+    <script src="js/j_javascript.js"></script>
+    <!-- <script src="js/jinan.js"></script> -->
+<script type="text/javascript">
+ $(".j_hover").mouseover(function () { $("#dsk").show(); }).mouseout(function () { $("#dsk").hide(); });
+    </script>
+</body>
+
+</html>

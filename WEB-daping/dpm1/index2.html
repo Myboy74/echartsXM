@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/rest.css">
+    <link rel="stylesheet" type="text/css" href="css/w_css.css"/>
+    <style>
+        body{
+            overflow:scroll;
+        }
+        #lbox{
+            width: 3840px;
+            height: 810px;
+            /*overflow:hidden;*/
+        }
+        .fl{
+            float: left;
+        }
+        .lebox{
+            width: 480px;
+            height:810px;
+        }
+        .lcen{
+            width: 960px;
+            height:810px;
+        }
+        .lecet{
+            width: 960px;
+            height: 540px;
+            background:url(img/lcen.png) 0 0 no-repeat;
+            overflow: hidden;
+            position: relative;
+
+        }
+        .leceb{
+            width: 920px;
+            height: 270px;
+            margin: 0 auto;
+        }
+        .cler{
+            overflow:hidden;
+        }
+        .lrt{
+            width: 455px;
+            height: 270px;
+        }
+        #lect,#lects,#lect22,#lect33{
+            width: 930px;
+            height: 508px;
+            margin:10px auto 0;
+        }
+        #lkait{
+            position: absolute;
+            right:60px;
+            top: 8px;
+
+        }
+        .lkt{
+            color: rgb(255, 255, 255);
+            font-family: '黑体';
+            font-size: 18px;
+        }
+        .lkts{
+            color:#31B0E5;
+            font-size: 50px;
+            /*font-family: '黑体';*/
+        }
+        .lecets{
+            width: 960px;
+            height: 540px;
+        }
+        .rcens{
+            background:url(img/lrih.png) no-repeat;
+        }
+        .data {
+            margin: 10px 0 0 80px;
+        }
+        .data-box, .date-s {
+            color: #307ec2!important;
+            font-size: 22px;
+            text-shadow: 0 0 10px #265fac;
+        }
+        .date-tiem, .ltimes {
+            font-size: 35px;
+        }
+        .lwz{
+            font-size: 18px;
+            color: rgb(255, 255, 255);
+            margin-top: 10px;
+            font-family: '黑体';
+            text-align: center;
+
+        }
+        .liht{
+            position: relative;
+        }
+        .lws{
+            width: 400px;
+            margin:31px auto 20px;
+        }
+        .s1,.s2,.s3,.s4,.s5,.s6{
+            position: absolute;
+            color:#31B0E5;
+            font-size: 16px;
+        }
+        .s1,.s2,.s3{
+            top: 89px;
+        }
+        .s1{
+            left: 76px;
+        }
+        .s2{
+            left: 210px;
+        }
+        .s3{
+            right:75px;
+        }
+        .s4{
+            left: 66px;
+            font-size: 20px;
+        }
+        .s5{
+            left: 212px;
+            font-size: 20px;
+        }
+        .s6{
+            right: 70px;
+            font-size: 20px;
+        }
+        .fr{
+            float: right;
+        }
+        .w_bt{
+            width: 951px;
+            height: 261px;
+            background: url(img/切图-06.png) no-repeat center center;
+            background-size: 100% 100%;
+        }
+        .cler{
+            overflow:hidden;
+        }
+        #return{
+            color: #fff;
+            display: inline-block;
+            /* position: absolute; */
+            float: right;
+            margin-right: 45px;
+            margin-top: 450px;
+            right: 0;
+            top: 40px;
+            cursor: pointer;
+            display: none
+        }
+        #w_mainer canvas,#w_mainer11 canvas{
+            width: 240px!important;
+            height: 220px!important;
+            top:20px!important;
+            left:13px !important;
+        }
+        .progre{
+            line-height: 6px;
+            margin-bottom: 5px;
+        }
+        .progre span{
+            margin-left: 10px;
+        }
+        .jinandata{
+            display: none;
+        }
+        .overs{
+            width: 325px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            /*最多显示几行*/
+            /*-webkit-line-clamp:3;*/
+        }
+        .u_bt{
+            position: relative;
+        }
+        .ezb div{
+            position: absolute;
+            cursor: pointer;
+            height: 136px;
+            width: 11px;
+            top: 60px;
+        }
+        .ezb div:nth-child(1){
+              left: 114px;
+          }
+        .ezb div:nth-child(2){
+            left: 147px;
+        }
+        .ezb div:nth-child(3){
+            left: 180px;
+        }
+        .ezb div:nth-child(4){
+            left: 213px;
+        }
+        .ezb div:nth-child(5){
+            left: 246px;
+        }
+        .ezb div:nth-child(6){
+            left: 279px;
+        }
+        .ezb div:nth-child(7){
+            left: 312px;
+        }
+        .ezb div:nth-child(8){
+            left: 345px;
+        }
+        .ezb div:nth-child(9){
+            left: 378px;
+        }
+        .ezb div:nth-child(10){
+            left: 411px;
+        }
+        .ezb div:nth-child(11){
+            left: 444px;
+        }
+        .ezb div:nth-child(12){
+            left: 477px;
+        }
+        .ezb div:nth-child(13){
+            left: 510px;
+        }
+        .ezb div:nth-child(14){
+            left: 543px;
+        }
+        .ezb div:nth-child(15){
+            left: 576px;
+        }
+        .ezb div:nth-child(16){
+            left: 609px;
+        }
+        .ezb div:nth-child(17){
+            left: 642px;
+        }
+        .ezb div:nth-child(18){
+            left: 675px;
+        }
+        .ezb div:nth-child(19){
+            left: 708px;
+        }
+        .ezb div:nth-child(20){
+            left: 741px;
+        }
+        .ezb div:nth-child(21){
+            left: 774px;
+        }
+        .ezb div:nth-child(22){
+            left: 807px;
+        }
+        .ezb div:nth-child(23){
+            left: 840px;
+        }
+        .u_fanhui{
+            cursor: pointer;
+            display: none;
+            right: 55px;
+            top: 40px;
+            position: absolute;
+            color: #ffffff;
+        }
+        .w_smbg h2.xc{
+            margin: 20px 30px 0px 30px;
+        }
+    </style>
+</head>
+<body>
+<div id="lbox cler" style="width:3840px;">
+    <!--省-->
+    <div class="province">
+        <div class="lebox fl" >
+            <div class="w_smbg" style="margin-top:5px;" id="f_sszx">
+                <div class="w_title cler">
+                    <h2 class="fl">实时在线情况<span>179812人</span></h2>
+                    <a class="fr time"><img src="img/timt.png"></a>
+                </div>
+                <div class="progress_Bar">
+                    <div class="progress cler"><span>&nbsp;&nbsp;APP端</span><div class="endStyle"><div class="progressbar progressbar3"></div></div><span>114356人</span></div>
+                    <div class="progress cler" ><span>&nbsp;&nbsp;&nbsp;&nbsp;WEB端</span><div class="endStyle"><div class="progressbar progressbar1"></div></div><span>65456人</span></div>
+                </div>
+                <div class="hr"></div>
+                <div class="w_title cler">
+                    <h2 class="fl">历史在线峰值<span>1920867人</span></h2>
+                    <a class="fr time"></a>
+                </div>
+                <div class="progress_Bar">
+                    <div class="progress cler"><span>&nbsp;&nbsp;APP端</span><div class="endStyle"><div class="progressbar progressbar3"></div></div><span>1440651人</span></div>
+                    <div class="progress cler" ><span>&nbsp;&nbsp;&nbsp;&nbsp;WEB端</span><div class="endStyle"><div class="progressbar progressbar1"></div></div><span>480216人</span></div>
+                </div>
+            </div>
+            <div class="w_smbg" style=" position: relative;">
+                <div class="w_title cler">
+                    <h2 class="fl xc">实时在线党员年龄/性别/学历</h2>
+                    <ul class="fl cler w_tipbar" style="margin-left:5px;">
+                        <li>年龄</li>
+                        <li>性别</li>
+                        <li>学历</li>
+                    </ul>
+
+                </div>
+                <div id="lsex2" class="navbar" style="width:400px;height:230px;"></div>
+                <div id="lsex1" class="navbar w_hide" style="width:400px;height:230px;"></div>
+
+                <div id="lsex3" class="navbar w_hide" style="width:400px;height:230px;"></div>
+            </div>
+            <div class="w_smbg scrollbox" style="margin-bottom:0;">
+                <div class="w_title cler">
+                    <h2 class="fl">实时关注TOP10</h2>
+                    <ul class="fl cler w_tipbar1" style="margin-left:75px;">
+
+                        <li>新闻信息</li>
+                        <li>政策页面</li>
+                    </ul>
+                </div>
+
+                <div id="scrollDiv1" class="wangchao">
+                    <ul class="w_newsRanking" id="f_sifgzxw">
+                        <li class="cf"><span class="fl">1</span><p class="overs fl"> “灯塔-党建在线”党的十九大精神学习竞赛活动开始啦！ </p><a>458420</a></li>
+                        <li class="cf"><span class="fl">2</span><p class="overs fl">“灯塔-党建在线”党的十九大精神学习竞赛活动线上初赛第二期开始竞赛答题</p><a>410988</a></li>
+                        <li class="cf"><span class="fl">3</span><p class="overs fl">山东省全面展开新旧动能转换 聚焦聚力高质量发展</p><a>406704</a></li>
+                        <li class="cf"><span class="fl">4</span><p class="overs fl">聚焦全国两会</p><a>402545</a></li>
+                        <li class="cf"><span class="fl">5</span><p class="overs fl">第四期学习竞赛活动开始，学习重点公布！</p><a>396688</a></li>
+                        <li class="cf"><span class="fl">6</span><p class="overs fl">学习竞赛活动线上初赛第五期正式开始竞赛答题</p><a>373748</a> </li>
+                        <li class="cf"><span class="w_spacile fl">7</span><p class="overs fl">习近平：以永远在路上的执着把从严治党引向深入</p><a>332656</a> </li>
+                        <li class="cf"><span class="fl">8</span><p class="overs fl">纪念马克思诞辰200周年大会举行 习近平发表重要讲话</p><a>311011</a></li>
+                        <li class="cf"><span class="fl">9</span><p class="overs fl">习近平出席博鳌亚洲论坛2018年年会开幕式并发表主旨演讲</p><a>297823</a></li>
+                        <li class="cf"><span class="fl">10</span><p class="overs fl">【学习竞赛】今天，你答题了吗？学习竞赛活动正刷爆朋友圈！</p><a>285136</a></li>
+
+                    </ul>
+                </div>
+                <div id="scrollDiv2" class="wangchao w_hide">
+                    <ul class="w_newsRanking" id="f_sifgzzc">
+                        <li><span>1</span>聘任制公务员管理规定（试行）<a>245073</a></li>
+                        <li><span>2</span>互联网新闻信息服务单位内容管理从业人员管理办法<a>225155</a> </li>
+                        <li><span>3</span>宗教事务条例 <a>219545</a></li>
+                        <li><span>4</span>中国共产党章程（2017年修改）<a>198920</a></li>
+                        <li><span>5</span>关于加强干部选拔任用工作监督的意见<a>178021</a></li>
+                        <li><span>6</span>山东省省直机关基层党组织党建活动经费管理办法<a>150124</a></li>
+                        <li><span>7</span>互联网群组信息服务管理规定 <a>140540</a></li>
+                        <li><span>8</span>中央和国家机关基层党组织党建活动经费管理办法<a>138116</a></li>
+                        <li><span>9</span>党组织可否安排非中共党员人员向党员收取党费？<a>126584</a> </li>
+                        <li><span class="w_spacile">10</span>怎样正确把握党费的使用范围？<a>119325</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="lebox fl">
+            <div class="w_smbg" style="margin-top:5px;">
+                <div class="w_title cler">
+                    <h2 class="fl">“灯塔-党建在线”访问情况</h2>
+                </div>
+                <h4 style="color:#fff;padding-left:100px;margin-top:50px;font-weight:normal;">累积访问人次</h4>
+                <div class="w_visit" id="f_sifzxfw">
+                    <span class="counter" >1,572,271,434</span>
+                </div>
+            </div>
+            <div class="w_smbg">
+                <div class="w_title cler">
+                    <h2 class="fl">WEB/APP/微信访问分布占比</h2>
+                </div>
+                <div id="w_pie" style="width:400px;height:230px;"></div>
+            </div>
+            <div class="w_smbg scrollbox" style="margin-bottom:0;">
+                <div class="w_title cler">
+                    <h2 class="fl">访问分布情况</h2>
+
+                    <div class="w_visits" id="f_siffwfb">
+                        <h4>党建和组织工作宣传网</h4>
+                        <div class="progre cler">
+                            <div class="w_lineOne w_line"></div>
+                            <span> 11662593</span>
+                        </div>
+
+                        <h4>基层党组织建设网</h4>
+                        <div class="progre cler">
+                            <div class="w_lineTwo w_line"></div>
+                            <span>4037294</span>
+                        </div>
+
+
+                        <h4>党员队伍建设网</h4>
+                        <div class="progre cler">
+                            <div class="w_lineFor w_line"></div>
+                            <span>2411380</span>
+                        </div>
+
+                        <h4>干部工作网</h4>
+                        <div class="progre cler">
+                            <div class="w_lineFive w_line"></div>
+                            <span>1822421</span>
+                        </div>
+
+                        <h4>第一书记</h4>
+                        <div class="progre cler">
+                            <div class="w_lineSix w_line"></div>
+                            <span>1005705</span>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="navbar"></div>
+                <div class="navbar w_hide"></div>
+                <div class="navbar w_hide"></div>
+            </div>
+        </div>
+        <div class="fl lcen">
+            <div class="lecet">
+                <div id="lkait">
+                    <div class="lkt">
+                        e支部开通总数
+                    </div>
+                    <div class="lkts" id="f_ezs">
+                        265,989
+                        <span style='font-size:22px;'>个</span>
+                    </div>
+                </div>
+                <div  id="lect">
+
+                </div>
+            </div>
+            <div class="w_bt u_bt">
+                <div id="w_main" style="width: 98%;height:98%; margin: 5px auto;">
+                </div>
+                <div id="w_maintt" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+                <div id="w_maintt2" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+                <div id="w_maintt3" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+                <div id="w_maintt4" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+                <div id="w_maintt5" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+                <div id="w_maintt6" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+                <div id="w_maintt7" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+                <div id="w_maintt8" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+                <div id="w_maintt9" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+                <div id="w_maintt10" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+                <div id="w_maintt11" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+                <div id="w_maintt12" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+                <div id="w_maintt13" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+                <div id="w_maintt14" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+                <div id="w_maintt15" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+                <div id="w_maintt16" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+                <div id="w_maintt17" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+                <div id="w_maintt18" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+                <div id="w_maintt19" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+                <div id="w_maintt20" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+                <div id="w_maintt21" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+                <div id="w_maintt22" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+                <div id="w_maintt23" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+                <div class="ezb">
+                    <div class="jinan_ezb"></div>
+                    <div class="qd_ezb"></div>
+                    <div class="zb_ezb"></div>
+                    <div class="zz_ezb"></div>
+                    <div class="dy_ezb"></div>
+                    <div class="yt_ezb"></div>
+                    <div class="wf_ezb"></div>
+                    <div class="jn_ezb"></div>
+                    <div class="tn_ezb"></div>
+                    <div class="wh_ezb"></div>
+                    <div class="rz_ezb"></div>
+                    <div class="lw_ezb"></div>
+                    <div class="lx_ezb"></div>
+                    <div class="dz_ezb"></div>
+                    <div class="lc_ezb"></div>
+                    <div class="bz_ezb"></div>
+                    <div class="hz_ezb"></div>
+                    <div class="jggw_ezb"></div>
+                    <div class="jwgw_ezb"></div>
+                    <div class="gzw_ezb"></div>
+                    <div class="slyt_ezb"></div>
+                    <div class="qlsh_ezb"></div>
+                    <div class="hsj_ezb"></div>
+                </div>
+                <a class="u_fanhui">返回</a>
+            </div>
+        </div>
+        <div class="fl lcen">
+            <div class="lecet">
+                <div id="lkait">
+                    <div class="lkt">
+                        党员注册总数
+                    </div>
+                    <div class="lkts" id="f_dyzs">
+                        6,175,434
+                        <span style='font-size:22px;'>人</span>
+                    </div>
+                </div>
+                <div  id="lects">
+
+                </div>
+            </div>
+            <div class="w_bt">
+
+                <div id="w_mains" style="width: 315px;height:98%; margin-left: 10px; float: left;"></div>
+                <div id="w_mainer" style="width: 270px;height:98%; float: left;"></div>
+
+                <div id="w_mainers" style="width:315px;height:98%; float: right; margin-right: 40px; position: relative;">
+                    <p style="position: absolute; left: 20px; top: 15px; color: #fff; z-index: 30;">男</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--济南市-->
+    <div class="jinandata">
+        <div class="lebox fl" >
+            <div class="w_smbg" style="margin-top:5px;">
+                <div class="w_title cler">
+                    <h2 class="fl">实时在线情况<span>141241人</span></h2>
+                    <a class="fr time"><img src="img/timt.png"></a>
+                </div>
+                <div class="progress_Bar">
+                    <div class="progress cler"><span>&nbsp;&nbsp;APP端</span><div class="endStyle"><div class="progressbar progressbar3"></div></div><span>91169人</span></div>
+                    <div class="progress cler" ><span>&nbsp;&nbsp;&nbsp;&nbsp;WEB端</span><div class="endStyle"><div class="progressbar progressbar1"></div></div><span>50072人</span></div>
+                </div>
+                <div class="hr"></div>
+                <div class="w_title cler">
+                    <h2 class="fl">历史在线峰值<span>153669人</span></h2>
+                    <a class="fr time"></a>
+                </div>
+                <div class="progress_Bar">
+                    <div class="progress cler"><span>&nbsp;&nbsp;APP端</span><div class="endStyle"><div class="progressbar progressbar3"></div></div><span>115252人</span></div>
+                    <div class="progress cler" ><span>&nbsp;&nbsp;&nbsp;&nbsp;WEB端</span><div class="endStyle"><div class="progressbar progressbar1"></div></div><span>38417人</span></div>
+                </div>
+            </div>
+            <div class="w_smbg" style=" position: relative;">
+                <div class="w_title cler">
+                    <h2 class="fl xc">实时在线党员年龄/性别/学历</h2>
+                    <ul class="fl cler w_tipbar" style="margin-left:5px;">
+                        <li>年龄</li>
+                        <li>性别</li>
+                        <li>学历</li>
+                    </ul>
+
+                </div>
+                <div id="lsex4" class="navbars" style="width:400px;height:230px;"></div>
+                <div id="lsex5" class="navbars w_hide" style="width:400px;height:230px;"></div>
+
+                <div id="lsex6" class="navbars w_hide" style="width:400px;height:230px;"></div>
+            </div>
+            <div class="w_smbg scrollbox" style="margin-bottom:0;">
+                <div class="w_title cler">
+                    <h2 class="fl">实时关注TOP10</h2>
+                    <ul class="fl cler w_tipbar1" style="margin-left:75px;">
+
+                        <li>新闻信息</li>
+                        <li>政策页面</li>
+                    </ul>
+                </div>
+
+                <div id="scrollDiv1" class="wangchaos">
+                    <ul class="w_newsRanking">
+                        <li class="cf"><span class="fl">1</span><p class="overs fl"> “灯塔-党建在线”党的十九大精神学习竞赛活动开始啦！ </p><a>458420</a></li>
+                        <li class="cf"><span class="fl">2</span><p class="overs fl">“灯塔-党建在线”党的十九大精神学习竞赛活动线上初赛第二期开始竞赛答题</p><a>410988</a></li>
+                        <li class="cf"><span class="fl">3</span><p class="overs fl">山东省全面展开新旧动能转换 聚焦聚力高质量发展</p><a>406704</a></li>
+                        <li class="cf"><span class="fl">4</span><p class="overs fl">聚焦全国两会</p><a>402545</a></li>
+                        <li class="cf"><span class="fl">5</span><p class="overs fl">第四期学习竞赛活动开始，学习重点公布！</p><a>396688</a></li>
+                        <li class="cf"><span class="fl">6</span><p class="overs fl">学习竞赛活动线上初赛第五期正式开始竞赛答题</p><a>373748</a> </li>
+                        <li class="cf"><span class="w_spacile fl">7</span><p class="overs fl">习近平：以永远在路上的执着把从严治党引向深入</p><a>332656</a> </li>
+                        <li class="cf"><span class="fl">8</span><p class="overs fl">纪念马克思诞辰200周年大会举行 习近平发表重要讲话</p><a>311011</a></li>
+                        <li class="cf"><span class="fl">9</span><p class="overs fl">习近平出席博鳌亚洲论坛2018年年会开幕式并发表主旨演讲</p><a>297823</a></li>
+                        <li class="cf"><span class="fl">10</span><p class="overs fl">【学习竞赛】今天，你答题了吗？学习竞赛活动正刷爆朋友圈！</p><a>285136</a></li> </ul>
+                </div>
+                <div id="scrollDiv2" class="wangchaos w_hide">
+                    <ul class="w_newsRanking">
+                        <li><span>1</span>聘任制公务员管理规定（试行）<a>245073</a></li>
+                        <li><span>2</span>互联网新闻信息服务单位内容管理从业人员管理办法<a>225155</a> </li>
+                        <li><span>3</span>宗教事务条例 <a>219545</a></li>
+                        <li><span>4</span>中国共产党章程（2017年修改）<a>198920</a></li>
+                        <li><span>5</span>关于加强干部选拔任用工作监督的意见<a>178021</a></li>
+                        <li><span>6</span>山东省省直机关基层党组织党建活动经费管理办法<a>150124</a></li>
+                        <li><span>7</span>互联网群组信息服务管理规定 <a>140540</a></li>
+                        <li><span>8</span>中央和国家机关基层党组织党建活动经费管理办法<a>138116</a></li>
+                        <li><span>9</span>党组织可否安排非中共党员人员向党员收取党费？<a>126584</a> </li>
+                        <li><span class="w_spacile">10</span>怎样正确把握党费的使用范围？<a>119325</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="lebox fl">
+            <div class="w_smbg" style="margin-top:5px;">
+                <div class="w_title cler">
+                    <h2 class="fl">“灯塔-党建在线”访问情况</h2>
+                </div>
+                <h4 style="color:#fff;padding-left:100px;margin-top:50px;font-weight:normal;">累积访问人次</h4>
+                <div class="w_visit">
+                    <span class="counter">121,461,840</span>
+                </div>
+            </div>
+            <div class="w_smbg">
+                <div class="w_title cler">
+                    <h2 class="fl">WEB/APP/微信访问分布占比</h2>
+                </div>
+                <div id="w_pie11" style="width:400px;height:230px;"></div>
+            </div>
+            <div class="w_smbg scrollbox" style="margin-bottom:0;">
+                <div class="w_title cler">
+                    <h2 class="fl">访问分布情况</h2>
+
+                    <div class="w_visits">
+                        <h4>党建和组织工作宣传网</h4>
+                        <div class="progre cler">
+                            <div class="w_lineOne w_line"></div>
+                            <span>10868327</span>
+                        </div>
+
+                        <h4>基层党组织建设网</h4>
+                        <div class="progre cler">
+                            <div class="w_lineTwo w_line"></div>
+                            <span>3672798</span>
+                        </div>
+                        <h4>党员队伍建设网</h4>
+                        <div class="progre cler">
+                            <div class="w_lineFor w_line"></div>
+                            <span>2195933</span>
+                        </div>
+
+                        <h4>干部工作网</h4>
+                        <div class="progre cler">
+                            <div class="w_lineFive w_line"></div>
+                            <span>1655713</span>
+                        </div>
+
+                        <h4>第一书记</h4>
+                        <div class="progre cler">
+                            <div class="w_lineSix w_line"></div>
+                            <span>917319</span>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="navbar"></div>
+                <div class="navbar w_hide"></div>
+                <div class="navbar w_hide"></div>
+            </div>
+        </div>
+        <div class="fl lcen">
+            <div class="lecet">
+                <div id="lkait">
+                    <div class="lkt">
+                        e支部开通总数
+                    </div>
+                    <div class="lkts">
+                        18,778<span style='font-size:22px;'>个</span>
+                    </div>
+                </div>
+                <div  id="lect22">
+
+                </div>
+            </div>
+            <div class="w_bt">
+                <div id="w_main11" style="width: 932px;height:256px; margin: 5px auto;">
+
+                </div>
+            </div>
+        </div>
+        <div class="fl lcen">
+            <div class="lecet">
+                <div id="lkait">
+                    <div class="lkt">
+                        党员注册总数
+                    </div>
+                    <div class="lkts">
+                        438,871
+                        <span style='font-size:22px;'>人</span>
+                    </div>
+                </div>
+                <div  id="lect33">
+
+                </div>
+            </div>
+            <div class="w_bt">
+                <div id="w_mains11" style="width: 320px;height:256px; margin-left: 10px; float: left;"></div>
+                <div id="w_mainer11" style="width: 270px;height:256px; float: left;"></div>
+
+                <div id="w_mainers11" style="width:310px;height:256px; float: right; margin-right: 40px; position: relative;">
+                    <p style="position: absolute; left: 15px; top: 15px; color: #fff; z-index: 30;">男</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--地图切换-->
+    <div class="fl lcen rcens">
+        <div class="leceb cler">
+
+            <div class="fl lrt">
+                <div style="text-align: center;">
+                    <img src="dtdjs.png" alt="">
+                </div>
+
+                <div class="lwz" style="margin-top:40px;">
+                    安全运行时间
+                </div>
+
+                <div class="data">
+                    <div class="data-box" id="dateShow1" data-date="2017/08/29 23:45:24">
+                        <span class="date-tiem d">00</span>天
+                        <span class="date-tiem h">00</span>时
+                        <span class="date-tiem m">00</span>分
+                        <span class="ltimes date-s s">00</span>秒
+                    </div>
+                </div>
+            </div>
+            <div class="fl lrt liht">
+                <span class="s1">72%</span>
+                <span class="s2">43%</span>
+                <span class="s3">35%</span>
+                <div class="lws">
+                    <img src="img/yuan.png" alt="">
+                    <img src="img/yuan.png" alt="">
+                    <img src="img/yuan.png" alt="">
+                </div>
+                <span class="s4">并发量</span>
+                <span class="s5">内存</span>
+                <span class="s6">带宽</span>
+            </div>
+        </div>
+        <div class="lecets">
+            <div class=" scrollbox">
+                <div id="map_bg">
+                    <a id="mapChange">济南市</a>
+                    <a id="weifang"></a>
+                    <a id="zaozhuang"></a>
+                    <a id="qingdao"></a>
+                    <a id="zibo"></a>
+                </div>
+                <a id="return" style="color:#fff;">返回</a>
+                <div class="map_bg">
+                </div>
+                <div class="zibo">
+                </div>
+                <div class="weifang">
+                </div>
+                <div class="qingdao">
+                </div>
+                <div class="zaozhuang">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+
+
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.countup.min.js"></script>
+<script>
+    $('.w_visit').countUp();
+</script>
+<script type="text/javascript" src="js/w_all.js" ></script>
+<!--<script src="js/w_js.js"></script>-->
+<!--<script src="js/zhixue.js"></script>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/4.0.4/echarts-en.common.js"></script>-->
+<script src="https://cdn.bootcss.com/echarts/4.0.4/echarts-en.min.js"></script>
+
+
+<script src="js/jq_scroll.js"></script>
+<script src="js/leftTime.js"></script>
+<!--<script src="js/ljs.js"></script>-->
+
+<!--改数据但是必须清缓存，放弃-->
+<!--<script src="js/f_update.js"></script>-->
+
+<script src="js/w_javascript.js"></script>
+<script src="js/jinan.js"></script>
+</body>
+</html>

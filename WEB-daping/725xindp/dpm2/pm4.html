@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/rest.css">
+    <link rel="stylesheet" type="text/css" href="css/w_css.css" />
+    <style>
+        body {
+            overflow: scroll;
+            padding-top: 3px;
+        }
+
+        #lbox {
+            width: 3840px;
+            height: 810px;
+            /*overflow:hidden;*/
+        }
+
+        .fl {
+            float: left;
+        }
+
+        .lebox {
+            width: 480px;
+            height: 540px;
+        }
+
+        .lcen {
+            width: 960px;
+            height: 810px;
+        }
+
+        .lecet {
+            width: 960px;
+            height: 540px;
+            background: url(img/lcen.png) 0 0 no-repeat;
+            overflow: hidden;
+            position: relative;
+
+        }
+
+        .f_jinan {
+            width: 10px;
+            height: 370px;
+            position: absolute;
+            bottom: 100px;
+            left: 100px;
+        }
+
+        .u_qingdao {
+            width: 10px;
+            height: 370px;
+            position: absolute;
+            bottom: 100px;
+            left: 137px;
+        }
+
+        .f_fanHui {
+            padding: 10px;
+            color: white;
+            position: absolute;
+            top: 30px;
+            right: 50px;
+            cursor: pointer;
+            z-index: 1;
+        }
+
+        .leceb {
+            width: 960px;
+            height: 270px;
+            margin: 0 auto;
+        }
+
+        .cler {
+            overflow: hidden;
+        }
+
+        .lrt {
+            width: 472px;
+            height: 260px;
+        }
+
+        #lect,
+        #lects,
+        #lect22,
+        #lect33,
+        #j_content {
+            width: 930px;
+            height: 508px;
+            margin: 10px auto 0;
+        }
+
+        #lkait {
+            position: absolute;
+            right: 60px;
+            top: 8px;
+
+        }
+
+        .lkt {
+            color: rgb(255, 255, 255);
+            font-family: '黑体';
+            font-size: 18px;
+        }
+
+        .lkts {
+            color: #31B0E5;
+            font-size: 50px;
+            /*font-family: '黑体';*/
+        }
+
+        .lecets {
+            width: 960px;
+            height: 540px;
+        }
+
+        .rcens {
+            background: url(img/lrih.png) no-repeat;
+        }
+
+        .data {
+            margin: 10px 0 0 80px;
+        }
+
+        .data-box,
+        .date-s {
+            color: #307ec2 !important;
+            font-size: 22px;
+            text-shadow: 0 0 10px #265fac;
+        }
+
+        .date-tiem,
+        .ltimes {
+            font-size: 35px;
+        }
+
+        .lwz {
+            font-size: 18px;
+            color: rgb(255, 255, 255);
+            margin-top: 10px;
+            font-family: '黑体';
+            text-align: center;
+
+        }
+
+        .liht {
+            position: relative;
+        }
+
+        .lws {
+            width: 400px;
+            margin: 31px auto 20px;
+        }
+
+        .s1,
+        .s2,
+        .s3,
+        .s4,
+        .s5,
+        .s6 {
+            position: absolute;
+            color: #31B0E5;
+            font-size: 16px;
+        }
+
+        .s1,
+        .s2,
+        .s3 {
+            top: 89px;
+        }
+
+        .s1 {
+            left: 76px;
+        }
+
+        .s2 {
+            left: 210px;
+        }
+
+        .s3 {
+            right: 75px;
+        }
+
+        .s4 {
+            left: 66px;
+            font-size: 20px;
+        }
+
+        .s5 {
+            left: 212px;
+            font-size: 20px;
+        }
+
+        .s6 {
+            right: 70px;
+            font-size: 20px;
+        }
+
+        #lyuan,
+        #lyu,
+        #lyuan12,
+        #lyu12 {
+            background: url(img/lks.png) 0 0 no-repeat;
+        }
+
+        .fr {
+            float: right;
+        }
+
+        #lect,
+        #lects,
+        #f_lects,
+        #u_lects,
+        #lect12,
+        #lects12 {
+            width: 930px;
+            height: 508px;
+            margin: 10px auto 0;
+        }
+
+        #u_lects,
+        #f_lects {
+            position: relative;
+            z-index: 1;
+        }
+
+        .w_bt {
+            width: 951px;
+            height: 261px;
+            background: url(img/切图-06.png) no-repeat center center;
+            background-size: 100% 100%;
+        }
+
+        .cler {
+            overflow: hidden;
+        }
+
+        #return {
+            color: #fff;
+            display: inline-block;
+            /* position: absolute; */
+            float: right;
+            margin-right: 45px;
+            margin-top: 450px;
+            right: 0;
+            top: 40px;
+            cursor: pointer;
+            display: none
+        }
+
+        #w_mainer canvas,
+        #w_mainer11 canvas {
+            width: 240px !important;
+            height: 220px !important;
+            top: 20px !important;
+            left: 13px !important;
+        }
+
+        .progre {
+            line-height: 6px;
+            margin-bottom: 5px;
+        }
+
+        .progre div {
+            float: left;
+        }
+
+        .progre span {
+            color: #fff;
+            font-size: 12px;
+            margin-left: 10px;
+        }
+
+        .tjsize {
+            display: inline-block;
+            color: #fff;
+            position: absolute;
+            left: 295px;
+            top: 225px;
+            font-size: 18px;
+        }
+
+        .tjsizes {
+            display: inline-block;
+            color: #fff;
+            position: absolute;
+            left: 775px;
+            top: 225px;
+            font-size: 18px;
+        }
+
+        .jinandatas {
+            display: none;
+        }
+
+        .overs {
+            width: 325px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            /*最多显示几行*/
+            /*-webkit-line-clamp:3;*/
+        }
+
+        .u_bt {
+            position: relative;
+        }
+
+        .ezb div {
+            position: absolute;
+            cursor: pointer;
+            height: 136px;
+            width: 11px;
+            top: 60px;
+        }
+
+        .ezb div:nth-child(1) {
+            left: 114px;
+        }
+
+        .ezb div:nth-child(2) {
+            left: 147px;
+        }
+
+        .ezb div:nth-child(3) {
+            left: 180px;
+        }
+
+        .ezb div:nth-child(4) {
+            left: 213px;
+        }
+
+        .ezb div:nth-child(5) {
+            left: 246px;
+        }
+
+        .ezb div:nth-child(6) {
+            left: 279px;
+        }
+
+        .ezb div:nth-child(7) {
+            left: 312px;
+        }
+
+        .ezb div:nth-child(8) {
+            left: 345px;
+        }
+
+        .ezb div:nth-child(9) {
+            left: 378px;
+        }
+
+        .ezb div:nth-child(10) {
+            left: 411px;
+        }
+
+        .ezb div:nth-child(11) {
+            left: 444px;
+        }
+
+        .ezb div:nth-child(12) {
+            left: 477px;
+        }
+
+        .ezb div:nth-child(13) {
+            left: 510px;
+        }
+
+        .ezb div:nth-child(14) {
+            left: 543px;
+        }
+
+        .ezb div:nth-child(15) {
+            left: 576px;
+        }
+
+        .ezb div:nth-child(16) {
+            left: 609px;
+        }
+
+        .ezb div:nth-child(17) {
+            left: 642px;
+        }
+
+        .ezb div:nth-child(18) {
+            left: 675px;
+        }
+
+        .ezb div:nth-child(19) {
+            left: 708px;
+        }
+
+        .ezb div:nth-child(20) {
+            left: 741px;
+        }
+
+        .ezb div:nth-child(21) {
+            left: 774px;
+        }
+
+        .ezb div:nth-child(22) {
+            left: 807px;
+        }
+
+        .ezb div:nth-child(23) {
+            left: 840px;
+        }
+
+        .u_fanhui {
+            cursor: pointer;
+            display: none;
+            right: 30px;
+            top: 40px;
+            position: absolute;
+            color: #ffffff;
+        }
+
+        .w_smbg h2.xc {
+            margin: 20px 30px 0px 30px;
+        }
+
+        .w_smbg {
+            float: left;
+        }
+
+        .j_smbg {
+            margin-left: 5px;
+        }
+
+        #lfbu {
+            width: 930px;
+            height: 508px;
+            margin: 10px auto 0;
+        }
+
+        .gx,
+        .gx2 {
+            position: absolute;
+            left: 4%;
+            top: 3%;
+            z-index: 10;
+        }
+
+        .gx p,
+        .gx2 p {
+            font-weight: bold;
+            color: #FFFFFF;
+            margin-bottom: 10px;
+            /*opacity: 0.7;*/
+        }
+
+        .qie {
+            margin-top: 50px;
+            border-radius: 6px;
+            width: 85px;
+            cursor: pointer;
+        }
+
+        .qie {
+            text-align: center;
+        }
+
+        .qie1,
+        .qie2 {
+            padding: 20px 10px 10px 10px;
+            height: 63px;
+            background: rgba(255, 255, 255, 0.1);
+            /*border: 1px solid #519FFC;*/
+            /*border-radius: 10px;*/
+        }
+
+        .qie1 p,
+        .qie2 p {
+            font-size: 15px;
+        }
+
+        .mb {
+            margin-bottom: 6px;
+        }
+
+        .blue {
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            background: #519FFC;
+            position: absolute;
+            left: 4%;
+            top: 36%;
+        }
+
+        .gxinfo {
+            opacity: 0.6;
+            font-family: PingFangSC-Regular;
+            font-size: 13px;
+            color: #FFFFFF;
+        }
+
+        .gxinfo2 {
+            color: #FFFFFF;
+            opacity: 0.4;
+        }
+
+        .qiecla {
+            background: rgba(255, 255, 255, 0.06);
+        }
+
+        .red {
+            left: 4%;
+            top: 73%;
+            position: absolute;
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            background: #EA4245;
+        }
+
+        .zong,
+        .zong2 {
+            display: none;
+            height: 530px;
+            width: 500px;
+            margin: 0 auto;
+            top: -93.5%;
+            left: 4.4%;
+            /* background-size: 100% 100%; */
+            margin-bottom: 31px;
+            position: relative;
+            overflow: hidden;
+            z-index: 0;
+        }
+
+        .dong1,
+        .dong11 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 500px;
+            height: 500px;
+            background: url(img/aaa.png) no-repeat center center;
+            background-size: 15% 15%;
+            opacity: 0;
+        }
+
+        .dong2,
+        .dong22 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 500px;
+            height: 500px;
+            background: url(img/aaa.png) no-repeat center center;
+            background-size: 15% 15%;
+            opacity: 0;
+        }
+
+        .dong3,
+        .dong33 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 500px;
+            height: 500px;
+            background: url(img/aaa.png) no-repeat center center;
+            background-size: 15% 15%;
+            opacity: 0;
+        }
+
+        .dong1 {
+            -webkit-animation: ani-circle-a 4.5s ease-out forwards infinite;
+            animation: ani-circle-a 4.5s ease-out forwards infinite;
+        }
+
+        .dong2 {
+            -webkit-animation: ani-circle-a 4.5s ease-out 1.5s forwards infinite;
+            animation: ani-circle-a 4.5s ease-out 1.5s forwards infinite;
+        }
+
+        .dong3 {
+            -webkit-animation: ani-circle-a 4.5s ease-out 3s forwards infinite;
+            animation: ani-circle-a 4.5s ease-out 3s forwards infinite;
+        }
+
+        @-webkit-keyframes ani-circle-a {
+            0% {
+                -webkit-transform: scale(3);
+                transform: scale(3);
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+            10% {
+                opacity: .7;
+                filter: alpha(opacity=70);
+            }
+            100% {
+                -webkit-transform: scale(0.8);
+                transform: scale(0.8);
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+        }
+
+        @keyframes ani-circle-a {
+            0% {
+                -webkit-transform: scale(3);
+                transform: scale(3);
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+            10% {
+                opacity: 1;
+                filter: alpha(opacity=70);
+            }
+            100% {
+                -webkit-transform: scale(0.8);
+                transform: scale(0.8);
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+        }
+
+        .dong11 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 500px;
+            height: 500px;
+            background: url(img/bbb.png) no-repeat center center;
+            background-size: 15% 15%;
+            opacity: 0;
+        }
+
+        .dong22 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 500px;
+            height: 500px;
+            background: url(img/bbb.png) no-repeat center center;
+            background-size: 15% 15%;
+            opacity: 0;
+        }
+
+        .dong33 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 500px;
+            height: 500px;
+            background: url(img/bbb.png) no-repeat center center;
+            background-size: 15% 15%;
+            opacity: 0;
+        }
+
+        .dong11 {
+            -webkit-animation: ani-circle-a 4.5s ease-out forwards infinite;
+            animation: ani-circle-a2 4.5s ease-out forwards infinite;
+        }
+
+        .dong22 {
+            -webkit-animation: ani-circle-a 4.5s ease-out 1.5s forwards infinite;
+            animation: ani-circle-a2 4.5s ease-out 1.5s forwards infinite;
+        }
+
+        .dong33 {
+            -webkit-animation: ani-circle-a 4.5s ease-out 3s forwards infinite;
+            animation: ani-circle-a2 4.5s ease-out 3s forwards infinite;
+        }
+
+        @-webkit-keyframes ani-circle-a2 {
+            0% {
+                -webkit-transform: scale(0.8);
+                transform: scale(0.8);
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+            10% {
+                opacity: .7;
+                filter: alpha(opacity=70);
+            }
+            100% {
+                -webkit-transform: scale(3);
+                transform: scale(3);
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+        }
+
+        @keyframes ani-circle-a2 {
+            0% {
+                -webkit-transform: scale(0.8);
+                transform: scale(0.8);
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+            10% {
+                opacity: 1;
+                filter: alpha(opacity=70);
+            }
+            100% {
+                -webkit-transform: scale(4);
+                transform: scale(4);
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+        }
+
+        .j_news {
+            width: 960px;
+            height: 260px;
+        }
+
+        .j_bt {
+            float: left;
+        }
+    </style>
+    <style>
+        .nation_rank .overs {
+            width: 119px;
+        }
+
+        .nation_rank li a {
+            width: 100px;
+            display: inline-block;
+            float: right;
+        }
+
+        .nation_rank li a:nth-last-child(2) {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="lbox cler" style="width:3840px;">
+        <div class="fl lcen">
+            <div class="w_bt j_bt" style="margin-bottom: 10px;">
+                <div class="cler" style="line-height: 40px;font-size: 20px;color: #fff;text-indent: 2em;margin-top: 10px;">
+                    <h2 class="fl xc">概述</h2>
+                </div>
+                <div class="navbars" style="color: #fff;font-size: 18px; padding: 20px 30px;text-indent: 2em;line-height: 35px;">
+                    自2017年12月11日6:00至2018年5月20日24:00，省远程教育中心共向全省广大基层党组织和党员干部群众推送相关学习资料200多篇，发布题目1053道。全省共有253097个党支部参与学习竞赛，占党支部总数的91.3%；参与学习竞赛总人数达到5135478人，其中党员4954489人，占全省党员总数的75.8%；累计参与在线学习和竞赛答题1.74亿人次，日均335.2万人次；获得满分的达到7334.1万人次，占总答题人次的60.9%。
+                </div>
+            </div>
+            <div class="lebox fl">
+                <div class="w_smbg" style=" position: relative;">
+                    <div class="w_title cler">
+                        <h2 class="fl xc">党员年龄分布图</h2>
+                    </div>
+                    <div id="gyt_age" class="navbars" style="width:430px;height:230px;margin-left: 20px"></div>
+                </div>
+                <div class="w_smbg" style=" position: relative;">
+                    <div class="w_title cler">
+                        <h2 class="fl xc">党员学历分布图</h2>
+                    </div>
+                    <div id="gyt_edu" class="navbars" style="width:430px;height:230px;margin-left: 20px"></div>
+                </div>
+            </div>
+            <div class="lebox fl">
+
+                <div class="w_smbg" style=" position: relative;">
+                    <div class="w_title cler">
+                        <h2 class="fl xc">党员性别分布图</h2>
+                    </div>
+                    <div id="gyt_sex" class="navbars" style="width:430px;height:230px;margin-left: 20px"></div>
+                </div>
+                <div class="w_smbg" style=" position: relative;">
+                    <div class="w_title cler">
+                        <h2 class="fl xc">党员岗位分布</h2>
+                    </div>
+                    <div id="gyt_job" class="navbars" style="width:430px;height:230px;margin-left: 20px"></div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="fl lcen">
+            <div class="lecet">
+                <div id="lect">
+                    <div id="joinRate" style="width: 100%;height: 100%;"></div>
+                </div>
+            </div>
+            <div class="w_smbg scrollbox" style="margin-bottom:0;margin-right: 10px;">
+                <div class="w_title cler">
+                    <h2 class="fl">错题排行TOP10</h2>
+                </div>
+                <div id="scrollDiv">
+                    <ul class="w_newsRanking">
+                        <li class="cf">
+                            <span class="fl">1</span>
+                            <p class="overs fl"> 过去五年，改革全面发力、多点突破、纵深推进，着力增强改革（系统性、整体性、协同性）。 </p>
+                            <a>300587次</a>
+                        </li>
+                        <li class="cf">
+                            <span class="fl">2</span>
+                            <p class="overs fl">全面深化改革总目标是（完善和发展中国特色社会主义制度、推进国家治理体系和治理能力现代化）。</p>
+                            <a>233773次</a>
+                        </li>
+                        <li class="cf">
+                            <span class="fl">3</span>
+                            <p class="overs fl">过去五年，改革全面发力、多点突破、纵深推进，着力增强改革（系统性、整体性、协同性），压茬拓展改革广度和深度，推出一千五百多项改革举措，重要领域和关键环节改革取得突破性进展，主要领域改革主体框架基本确立。</p>
+                            <a>283515次</a>
+                        </li>
+                        <li class="cf">
+                            <span class="fl">4</span>
+                            <p class="overs fl">实现伟大梦想，必须推进伟大事业。（中国特色社会主义）是改革开放以来党的全部理论和实践的主题，是党和人民历尽千辛万苦、付出巨大代价取得的根本成就。</p>
+                            <a>274580次</a>
+                        </li>
+                        <li class="cf">
+                            <span class="fl">5</span>
+                            <p class="overs fl">过去五年，我国国际（影响力、感召力、塑造力）进一步提高，为世界和平与发展作出新的重大贡献。</p>
+                            <a>182284次</a>
+                        </li>
+                        <li class="cf">
+                            <span class="fl">6</span>
+                            <p class="overs fl">《党章》总纲指出，大力发展教育、科学、文化事业，推动中华优秀传统文化（创造性）转化、（创新性）发展，继承革命文化，发展社会主义先进文化，提高国家文化软实力。</p>
+                            <a>162186次</a>
+                        </li>
+                        <li class="cf">
+                            <span class="w_spacile fl">7</span>
+                            <p class="overs fl">党必须加强对工会、共产主义青年团、妇女联合会等群团组织的领导，使它们保持和增强（政治性、先进性、群众性），充分发挥作用。</p>
+                            <a>198804次</a>
+                        </li>
+                        <li class="cf">
+                            <span class="fl">8</span>
+                            <p class="overs fl">只有社会主义才能救中国，只有（改革开放）才能发展中国、发展社会主义、发展马克思主义。</p>
+                            <a>127368次</a>
+                        </li>
+                        <li class="cf">
+                            <span class="fl">9</span>
+                            <p class="overs fl">学习宣传贯彻党的十九大精神是全党全国当前和今后一个时期的首要政治任务。要按照（学懂、弄通、做实）的要求，学全学准、学深学透，做到理论贯通、实践贯通、部署贯通，形成贯彻十九大精神系统化的新思路、新布局、新举措、新成效。</p>
+                            <a>147778次</a>
+                        </li>
+                        <li class="cf">
+                            <span class="fl">10</span>
+                            <p class="overs fl">推进伟大工程，要结合（伟大斗争、伟大事业、伟大梦想）的实践来进行，确保党在世界形势深刻变化的历史进程中始终走在时代前列，在应对国内外各种风险和考验的历史进程中始终成为全国人民的主心骨，在坚持和发展中国特色社会主义的历史进程中始终成为坚强领导核心。</p>
+                            <a>285136次</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w_smbg" style=" position: relative;">
+                <div class="w_title cler">
+                    <h2 class="fl xc">参与线上竞赛党员年龄对比分析</h2>
+                </div>
+                <div id="compare_age" class="navbars" style="width:430px;height:230px;margin-left: 20px"></div>
+            </div>
+        </div>
+        <div class="fl lcen">
+            <div class="lecet">
+                <div id="lect">
+                    <div id="score" style="width: 100%;height: 100%;"></div>
+                </div>
+            </div>
+            <div class="w_smbg" style=" position: relative;margin-right: 7px;">
+                <div class="w_title cler">
+                    <h2 class="fl xc">参与线上竞赛党员学历对比分析</h2>
+                </div>
+                <div id="compare_edu" class="navbars" style="width:430px;height:230px;margin-left: 20px"></div>
+            </div>
+            <div class="w_smbg" style=" position: relative;">
+                <div class="w_title cler">
+                    <h2 class="fl xc">参与线上竞赛党员岗位对比分析</h2>
+                </div>
+                <div id="compare_job" class="navbars" style="width:430px;height:230px;margin-left: 20px"></div>
+            </div>
+        </div>
+        <div class="fl lcen">
+            <div class="cler j_news" style="margin-bottom: 10px;">
+                <div class="w_smbg scrollbox" style="margin-bottom:0;margin-right: 10px">
+                    <div class="w_title cler">
+                        <h2 class="fl">党员答题用时TOP10</h2>
+                    </div>
+                    <div id="scrollDiv5" class="con_list">
+                        <ul class="w_newsRanking" id="f_sifgzxw">
+                            <li class="cf">
+                                <span class="fl">1</span>
+                                <p class="overs fl">于*洋</p>
+                                <a>24.68秒</a>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">2</span>
+                                <p class="overs fl">邵*辉</p>
+                                <a>26.23秒</a>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">3</span>
+                                <p class="overs fl">姚*妍</p>
+                                <a>26.25秒</a>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">4</span>
+                                <p class="overs fl">任*刚</p>
+                                <a>26.80秒</a>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">5</span>
+                                <p class="overs fl">张*信</p>
+                                <a>27.16秒</a>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">6</span>
+                                <p class="overs fl">杨*龙</p>
+                                <a>27.27秒</a>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">7</span>
+                                <p class="overs fl">孙*武</p>
+                                <a>27.61秒</a>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">8</span>
+                                <p class="overs fl">王*敏</p>
+                                <a>27.62秒</a>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">9</span>
+                                <p class="overs fl">宗*祥</p>
+                                <a>27.64秒</a>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">10</span>
+                                <p class="overs fl">张*伟</p>
+                                <a>27.66秒</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- <div id="time"></div> -->
+                    <!-- <div style="color: #fff;font-size: 16px;text-indent: 2em; margin-top: 20px;font-weight: bold;" >
+                        <span>传播概述</span>
+                    </div>
+                     -->
+                </div>
+                <div class="w_smbg" style=" position: relative;">
+                        <div class="w_title cler">
+                            <h2 class="fl xc">传播概述</h2>
+                        </div>
+                        <div style="margin-top: 45px;">
+                            <style>
+                                .circle-con {
+                                    display: flex;
+                                    justify-content: space-around;
+                                    margin-top: 15px;
+                                }
+                                .circle-con .circle {
+                                    display: flex;
+                                    align-items: center;
+                                    width: 120px;
+                                    height: 120px;
+                                    border-radius: 50%;
+                                    border: 2px solid #0053b9;
+                                    background: #316cb5;
+                                    font-size: 14px;
+                                    color: #fff;
+                                    line-height: 20px;
+                                    font-weight: bold;
+                                    text-align: center;
+                                }
+                                .circle-con .circle:hover {
+                                    background: #316cb5;
+                                    border: 2px solid #0053b9;
+                                    width: 125px;
+                                    height: 125px; 
+                                }
+                                .circle-txt {
+                                    text-align: center;
+                                    display: block;
+                                    width: 100%;
+                                }
+                            </style>
+                            <div class="circle-con" style="width: 100%;">
+                                <div class="circle">
+                                    <span class="circle-txt">媒体传播<br>225天</span> 
+                                </div>
+                                <div class="circle">
+                                    <span class="circle-txt">传播媒体<br>215家</span>
+                                </div>
+                                <div class="circle">
+                                    <span class="circle-txt">媒体传播数量<br>455篇</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="cler j_news" style="margin-bottom: 10px;">
+                <div class="w_smbg" style=" position: relative;margin-right: 10px;">
+                    <div class="w_title cler">
+                        <h2 class="fl xc">媒介传播的占比分布</h2>
+                    </div>
+                    <div id="spreadPer" style="height: 100%;"></div>
+                </div>
+                <div class="w_smbg scrollbox nation_rank" style="margin-bottom:0;">
+                    <div class="w_title cler">
+                        <h2 class="fl">媒体传播覆盖TOP10</h2>
+                        <ul class="fl cler w_tipbar1" style="margin-left:75px;">
+                            <li>全国媒体</li>
+                            <li>省内媒体</li>
+                        </ul>
+                    </div>
+                    <div id="scrollDiv3" class="wangchaos">
+                        <ul class="w_newsRanking" id="f_sifgzxw">
+                            <li class="cf">
+                                <span class="fl">1</span>
+                                <p class="overs fl"> 山东省 </p>
+                                <a>34.14%</a>
+                                <a>198篇</a>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">2</span>
+                                <p class="overs fl">云南省</p>
+                                <a>7.93%</a>
+                                <a>46篇</a>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">3</span>
+                                <p class="overs fl">全国性</p>
+                                <a>7.07%</a>
+                                <a>41篇</a>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">4</span>
+                                <p class="overs fl">辽宁省</p>
+                                <a>2.59%</a>
+                                <a>15篇</a>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">5</span>
+                                <p class="overs fl">北京市</p>
+                                <a>1.03%</a>
+                                <a>6篇</a>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">6</span>
+                                <p class="overs fl">陕西省</p>
+                                <a>0.86%</a>
+                                <a>5篇</a>
+                            </li>
+                            <li class="cf">
+                                <span class="w_spacile fl">7</span>
+                                <p class="overs fl">浙江省</p>
+                                <a> 0.69%</a>
+                                <a>4篇</a>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">8</span>
+                                <p class="overs fl">江苏省</p>
+                                <a>0.52%</a>
+                                <a>3篇</a>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">9</span>
+                                <p class="overs fl">上海市</p>
+                                <a>0.52%</a>
+                                <a>3篇</a>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">10</span>
+                                <p class="overs fl">重庆市</p>
+                                <a>0.34%</a>
+                                <a>2篇</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="scrollDiv4" class="wangchaos  w_hide">
+                        <ul class="w_newsRanking" id="f_sifgzxw">
+                            <li class="cf">
+                                <span class="fl">1</span>
+                                <p class="overs fl"> 济南市 </p>
+                                <a>43.94%</a>
+                                <a>87篇</a>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">2</span>
+                                <p class="overs fl">德州市</p>
+                                <a>32.83%</a>
+                                <a>65篇</a>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">3</span>
+                                <p class="overs fl">枣庄市</p>
+                                <a>23.74%</a>
+                                <a>47篇</a>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">4</span>
+                                <p class="overs fl">淄博市</p>
+                                <a>23.23%</a>
+                                <a>46篇</a>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">5</span>
+                                <p class="overs fl">威海市</p>
+                                <a>22.22%</a>
+                                <a>44篇</a>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">6</span>
+                                <p class="overs fl">泰安市</p>
+                                <a>21.72%</a>
+                                <a>43篇</a>
+                            </li>
+                            <li class="cf">
+                                <span class="w_spacile fl">7</span>
+                                <p class="overs fl">烟台市</p>
+                                <a> 6.57%</a>
+                                <a>13篇</a>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">8</span>
+                                <p class="overs fl">济宁市</p>
+                                <a>5.05%</a>
+                                <a>10篇</a>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">9</span>
+                                <p class="overs fl">潍坊市</p>
+                                <a>4.04%</a>
+                                <a>8篇</a>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">10</span>
+                                <p class="overs fl">聊城市</p>
+                                <a>3.54%</a>
+                                <a>7篇</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="cler j_news">
+                <div class="w_smbg scrollbox" style="margin-bottom:0;margin-right: 10px">
+                    <div class="w_title cler">
+                        <h2 class="fl">关联热点词汇</h2>
+                    </div>
+                    <div id="scrollDiv2" class="con_list">
+                        <ul class="w_newsRanking" id="f_sifgzxw">
+                            <li class="cf">
+                                <span class="fl">1</span>
+                                <p class="overs fl">作专题报告</p>
+                                <a>120</a>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">2</span>
+                                <p class="overs fl">山东省党员干部</p>
+                                <a>120</a>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">3</span>
+                                <p class="overs fl">运用互联网</p>
+                                <a>120</a>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">4</span>
+                                <p class="overs fl">信息委员会</p>
+                                <a>120</a>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">5</span>
+                                <p class="overs fl">党的建设方面</p>
+                                <a>120</a>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">6</span>
+                                <p class="overs fl">临沂大学校长</p>
+                                <a>120</a>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">7</span>
+                                <p class="overs fl">委员会党组书记</p>
+                                <a>120</a>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">8</span>
+                                <p class="overs fl">党组书记孙志恒</p>
+                                <a>120</a>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">9</span>
+                                <p class="overs fl">党的建设组织</p>
+                                <a>120</a>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">10</span>
+                                <p class="overs fl">中国联通山东省分公司</p>
+                                <a>120</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="w_smbg scrollbox" style="margin-bottom:0;">
+                    <div class="w_title cler">
+                        <h2 class="fl">线上竞赛热点新闻</h2>
+                    </div>
+                    <div id="scrollDiv1">
+                        <ul class="w_newsRanking" id="f_sifgzxw">
+                            <li class="cf">
+                                <span class="fl">1</span>
+                                <p class="overs fl">山东灯塔党建在线官网：党的十九大精神学习竞赛大体入口（0 闽南网 2017-12-21 09：20）</p>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">2</span>
+                                <p class="overs fl">山东济南回民中学“灯塔-党建在线”知识竞赛再掀热潮（0 中国高校之窗 2018-05-16 09：09）</p>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">3</span>
+                                <p class="overs fl">莱西市水集街道召开“灯塔党建在线”学习竞赛动员培训会议（0 大众网 2018-05-10 17：42）</p>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">4</span>
+                                <p class="overs fl">【公交】济南公交：加强党风廉政建设 当好百姓专职司机（0 新华社（山东）2018-06-06 12：00）</p>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">5</span>
+                                <p class="overs fl">昨夜雨后今日“泉城蓝”再现！有一片云酷似山东板块图（0 齐鲁网 2018-06-28 16：35）</p>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">6</span>
+                                <p class="overs fl">国翠小学积极开展“灯塔-党建在线”学习竞赛活动（0 胶东在线 2017-12-18 09：02）</p>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">7</span>
+                                <p class="overs fl">济南九中再次部署“灯塔--党建在线”学习竞赛工作（0 中青在线 2018-01-15 17：45）</p>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">8</span>
+                                <p class="overs fl">《人民日报》点赞山东搭建“灯塔--党建在线”网络平台（0 济南电视台 2018-05-08 08：15）</p>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">9</span>
+                                <p class="overs fl">化学化工学院召开党内表彰大会（0 中国海洋大学 2018-06-28 10：45）</p>
+                            </li>
+                            <li class="cf">
+                                <span class="fl">10</span>
+                                <p class="overs fl">张鲁镇：“灯塔党建在线”知识竞赛（0 莘县新闻网 2018-04-12 16：57）</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.countup.min.js"></script>
+    <script>
+        $('.w_visit').countUp();
+    </script>
+    <script type="text/javascript" src="js/w_all.js"></script>
+    <script src="https://cdn.bootcss.com/echarts/4.0.4/echarts-en.min.js"></script>
+    <script src="js/jq_scroll.js"></script>
+    <script src="js/leftTime.js"></script>
+    <!-- <script src="js/j_javascript.js"></script> -->
+    <script src="js/index4.js"></script>
+    <!-- <script src="js/jinan.js"></script> -->
+</body>
+
+</html>

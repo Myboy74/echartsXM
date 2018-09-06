@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>第一屏</title>
+		<link rel="stylesheet" href="css/rest.css">
+		<link rel="stylesheet" type="text/css" href="css/w_css.css" />
+		<!--<script src="js/w_js/china.json"></script>-->
+		<style>
+			body {
+				overflow: hidden;
+			}
+			
+			#lbox {
+				width: 3840px;
+				height: 810px;
+				/*overflow:hidden;*/
+			}
+			
+			.fl {
+				float: left;
+			}
+			
+			.lebox {
+				width: 480px;
+				height: 810px;
+			}
+			
+			.lcen {
+				width: 960px;
+				height: 810px;
+			}
+			
+			.lecet {
+				width: 960px;
+				height: 530px;
+				background: url(img/lcen.png) 0 0 no-repeat;
+				overflow: hidden;
+				position: relative;
+			}
+			
+			.leceb {
+				width: 920px;
+				height: 270px;
+				margin: 0 auto;
+			}
+			
+			.cler {
+				overflow: hidden;
+			}
+			
+			.lrt {
+				width: 455px;
+				height: 270px;
+			}
+			
+			#lect,
+			#lects,
+			#lect22,
+			#lect33 {
+				width: 930px;
+				height: 508px;
+				margin: 10px auto 0;
+			}
+			
+			#lkait {
+				position: absolute;
+				right: 60px;
+				top: 10px;
+			}
+			
+			.lkt {
+				color: rgb(255, 255, 255);
+				font-family: '黑体';
+				font-size: 18px;
+			}
+			
+			.lkts {
+				color: #31B0E5;
+				font-size: 50px;
+				/*font-family: '黑体';*/
+			}
+			
+			.w_hui {
+				position: absolute;
+				top: 5px;
+				left: 10px;
+				color: rgba(255, 255, 255, 0.7)!important;
+			}
+			
+			.lecets {
+				width: 960px;
+				height: 540px;
+			}
+			
+			.rcens {
+				background: url(img/lrih.png) no-repeat;
+			}
+			
+			.data {
+				margin: 10px 0 0 80px;
+			}
+			
+			.data-box,
+			.date-s {
+				color: #307ec2 !important;
+				font-size: 22px;
+				text-shadow: 0 0 10px #265fac;
+			}
+			
+			.date-tiem,
+			.ltimes {
+				font-size: 35px;
+			}
+			
+			.lwz {
+				font-size: 18px;
+				color: rgb(255, 255, 255);
+				margin-top: 10px;
+				font-family: '黑体';
+				text-align: center;
+			}
+			
+			.liht {
+				position: relative;
+			}
+			
+			.lws {
+				width: 400px;
+				margin: 31px auto 20px;
+			}
+			
+			.s1,
+			.s2,
+			.s3,
+			.s4,
+			.s5,
+			.s6 {
+				position: absolute;
+				color: #31B0E5;
+				font-size: 16px;
+			}
+			
+			.s1,
+			.s2,
+			.s3 {
+				top: 89px;
+			}
+			
+			.s1 {
+				left: 76px;
+			}
+			
+			.s2 {
+				left: 210px;
+			}
+			
+			.s3 {
+				right: 75px;
+			}
+			
+			.s4 {
+				left: 66px;
+				font-size: 20px;
+			}
+			
+			.s5 {
+				left: 212px;
+				font-size: 20px;
+			}
+			
+			.s6 {
+				right: 70px;
+				font-size: 20px;
+			}
+			
+			.fr {
+				float: right;
+			}
+			
+			.w_bt {
+				width: 951px;
+				height: 261px;
+				background: url(img/切图-06.png) no-repeat center center;
+				background-size: 100% 100%;
+			}
+			
+			.cler {
+				overflow: hidden;
+			}
+			
+			#return {
+				color: #fff;
+				display: inline-block;
+				/* position: absolute; */
+				float: right;
+				margin-right: 45px;
+				margin-top: 450px;
+				right: 0;
+				top: 40px;
+				cursor: pointer;
+				display: none
+			}
+			
+			#w_mainer canvas,
+			#w_mainer11 canvas {
+				width: 240px !important;
+				height: 220px !important;
+				top: 20px !important;
+				left: 13px !important;
+			}
+			
+			.progre {
+				line-height: 6px;
+				margin-bottom: 5px;
+			}
+			
+			.progre span {
+				margin-left: 10px;
+			}
+			
+			.jinandata {
+				display: none;
+			}
+			
+			.overs {
+				width: 325px;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				/*最多显示几行*/
+				/*-webkit-line-clamp:3;*/
+			}
+			
+			.u_bt {
+				position: relative;
+			}
+			
+			.ezb div {
+				position: absolute;
+				cursor: pointer;
+				height: 136px;
+				width: 11px;
+				top: 60px;
+			}
+			
+			.ezb div:nth-child(1) {
+				left: 114px;
+			}
+			
+			.ezb div:nth-child(2) {
+				left: 147px;
+			}
+			
+			.ezb div:nth-child(3) {
+				left: 180px;
+			}
+			
+			.ezb div:nth-child(4) {
+				left: 213px;
+			}
+			
+			.ezb div:nth-child(5) {
+				left: 246px;
+			}
+			
+			.ezb div:nth-child(6) {
+				left: 279px;
+			}
+			
+			.ezb div:nth-child(7) {
+				left: 312px;
+			}
+			
+			.ezb div:nth-child(8) {
+				left: 345px;
+			}
+			
+			.ezb div:nth-child(9) {
+				left: 378px;
+			}
+			
+			.ezb div:nth-child(10) {
+				left: 411px;
+			}
+			
+			.ezb div:nth-child(11) {
+				left: 444px;
+			}
+			
+			.ezb div:nth-child(12) {
+				left: 477px;
+			}
+			
+			.ezb div:nth-child(13) {
+				left: 510px;
+			}
+			
+			.ezb div:nth-child(14) {
+				left: 543px;
+			}
+			
+			.ezb div:nth-child(15) {
+				left: 576px;
+			}
+			
+			.ezb div:nth-child(16) {
+				left: 609px;
+			}
+			
+			.ezb div:nth-child(17) {
+				left: 642px;
+			}
+			
+			.ezb div:nth-child(18) {
+				left: 675px;
+			}
+			
+			.ezb div:nth-child(19) {
+				left: 708px;
+			}
+			
+			.ezb div:nth-child(20) {
+				left: 741px;
+			}
+			
+			.ezb div:nth-child(21) {
+				left: 774px;
+			}
+			
+			.ezb div:nth-child(22) {
+				left: 807px;
+			}
+			
+			.ezb div:nth-child(23) {
+				left: 840px;
+			}
+			
+			.u_fanhui {
+				cursor: pointer;
+				display: none;
+				right: 55px;
+				top: 40px;
+				position: absolute;
+				color: #ffffff;
+			}
+			
+			.w_smbg h2.xc {
+				margin: 20px 30px 0px 30px;
+			}
+			
+			.u_bt h2.xc {
+				margin: 20px 30px 0px 30px;
+				color: rgba(255, 255, 255, 0.7);
+			}
+			
+			#lfbu {
+				width: 930px;
+				height: 508px;
+				margin: 10px auto 0;
+			}
+			
+			.w_fanhui {
+				position: absolute;
+				top: 40px;
+				right: 40px;
+				color: #ccc;
+				padding: 5px 10px;
+				border: 1px solide #CCCCCC;
+				border-radius: 15px;
+				background: #1C93D0;
+				display: none;
+				cursor: pointer;
+			}
+			
+			div.table-list {
+				padding-top: 6px;
+				padding-right: 1px;
+				border-bottom: 0;
+				color: #fff;
+			}
+			
+			.overview-card-title-container {
+				padding: 10px 25px 20px;
+			}
+			
+			tbody {
+				color: rgba(255, 255, 255, 0.8)
+			}
+			
+			div.table-list table.list {
+				border-collapse: collapse;
+				width: 98%;
+				font-size: 12px;
+			}
+			
+			div.table-list table.list tr.title {
+				border-bottom: none;
+				/*   height: 50px;*/
+				line-height: 50px;
+			}
+			
+			div.table-list table.list th {
+				height: 16px;
+				line-height: 16px;
+				padding: 13px 20px 0 10px;
+				text-align: center;
+				color: rgba(255, 255, 255, 0.8);
+				white-space: nowrap;
+				font-weight: 400;
+			}
+			
+			div.table-list table.list tr td.normal {
+				padding-left: 20px;
+				width: 55px;
+				text-align: center;
+				color: rgba(255, 255, 255, 0.8);
+			}
+			
+			div.table-list table.list tr td {
+				padding: 25px 20px 6px 5px;
+				height: 17px;
+				line-height: 17px;
+				white-space: nowrap;
+				text-align: center;
+			}
+			
+			.arrow-up {
+				background-repeat: no-repeat;
+				background-position: 80% 27px;
+				background-image: url(arrow-up.png);
+			}
+			
+			.w_visits h4 {
+				color: rgba(255, 255, 255, 0.7);
+				font-weight: 400;
+				font-size: 12px;
+				height: 20px;
+				line-height: 18px;
+				margin-left: 20px;
+			}
+			
+			.progre {
+				line-height: 12px;
+			}
+			
+			#zinx {
+				z-index: 300;
+			}
+			
+			.w_tipbar1s li,
+			.w_tipbar_w li,
+			.l_tipbar_w li,
+			 {
+				color: rgba(255, 255, 255, 0.5);
+				background: rgba(255, 255, 255, 0.15);
+				cursor: pointer;
+				float: left;
+				display: inline-block;
+				border-radius: 3px;
+				font-size: 14px;
+				padding: 3px 7px;
+				margin-right: 10px;
+				margin-top: 10px;
+			}
+			
+			.active_bars {
+				color: rgba(255, 255, 255, 0.30) !important;
+			}
+			
+			.hide {
+				display: none;
+			}
+			
+			#lbox {
+				width: 3840px;
+				height: 810px;
+				background: url(img/bgs.png) 0 0 no-repeat;
+			}
+			
+			.w_wai {
+				position: relative;
+			}
+			
+			.w_kuang {
+				position: absolute;
+				top: 0;
+				right: 80px;
+				width: 200px;
+				height: 200px;
+				background: rgba(40, 40, 40, 0.7);
+				border-radius: 8px;
+				padding: 15px;
+				display: none;
+			}
+			
+			.w_kuang li {
+				float: left;
+				color: #FFFFFF;
+				font-size: 14px;
+				width: 240px;
+				line-height: 25px;
+			}
+			
+			.f_fuwu img {
+				    width: 85%;
+    				height: 43%;
+    				position: absolute;
+   					top: 2%;
+    				right: 4%;
+			}
+			
+			.f_fuwu p.f_blocks {
+				width: 35px;
+				height: 75px;
+				position: absolute;
+				top: 135px;
+				left: 180px;
+				transform: rotate(-72deg);
+			}
+			
+			.f_fuwu p.f_blo {
+				width: 55px;
+    			height: 145px;
+    			position: absolute;
+    			top: 130px;
+    			left: 300px;
+				transform: rotate(-72deg);
+			}
+			
+			.f_srverUsea {
+				display: none;
+			}
+			
+			.f_clock {
+				width: 932px;
+				height: 217px;
+				margin-top: 40px;
+				margin-left: 15px;
+			}
+			
+			.w_tipbar {
+				position: absolute;
+				right: 20px;
+				z-index: 999;
+			}
+			
+			.f_ul {
+				margin-top: 10px;
+			}
+			
+			.w_tipbar li.f_li,.w_tipbar_l .f_li{
+				background: #29ABE2;
+				color: rgba(255,255,255,0.7)!important;
+			}
+			
+			.dv {
+				width: 100%;
+				height: 100%;
+			}
+			.navbar{
+				margin: auto;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="lbox cler" style="width:3840px;">
+			<!--省-->
+			<div class="province" style="overflow: hidden;">
+				<!--<div class="fl lcen">
+					<div class=" w_bt u_bt" style="float:left; margin-bottom: 10px;">
+						<div id="l24zx" style="width: 98%;height: 98%;">
+						</div>
+						
+					</div>
+					<div class="w_bt u_bt" style="float:left; margin-bottom: 10px;">
+                		<h2 class="fl xc">管理员年龄/学历/工作岗位分布(单位:人)</h2>
+						<div style="clear: both;" class="w_wai">
+							
+						
+						<div id="w_age2"  style="width:330px;height:230px;float: left;"></div>
+						<div id="w_xueli"  style="width:300px;height:230px;float: left;z-index: 300;"></div>
+						<div id="w_work"  style="width:320px;height:230px;float: left;"></div>
+						<ul class="w_kuang" id="dsk">
+							<li>其它：287  (0.09%)</li>
+							<li>小学：2384  (0.83%)</li>
+							<li>初中：34982  (11.82%)</li>
+							<li>普通高中：38389  (12.97%)</li>
+							<li>中等职业教育： 29712 (10.03%)</li>
+							<li>本专科教育：170532  (57.62%)</li>
+							<li>研究生教育：19654  (6.64%)</li>
+						</ul>
+						</div>
+					</div>
+					<div class="w_bt u_bt" style="float:left; margin-bottom: 10px;">
+						<div id="w_main" style="width: 98%;height:98%; margin: 5px auto;">
+						</div>
+						<div style="display: none;">
+							<div id="w_maintt" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt2" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt3" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt4" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt5" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt6" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt7" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt8" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt9" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt10" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt11" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt12" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt13" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt14" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt15" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt16" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt17" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt18" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt19" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt20" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt21" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt22" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt23" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+
+						</div>
+					</div>
+				</div>-->
+				<div class="fl lcen">
+					<div class="w_smbg" style="float:left;margin-right: 7px;display: none;">
+						<div class="table-list" id="IndexPreview">
+							<div class="overview-card-title-container"><label class="overview-card-title" style="font-size: 18px;color:rgba(255,255,255,0.7); font-weight: bold; font-family: '黑体';">今日访问量</label></div>
+							<table cellspacing="0" cellpadding="0" class="list" id="IndexPreviewTableList">
+								<tbody>
+									<tr class="title">
+										<th></th>
+										<th style=" width: 90px;">浏览量(PV)</th>
+										<th style="width: 94px;">访客数(UV)</th>
+										<th>IP数 </th>
+
+									</tr>
+									<tr class="highlight">
+										<td class="normal">今日</td>
+
+										<td class="" style="font-weight: 700;">905,047</td>
+										<td class="" style="font-weight: 700;">103,276</td>
+										<td class="" style="font-weight: 700;">66,763</td>
+
+									</tr>
+									<tr>
+										<td class="normal">昨日</td>
+										<td class="" style="font-weight: 700;">1,495,524</td>
+										<td class="" style="font-weight: 700;">147,124</td>
+										<td class="" style="font-weight: 700;">97,194</td>
+
+									</tr>
+									<tr>
+										<td class="normal">预计今日</td>
+										<td class="arrow-up" style="font-weight: 700;">1,503,267</td>
+										<td class="arrow-up" style="font-weight: 700;">146,585</td>
+										<td class="arrow-up" style="font-weight: 700;">97,038</td>
+
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<!--实时在线情况-->
+					<div class="w_smbg" style="margin-top:5px;margin-right:7px;float: left;">
+						<div class="w_title cler">
+							<h2 class="fl">实时在线情况<span>170612
+人</span></h2>
+							<a class="fr time"><img src="img/timt.png"></a>
+						</div>
+						<div class="progress_Bar">
+							<div class="progress cler"><span>&nbsp;&nbsp;APP端</span>
+								<div class="endStyle">
+									<div class="progressbar progressbar3"></div>
+								</div><span>107356
+人</span></div>
+							<div class="progress cler"><span>&nbsp;&nbsp;&nbsp;&nbsp;WEB端</span>
+								<div class="endStyle">
+									<div class="progressbar progressbar1"></div>
+								</div><span>63256
+人</span></div>
+						</div>
+						<div class="hr"></div>
+						<div class="w_title cler">
+							<h2 class="fl">历史在线峰值<span>1920867人</span><span style="color:#e9573f">2017/12/12 10:32:07</span></h2>
+							<a class="fr time"></a>
+						</div>
+						<div class="progress_Bar">
+							<div class="progress cler"><span>&nbsp;&nbsp;APP端</span>
+								<div class="endStyle">
+									<div class="progressbar progressbar3"></div>
+								</div><span>1440651人</span></div>
+							<div class="progress cler"><span>&nbsp;&nbsp;&nbsp;&nbsp;WEB端</span>
+								<div class="endStyle">
+									<div class="progressbar progressbar1"></div>
+								</div><span>480216人</span></div>
+						</div>
+					</div>
+					<!--“灯塔-党建在线”访问情况总数-->
+					<div class="w_smbg" style="margin-top:5px;float: left;">
+						<div class="w_title cler">
+							<h2 class="fl">“灯塔-党建在线”访问情况</h2>
+						</div>
+						<h4 style="color:#fff;padding-left:100px;margin-top:35px;font-weight:normal;">累积访问人次</h4>
+						<div class="w_visit" id="f_sifzxfw">
+							1,575,875,669
+						</div>
+					</div>
+					<div class="w_smbg" style="margin-top:5px;float: left;margin-right: 10px;">
+						<div class="w_title cler">
+							<h2 class="fl xc" style="color: rgba(255,255,255,0.8);">实时在线党员年龄/性别/学历</h2>
+							<ul class="fl cler w_tipbar_l" style="margin-left:5px;margin-top: 15px;">
+								<li class="f_li">年龄</li>
+								<li class="">性别</li>
+								<li class="">学历</li>
+							</ul>
+						</div>
+						<div id="l_nian" class="navbar" style="width: 400px;height: 230px;position: relative;">
+
+						</div>
+						<div id="l_nian2" class="navbar w_hide" style="width: 400px;height: 230px;position: relative;">
+
+						</div>
+						<div id="l_nian3" class="navbar w_hide" style="width: 400px;height: 230px;position: relative;">
+
+						</div>
+					</div>
+					<div class="w_smbg" style="margin-top:5px;float: left;">
+						<div class="w_title cler">
+							<h2 class="fl xc" style="color:rgba(255,255,255,0.8)">三端访问人次分布</h2>
+						</div>
+						<div id="j_top" style="width:460px;height:230px; margin-top: -20px;"></div>
+					</div>
+					<!--新闻关注-->
+					<div class="w_smbg" style="float:left;margin-top:5px;margin-right: 10px;">
+						<div class="w_title cler" style="position: relative;">
+							<h2 class="fl" id="lkls" style=" color: rgba(255,255,255,0.7);">新闻关注TOP10</h2>
+							<!--<ul class="fl cler w_tipbar1"  style="margin-left:75px; position: absolute;right: 25px;">
+								<li class="active_bar">新闻关注</li>
+								<li>页面访问</li>
+							</ul>-->
+						</div>
+						<div id="scrollDiv2" class="wangchao">
+							<ul class="w_newsRanking" id="f_sifgzzc">
+								<li>
+									<span>1</span>习近平在中国共产党第十九次全国代表大会上的报告
+									<a>458530</a>
+								</li>
+								<li>
+									<span>2</span>习近平：以永远在路上的执着把从严治党引向深入
+									<a>411288</a>
+								</li>
+								<li>
+									<span>3</span>“灯塔-党建在线”党的十九大精神学习竞赛开始啦
+									<a>389342
+									</a>
+								</li>
+								<li>
+									<span>4</span>中共中央印发《深化党和国家机构改革方案》
+									<a>366696
+									</a>
+								</li>
+								<li>
+									<span>5</span>纪念马克思诞辰200周年大会举行 习近平发表...
+									<a>352396
+									</a>
+								</li>
+								<li>
+									<span>6</span>习近平在山东考察时强调 切实把新发展理念落到...
+									<a>346996
+									</a>
+								</li>
+								<li>
+									<span>7</span>山东省全面开展新旧动能转换 聚焦聚力高质量发展
+									<a>339815
+									</a>
+								</li>
+								<li>
+									<span>8</span>上海合作组织青岛峰会举行
+									<a>334125
+									</a>
+								</li>
+								<li>
+									<span>9</span>刘家义：深入贯彻落实十九大精神 全力推动乡村振兴
+									<a>325897
+									</a>
+								</li>
+								<li>
+									<span class="w_spacile">10</span>赴江苏浙江广东学习交流会举行
+									<a>314751
+									</a>
+								</li>
+
+							</ul>
+						</div>
+						<div id="scrollDiv1" class="wangchao  w_hide" style="float:left;">
+							<div class="w_title cler" style="position: relative;">
+								<ol style="position: absolute;width: 120px;z-index: 10000;font-size: 12px;left: 48px;color:#fff;">
+									<li style="position: absolute;top: 10px;">党建和组织工作宣传网</li>
+									<li style="position: absolute;top: 60px;">基层党组织建设网</li>
+									<li style="position: absolute;top: 110px;">党员队伍建设网</li>
+									<li style="position: absolute;top: 160px;">干部工作网</li>
+								</ol>
+								<div class="w_visits" style="height: 215px;position: relative;" id="f_siffwfb">
+									<!--<h4>党建和组织工作宣传网</h4>
+								<div class="progre cler">
+									<div class="w_lineOne w_line"></div>
+									<span> 11662593</span>
+								</div>
+
+								<h4>基层党组织建设网</h4>
+								<div class="progre cler">
+									<div class="w_lineTwo w_line"></div>
+									<span>4037294</span>
+								</div>
+
+								<h4>党员队伍建设网</h4>
+								<div class="progre cler">
+									<div class="w_lineFor w_line"></div>
+									<span>2411380</span>
+								</div>
+
+								<h4>干部工作网</h4>
+								<div class="progre cler">
+									<div class="w_lineFive w_line"></div>
+									<span>1822421</span>
+								</div>
+
+								<h4>第一书记</h4>
+								<div class="progre cler">
+									<div class="w_lineSix w_line"></div>
+									<span>1005705</span>
+								</div>-->
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!--页面访问-->
+					<div class="w_smbg scrollbox" style="margin-bottom:0;margin-top:5px; float: left;">
+						<div>
+							<h2 id="lkls" style=" color: rgba(255,255,255,0.7);">页面访问人次TOP5</h2>
+						</div>
+						<div id="scrollDiv1" class="wangchao">
+							<div class="w_title cler">
+
+								<div class="w_visits" id="f_siffwfb">
+									<h4>党建和组织工作宣传网</h4>
+									<div class="progre cler">
+										<div class="w_lineOne w_line"></div>
+										<span> 11662593</span>
+									</div>
+
+									<h4>基层党组织建设网</h4>
+									<div class="progre cler">
+										<div class="w_lineTwo w_line"></div>
+										<span>4037294</span>
+									</div>
+
+									<h4>党员队伍建设网</h4>
+									<div class="progre cler">
+										<div class="w_lineFor w_line"></div>
+										<span>2411380</span>
+									</div>
+
+									<h4>干部工作网</h4>
+									<div class="progre cler">
+										<div class="w_lineFive w_line"></div>
+										<span>1822421</span>
+									</div>
+
+									<h4>第一书记</h4>
+									<div class="progre cler">
+										<div class="w_lineSix w_line"></div>
+										<span>1005705</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="w_bt" style="float:left; margin-bottom: 10px;position: relative;display: none;">
+						<ul class="fl cler w_tipbar1s" id="zinx" style="margin-left:75px; position: absolute; right: 25px;">
+							<li>访问流量</li>
+							<li>七天访问量</li>
+						</ul>
+						<div id="zxts">
+							<div class="w_bt u_bt" id="f_sszx">
+							</div>
+							<div class="w_bt u_bt hide" id="lqs">
+							</div>
+						</div>
+
+					</div>
+					<div class="w_bt" style="float:left; margin-bottom: 10px;display: none;">
+						<div class="w_bt u_bt" id="" style="float:left; margin-bottom: 15px;">
+							<h2 class="fl xc">访客人员学历/年龄/工作岗位  （单位:人）</h2>
+							<div style="clear: both;">
+
+								<div id="w_xuelis" style="width:300px;height:230px;float: left;"></div>
+								<div id="w_age2s" style="width:300px;height:230px;float: left;"></div>
+								<div id="w_works" style="width:340px;height:230px;float: left;"></div>
+							</div>
+						</div>
+					</div>
+					<div class="lebox fl " style="display: none;">
+						<div class="w_smbg" style="margin-top:5px;" id="f_sszx">
+							<div class="w_title cler">
+								<h2 class="fl">实时在线情况<span>170612人</span></h2>
+								<a class="fr time"><img src="img/timt.png"></a>
+							</div>
+							<div class="progress_Bar">
+								<div class="progress cler"><span>&nbsp;&nbsp;APP端</span>
+									<div class="endStyle">
+										<div class="progressbar progressbar3"></div>
+									</div><span>107356人</span></div>
+								<div class="progress cler"><span>&nbsp;&nbsp;&nbsp;&nbsp;WEB端</span>
+									<div class="endStyle">
+										<div class="progressbar progressbar1"></div>
+									</div><span>63256人</span></div>
+							</div>
+							<div class="hr"></div>
+							<div class="w_title cler">
+								<h2 class="fl">历史在线峰值<span>1920867人 2017年12月12日 10:32:07</span></h2>
+								<a class="fr time"></a>
+							</div>
+							<div class="progress_Bar">
+								<div class="progress cler"><span>&nbsp;&nbsp;APP端</span>
+									<div class="endStyle">
+										<div class="progressbar progressbar3"></div>
+									</div><span>1440651人</span></div>
+								<div class="progress cler"><span>&nbsp;&nbsp;&nbsp;&nbsp;WEB端</span>
+									<div class="endStyle">
+										<div class="progressbar progressbar1"></div>
+									</div><span>480216人</span></div>
+							</div>
+						</div>
+						<div class="w_smbg" style=" position: relative;">
+							<div class="w_title cler">
+								<h2 class="fl xc">实时在线党员年龄/性别/学历</h2>
+								<ul class="fl cler" style="margin-left:5px;">
+									<li class="">年龄</li>
+									<li class="active_bar">性别</li>
+									<li class="">学历</li>
+								</ul>
+
+							</div>
+							<div id="lsex2" class="navbar" style="width: 400px; height: 230px; -webkit-tap-highlight-color: transparent; user-select: none; position: relative; display: none;" _echarts_instance_="ec_1532330349067">
+								<div style="position: relative; overflow: hidden; width: 400px; height: 230px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;"><canvas data-zr-dom-id="zr_0" width="400" height="230" style="position: absolute; left: 0px; top: 0px; width: 400px; height: 230px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div>
+								<div style="position: absolute; display: none; border-style: solid; white-space: nowrap; z-index: 9999999; transition: left 0.4s cubic-bezier(0.23, 1, 0.32, 1), top 0.4s cubic-bezier(0.23, 1, 0.32, 1); background-color: rgba(50, 50, 50, 0.7); border-width: 0px; border-color: rgb(51, 51, 51); border-radius: 4px; color: rgb(255, 255, 255); font: 14px/21px &quot;Microsoft YaHei&quot;; padding: 5px; left: 162px; top: 34px;"><span style="display:inline-block;margin-right:5px;border-radius:10px;width:10px;height:10px;background-color:#00aafa;"></span>30岁及以下: 25,282</div>
+							</div>
+							<div id="lsex1" class="navbar w_hide" style="width: 400px; height: 230px; -webkit-tap-highlight-color: transparent; user-select: none; position: relative; display: block;" _echarts_instance_="ec_1532330349066">
+								<div style="position: relative; overflow: hidden; width: 400px; height: 230px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;"><canvas data-zr-dom-id="zr_0" width="400" height="230" style="position: absolute; left: 0px; top: 0px; width: 400px; height: 230px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div>
+								<div style="position: absolute; display: none; border-style: solid; white-space: nowrap; z-index: 9999999; transition: left 0.4s cubic-bezier(0.23, 1, 0.32, 1), top 0.4s cubic-bezier(0.23, 1, 0.32, 1); background-color: rgba(50, 50, 50, 0.7); border-width: 0px; border-color: rgb(51, 51, 51); border-radius: 4px; color: rgb(255, 255, 255); font: 14px/21px &quot;Microsoft YaHei&quot;; padding: 5px; left: 282px; top: 126px;"><span style="display:inline-block;margin-right:5px;border-radius:10px;width:10px;height:10px;background-color:#39b54a;"></span>男: 127,541</div>
+							</div>
+
+							<div id="lsex3" class="navbar w_hide" style="width: 400px; height: 230px; -webkit-tap-highlight-color: transparent; user-select: none; position: relative; display: none;" _echarts_instance_="ec_1532330349068">
+								<div style="position: relative; overflow: hidden; width: 400px; height: 230px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;"><canvas data-zr-dom-id="zr_0" width="400" height="230" style="position: absolute; left: 0px; top: 0px; width: 400px; height: 230px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div>
+								<div style="position: absolute; display: none; border-style: solid; white-space: nowrap; z-index: 9999999; transition: left 0.4s cubic-bezier(0.23, 1, 0.32, 1), top 0.4s cubic-bezier(0.23, 1, 0.32, 1); background-color: rgba(50, 50, 50, 0.7); border-width: 0px; border-color: rgb(51, 51, 51); border-radius: 4px; color: rgb(255, 255, 255); font: 14px/21px &quot;Microsoft YaHei&quot;; padding: 5px; left: 72px; top: 78px;"><span style="display:inline-block;margin-right:5px;border-radius:10px;width:10px;height:10px;background-color:#00aafa;"></span>初中及以下: 50,042</div>
+							</div>
+						</div>
+						<div class="w_smbg scrollbox" style="margin-bottom:0;">
+							<div class="w_title cler">
+								<h2 class="fl">实时关注TOP10</h2>
+								<ul class="fl cler w_tipbar1" style="margin-left:75px;">
+
+									<li class="">新闻信息</li>
+									<li class="active_bar">政策页面</li>
+								</ul>
+							</div>
+
+							<div id="scrollDiv1" class="wangchao" style="display: none;">
+								<ul class="w_newsRanking" id="f_sifgzxw" style="margin-top: -2.36238px;">
+
+									<li class="cf"><span class="fl">5</span>
+										<p class="overs fl">第四期学习竞赛活动开始，学习重点公布！</p>
+										<a>396688</a>
+									</li>
+									<li class="cf"><span class="fl">6</span>
+										<p class="overs fl">学习竞赛活动线上初赛第五期正式开始竞赛答题</p>
+										<a>373748</a>
+									</li>
+									<li class="cf"><span class="w_spacile fl">7</span>
+										<p class="overs fl">习近平：以永远在路上的执着把从严治党引向深入</p>
+										<a>332656</a>
+									</li>
+									<li class="cf"><span class="fl">8</span>
+										<p class="overs fl">纪念马克思诞辰200周年大会举行 习近平发表重要讲话</p>
+										<a>311011</a>
+									</li>
+									<li class="cf"><span class="fl">9</span>
+										<p class="overs fl">习近平出席博鳌亚洲论坛2018年年会开幕式并发表主旨演讲</p>
+										<a>297823</a>
+									</li>
+									<li class="cf"><span class="fl">10</span>
+										<p class="overs fl">【学习竞赛】今天，你答题了吗？学习竞赛活动正刷爆朋友圈！</p>
+										<a>285136</a>
+									</li>
+									<li class="cf"><span class="fl">1</span>
+										<p class="overs fl"> “灯塔-党建在线”党的十九大精神学习竞赛活动开始啦！ </p>
+										<a>458420</a>
+									</li>
+									<li class="cf"><span class="fl">2</span>
+										<p class="overs fl">“灯塔-党建在线”党的十九大精神学习竞赛活动线上初赛第二期开始竞赛答题</p>
+										<a>410988</a>
+									</li>
+									<li class="cf"><span class="fl">3</span>
+										<p class="overs fl">山东省全面展开新旧动能转换 聚焦聚力高质量发展</p>
+										<a>406704</a>
+									</li>
+									<li class="cf"><span class="fl">4</span>
+										<p class="overs fl">聚焦全国两会</p>
+										<a>402545</a>
+									</li>
+								</ul>
+							</div>
+							<div id="scrollDiv2" class="wangchao w_hide" style="display: block;">
+								<ul class="w_newsRanking" id="f_sifgzzc" style="margin-top: -2.36238px;">
+
+									<li><span>5</span>关于加强干部选拔任用工作监督的意见
+										<a>178021</a>
+									</li>
+									<li><span>6</span>山东省省直机关基层党组织党建活动经费管理办法
+										<a>150124</a>
+									</li>
+									<li><span>7</span>互联网群组信息服务管理规定
+										<a>140540</a>
+									</li>
+									<li><span>8</span>中央和国家机关基层党组织党建活动经费管理办法
+										<a>138116</a>
+									</li>
+									<li><span>9</span>党组织可否安排非中共党员人员向党员收取党费？
+										<a>126584</a>
+									</li>
+									<li><span class="w_spacile">10</span>怎样正确把握党费的使用范围？
+										<a>119325</a>
+									</li>
+									<li><span>1</span>聘任制公务员管理规定（试行）
+										<a>245073</a>
+									</li>
+									<li><span>2</span>互联网新闻信息服务单位内容管理从业人员管理办法
+										<a>225155</a>
+									</li>
+									<li><span>3</span>宗教事务条例
+										<a>219545</a>
+									</li>
+									<li><span>4</span>中国共产党章程（2017年修改）
+										<a>198920</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="lebox fl" style="display: none;">
+						<div class="w_smbg" style="margin-top:5px;">
+							<div class="w_title cler">
+								<h2 class="fl">“灯塔-党建在线”访问情况</h2>
+							</div>
+							<h4 style="color:#fff;padding-left:100px;margin-top:50px;font-weight:normal;">累积访问人次</h4>
+							<div class="w_visit" id="f_sifzxfw">
+								1,572,271,434
+							</div>
+						</div>
+						<div class="w_smbg">
+							<!--<div class="w_title cler">
+                    <h2 class="fl">WEB/APP/微信访问分布占比</h2>
+                </div>-->
+							<div id="w_pie">
+
+							</div>
+						</div>
+						<div class="w_smbg scrollbox" style="margin-bottom:0;">
+							<div class="w_title cler">
+								<h2 class="fl">访问分布情况</h2>
+
+								<div class="w_visits" id="f_siffwfb">
+									<h4>党建和组织工作宣传网</h4>
+									<div class="progre cler">
+										<div class="w_lineOne w_line"></div>
+										<span> 11662593</span>
+									</div>
+
+									<h4>基层党组织建设网</h4>
+									<div class="progre cler">
+										<div class="w_lineTwo w_line"></div>
+										<span>4037294</span>
+									</div>
+
+									<h4>党员队伍建设网</h4>
+									<div class="progre cler">
+										<div class="w_lineFor w_line"></div>
+										<span>2411380</span>
+									</div>
+
+									<h4>干部工作网</h4>
+									<div class="progre cler">
+										<div class="w_lineFive w_line"></div>
+										<span>1822421</span>
+									</div>
+
+									<h4>第一书记</h4>
+									<div class="progre cler">
+										<div class="w_lineSix w_line"></div>
+										<span>1005705</span>
+									</div>
+
+								</div>
+
+							</div>
+							<div class="navbar"></div>
+							<div class="navbar w_hide"></div>
+							<div class="navbar w_hide"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="fl lcen" style=" margin-top: 5px;">
+					<div class=" w_bt u_bt" style="float:left; margin-bottom: 10px;display: none;">
+						<div id="l24zx" style="width: 98%;height: 98%;">
+						</div>
+
+					</div>
+					<!--<div class="w_smbg" style="margin-top:5px;float: left;margin-right: 10px;">
+						
+					</div>		-->
+					<div class="w_bt u_bt" style="float:left;  position: relative;">
+						<div id="lkait">
+							<div class="lkt">
+								<span style="color: rgba(255,255,255,0.7);">党员注册总数:</span>
+								<span style="color: red;font-size: 20px;">6,182,081</span>
+								<span style="color: rgba(255,255,255,0.7);">人</span>
+								<span style="color: rgba(255,255,255,0.7);">党员注册率:</span>
+								<span style="color: red;font-size: 20px;">94.3%</span>
+								
+							</div>
+							<!--<div class="lkts" id="f_dyzs">
+                       
+                    </div>-->
+						</div>
+						<div id="w_main" style="width: 98%;height:98%; margin: 5px auto; ">
+						</div>
+						<div style="display: none;">
+							<div id="w_maintt" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt2" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt3" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt4" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt5" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt6" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt7" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt8" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt9" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt10" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt11" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt12" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt13" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt14" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt15" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt16" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt17" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt18" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt19" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt20" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt21" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt22" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt23" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+
+						</div>
+					</div>
+					<div class="w_smbg"style="margin-top:5px;float: left;margin-right: 10px;">
+						<h2 class="fl xc" style="position: absolute;color:rgba(255,255,255,0.8)">党员结构情况(单位:人)</h2>
+						<div id="w_age2" style="width:98%;height:98%;float: left;"></div>
+					</div>
+					<div class="w_smbg"style="margin-top:5px;float: left;margin-right: 6px;">
+						<div id="ls_ex" style="width:98%;height:98%;float: left;"></div>
+						
+					</div>
+					<div class="w_smbg"style="float: left;margin-right: 10px;margin-top:5px;">
+						<div id="w_xueli" style="width:98%;height:98%;float: left;"></div>
+					</div>
+					<div class="w_smbg"style="float: left;margin-right: 6px;margin-top:5px;">
+						<div id="w_work" style="width:98%;height:98%;float: left;"></div>
+					</div>
+					<!--<div class="w_bt u_bt" style="float:left; margin-bottom: 10px;">
+						<div style="clear: both;" class="w_wai">
+						</div>
+					</div>-->
+					<div class="w_bt" style="float:left; margin-bottom: 10px;display: none;">
+						<div id="w_mains" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+					</div>
+				</div>
+				<!-- 全省党工委一共多少人 -->
+				<div class="fl lcen" style=" margin-top: 5px;">
+					<!--<div class="lecet " style="float:left;position: relative;">
+						<div id="lfbu" style="width: 98%;height: 98%;">
+						</div>
+						<div class="w_fanhui">返回</div>
+					</div>-->
+					 <div class="lecet w_rel">
+
+                <div style="font-size: 18px; color: rgba(255,255,255,0.7); font-weight: bolder; position: absolute;top: 15px; left: 30px;">党支部开通E支部情况</div>
+                 <div class="lkt" style="font-size: 18px; color: rgba(255,255,255,0.7); font-weight: bolder; position: absolute;top: 45px; left: 30px;">
+                        E支部开通总数：<span style="color: red;">266,425</span><span style="margin-left: 30px;">未开通：<span style="color: red;">11,980</span></span><span style="margin-left: 30px;">开通率：<span style="color: red;">95.7%</span></span>
+                    </div>
+                    <div class="lkts" id="f_ezs">
+                        
+                        
+                    </div> 
+                <div id="lect">
+
+                </div>
+            </div>
+					<div class=" w_bt u_bt " style="float:left; clear: both; margin-bottom: 13px;position: relative;">
+						<div style="font-size: 18px; color: rgba(255,255,255,0.7); font-weight: bolder; position: absolute;top: 15px; left: 30px;">E支部使用情况(全省使用E支部占比：<span style="color: red;">45.32%</span>)</div>
+                <div id="j_main" style="width: 98%;height:98%; margin: 0px auto;">
+                </div>
+						<!--<h2 class="fl xc w_hui">全省管理员情况</h2>
+						<div style="width: 50px;height:100%;float: left;"></div>
+						<div id="w_allz" style="width: 31%;height: 96%; float: left; margin-top: 30px;"></div>
+						<div id="w_kaitong" style=" width: 31%;height: 96%; float: left;margin-top: 30px;"></div>
+						<div id="w_bilv" style=" width: 31%;height: 96%; float: left;margin-top: 30px;"></div>
+						<div style="position: absolute;top:144px; right: 123px;font-size: 25px; color: rgba(255,255,255,0.8);">%</div>
+						<div style="position: absolute;top:144px; right: 423px;font-size: 25px; color: rgba(255,255,255,0.8);">%</div>-->
+					</div>
+					
+				</div>
+				<div class="fl lcen">
+					<!--带宽，流量，请求响应-->
+					<div class="fl lcen">
+						<div class="w_smbg fl f_server" style="position: relative; margin-top:5px;">
+							<div class="f_login">
+								<img src="img/dtdjs.png" alt="" style="margin-top: 70px;margin-left: 115px;">
+							</div>
+							<div class="lwz">
+								安全运行时间
+							</div>
+							<div class="data">
+								<div class="data-box" id="dateShow1" data-date="2017/08/29 23:45:24">
+									<span class="date-tiem d">00</span>天
+									<span class="date-tiem h">00</span>时
+									<span class="date-tiem m">00</span>分
+									<span class="ltimes date-s s">00</span>秒
+								</div>
+							</div>
+						</div>
+						<!--内存 宽带  CPU  -->
+						<div class="w_smbg fl" style=" position: relative; margin:5px 0 0 10px">
+							<div id="f_serverSum" class="dv"></div>
+						</div>
+
+						<div class="w_bt fl">
+							<div class="f_fuwu" style="width: 950px; height: 535px; position: relative">
+								<h2 style="color:rgba(255,255,255,0.7);font-size: 16px;width: 400px;margin: 10px 0 0 20px;text-indent: 2em; line-height: 20px;">
+									服务器总数527台，已使用422台，使用率80.1%，其中正常运行422台，不正常运行0台。
+								</h2>
+								<img src="img/f_4.png" alt="" class="">
+								<img src="img/f_3.png" alt="" class="f_serverUsea">
+								<img src="img/f_2.png" alt="" class="f_serverUsea">
+								<p class="f_blocks"></p>
+								<p class="f_blo"></p>
+							</div>
+
+						</div>
+
+						<div class="w_bt fl scrollbox" style="position: relative;margin-top: 5px;">
+							<ul class="fl cler w_tipbar f_ul">
+								<li class="f_li">带宽</li>
+								<li>流量</li>
+								<li>请求响应</li>
+							</ul>
+							<div id="f_broadband" class="f_clock wangchaos"></div>
+							<div id="f_flow" class="f_clock wangchaos w_hide"></div>
+							<div id="f_request" class="f_clock wangchaos w_hide"></div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/jquery-3.2.1.min.js"></script>
+
+		<script src="js/jquery.waypoints.min.js"></script>
+		<script src="js/jquery.countup.min.js"></script>
+		<script>
+			$('.w_visit').countUp();
+		</script>
+		<script type="text/javascript" src="js/w_all.js"></script>
+		<!--<script src="js/w_js.js"></script>-->
+		<!--<script src="js/zhixue.js"></script>-->
+		<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/4.0.4/echarts-en.common.js"></script>-->
+		<script src="https://cdn.bootcss.com/echarts/4.0.4/echarts-en.min.js"></script>
+
+		<script src="js/jq_scroll.js"></script>
+		<script src="js/leftTime.js"></script>
+		<!--<script src="js/ljs.js"></script>-->
+
+		<!--改数据但是必须清缓存，放弃-->
+		<!--<script src="js/f_update.js"></script>-->
+
+		<script src="js/w_javascript.js"></script>
+		<!--<script src="js/jinan.js"></script>-->
+		<script src="js/w_js/w_js.js"></script>
+		<script src="js/w_js/w_leftjs.js"></script>
+
+		<script src="js/yiping1.js"></script>
+
+		
+	</body>
+
+</html>

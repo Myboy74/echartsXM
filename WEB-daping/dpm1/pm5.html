@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+		<link rel="stylesheet" href="css/rest.css">
+		<link rel="stylesheet" type="text/css" href="css/w_css.css" />
+		<!--<script src="js/w_js/china.json"></script>-->
+		<style>
+			body {
+				overflow: hidden;
+			}
+			
+			#lbox {
+				width: 3840px;
+				height: 810px;
+				/*overflow:hidden;*/
+			}
+			
+			.fl {
+				float: left;
+			}
+			
+			.lebox {
+				width: 480px;
+				height: 810px;
+			}
+			
+			.lcen {
+				width: 960px;
+				height: 810px;
+			}
+			
+			.lecet {
+				width: 960px;
+				height: 530px;
+				background: url(img/lcen.png) 0 0 no-repeat;
+				overflow: hidden;
+				position: relative;
+			}
+			
+			.leceb {
+				width: 920px;
+				height: 270px;
+				margin: 0 auto;
+			}
+			
+			.cler {
+				overflow: hidden;
+			}
+			
+			.lrt {
+				width: 455px;
+				height: 270px;
+			}
+			
+			#lect,
+			#lects,
+			#lect22,
+			#lect33 {
+				width: 930px;
+				height: 508px;
+				margin: 10px auto 0;
+			}
+			
+			#lkait {
+				position: absolute;
+				right: 60px;
+				top: 8px;
+			}
+			
+			.lkt {
+				color: rgb(255, 255, 255);
+				font-family: '黑体';
+				font-size: 18px;
+			}
+			
+			.lkts {
+				color: #31B0E5;
+				font-size: 50px;
+				/*font-family: '黑体';*/
+			}
+			
+			.lecets {
+				width: 960px;
+				height: 540px;
+			}
+			
+			.rcens {
+				background: url(img/lrih.png) no-repeat;
+			}
+			
+			.data {
+				margin: 10px 0 0 80px;
+			}
+			
+			.data-box,
+			.date-s {
+				color: #307ec2 !important;
+				font-size: 22px;
+				text-shadow: 0 0 10px #265fac;
+			}
+			
+			.date-tiem,
+			.ltimes {
+				font-size: 35px;
+			}
+			
+			.lwz {
+				font-size: 18px;
+				color: rgb(255, 255, 255);
+				margin-top: 10px;
+				font-family: '黑体';
+				text-align: center;
+			}
+			
+			.liht {
+				position: relative;
+			}
+			
+			.lws {
+				width: 400px;
+				margin: 31px auto 20px;
+			}
+			
+			.s1,
+			.s2,
+			.s3,
+			.s4,
+			.s5,
+			.s6 {
+				position: absolute;
+				color: #31B0E5;
+				font-size: 16px;
+			}
+			
+			.s1,
+			.s2,
+			.s3 {
+				top: 89px;
+			}
+			
+			.s1 {
+				left: 76px;
+			}
+			
+			.s2 {
+				left: 210px;
+			}
+			
+			.s3 {
+				right: 75px;
+			}
+			
+			.s4 {
+				left: 66px;
+				font-size: 20px;
+			}
+			
+			.s5 {
+				left: 212px;
+				font-size: 20px;
+			}
+			
+			.s6 {
+				right: 70px;
+				font-size: 20px;
+			}
+			
+			.fr {
+				float: right;
+			}
+			
+			.w_bt {
+				width: 951px;
+				height: 261px;
+				background: url(img/切图-06.png) no-repeat center center;
+				background-size: 100% 100%;
+			}
+			
+			.cler {
+				overflow: hidden;
+			}
+			
+			#return {
+				color: #fff;
+				display: inline-block;
+				/* position: absolute; */
+				float: right;
+				margin-right: 45px;
+				margin-top: 450px;
+				right: 0;
+				top: 40px;
+				cursor: pointer;
+				display: none
+			}
+			
+			#w_mainer canvas,
+			#w_mainer11 canvas {
+				width: 240px !important;
+				height: 220px !important;
+				top: 20px !important;
+				left: 13px !important;
+			}
+			
+			.progre {
+				line-height: 6px;
+				margin-bottom: 5px;
+			}
+			
+			.progre span {
+				margin-left: 10px;
+			}
+			
+			.jinandata {
+				display: none;
+			}
+			
+			.overs {
+				width: 325px;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				/*最多显示几行*/
+				/*-webkit-line-clamp:3;*/
+			}
+			
+			.u_bt {
+				position: relative;
+			}
+			
+			.ezb div {
+				position: absolute;
+				cursor: pointer;
+				height: 136px;
+				width: 11px;
+				top: 60px;
+			}
+			
+			.ezb div:nth-child(1) {
+				left: 114px;
+			}
+			
+			.ezb div:nth-child(2) {
+				left: 147px;
+			}
+			
+			.ezb div:nth-child(3) {
+				left: 180px;
+			}
+			
+			.ezb div:nth-child(4) {
+				left: 213px;
+			}
+			
+			.ezb div:nth-child(5) {
+				left: 246px;
+			}
+			
+			.ezb div:nth-child(6) {
+				left: 279px;
+			}
+			
+			.ezb div:nth-child(7) {
+				left: 312px;
+			}
+			
+			.ezb div:nth-child(8) {
+				left: 345px;
+			}
+			
+			.ezb div:nth-child(9) {
+				left: 378px;
+			}
+			
+			.ezb div:nth-child(10) {
+				left: 411px;
+			}
+			
+			.ezb div:nth-child(11) {
+				left: 444px;
+			}
+			
+			.ezb div:nth-child(12) {
+				left: 477px;
+			}
+			
+			.ezb div:nth-child(13) {
+				left: 510px;
+			}
+			
+			.ezb div:nth-child(14) {
+				left: 543px;
+			}
+			
+			.ezb div:nth-child(15) {
+				left: 576px;
+			}
+			
+			.ezb div:nth-child(16) {
+				left: 609px;
+			}
+			
+			.ezb div:nth-child(17) {
+				left: 642px;
+			}
+			
+			.ezb div:nth-child(18) {
+				left: 675px;
+			}
+			
+			.ezb div:nth-child(19) {
+				left: 708px;
+			}
+			
+			.ezb div:nth-child(20) {
+				left: 741px;
+			}
+			
+			.ezb div:nth-child(21) {
+				left: 774px;
+			}
+			
+			.ezb div:nth-child(22) {
+				left: 807px;
+			}
+			
+			.ezb div:nth-child(23) {
+				left: 840px;
+			}
+			
+			.u_fanhui {
+				cursor: pointer;
+				display: none;
+				right: 55px;
+				top: 40px;
+				position: absolute;
+				color: #ffffff;
+			}
+			
+			.w_smbg h2.xc {
+				margin: 20px 30px 0px 30px;
+			}
+			.u_bt h2.xc {
+				margin: 20px 30px 0px 30px;
+				color: rgba(255,255,255,0.7);
+			}
+			
+			#lfbu {
+				width: 930px;
+				height: 508px;
+				margin: 10px auto 0;
+			}
+			
+			.w_fanhui {
+				position: absolute;
+				top: 40px;
+				right: 40px;
+				color: #ccc;
+				padding: 5px 10px;
+				border: 1px solide #CCCCCC;
+				border-radius: 15px;
+				background: #1C93D0;
+				display: none;
+				cursor: pointer;
+			}
+			div.table-list {
+			    padding-top: 6px;
+			    padding-right: 1px;
+			   
+			    border-bottom: 0;
+			    color: #fff;
+			}
+			.overview-card-title-container {
+			    padding: 10px 15px 0;
+			}
+			tbody{
+				color:rgba(255,255,255,0.8)
+			}
+			div.table-list table.list {
+    border-collapse: collapse;
+    width: 98%;
+    font-size: 12px;
+}
+div.table-list table.list tr.title {
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+}
+div.table-list table.list th {
+    height: 16px;
+    line-height: 16px;
+    padding: 13px 20px 0 10px;
+    text-align: center;
+    color: rgba(255,255,255,0.8);
+    white-space: nowrap;
+    font-weight: 400;
+}
+div.table-list table.list tr td.normal {
+    padding-left: 20px;
+    width: 55px;
+    text-align: center;
+    color: rgba(255,255,255,0.8);
+}
+div.table-list table.list tr td {
+    padding: 25px 20px 6px 5px;
+    height: 17px;
+    line-height: 17px;
+    white-space: nowrap;
+    text-align: center;
+}
+.arrow-up {
+    background-repeat: no-repeat;
+    background-position: 80% 27px;
+    background-image: url(arrow-up.png);
+}
+.w_visits h4 {
+  color: rgba(255,255,255,0.7);
+    font-weight: 400;
+    font-size: 12px;
+    height: 20px;
+    line-height: 18px;
+    margin-left: 20px;
+}
+.progre {
+    line-height: 12px;
+   
+}
+#zinx{
+	z-index: 300;
+}
+.w_tipbar1s li,.w_tipbar_w li  {
+    color: rgba(255,255,255,0.5);
+    background: rgba(255,255,255,0.15);
+    float: left;
+    display: inline-block;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 3px 7px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+
+.active_bars {
+    color: rgba(255,255,255,0.30) !important;
+}
+.hide{
+	display: none;
+}
+#lbox{
+	width: 3840px;
+	height: 810px;
+	background: url(img/bgs.png) 0 0 no-repeat;
+}
+		</style>
+	</head>
+
+	<body>
+		<div id="lbox cler" style="width:3840px;">
+			<!--省-->
+			<div class="province">
+				<!-- 全省党工委一共多少人 -->
+				<div class="fl lcen">
+
+					<div class="w_smbg" style="float:left;">
+						<!--<h2 class="fl xc">管理人员总数</h2>-->
+
+						<div id="w_allz" style=" width: 98%;height: 98%;" ></div>
+						
+					</div>
+					<div class="w_smbg" style="float:left;">
+						<!--<h2 class="fl xc">党组织管理员开通率</h2>-->
+
+						<div id="w_kaitong" style=" width: 98%;height: 98%;"></div>
+
+					</div>
+					
+					<!-- 各时间段管理人数在线 -->
+					
+					<!-- 各业务系统在线管理人数 -->
+					<!--<div class="w_smbg" style="float:left;">
+			
+						<div id="lgll" style="width: 470px;height: 270px;">
+
+						</div>
+					</div>-->
+					
+					<div class="lecet "style="float:left;">
+						<ul class="fl cler w_tipbar_w" style="margin-left:75px; z-index: 100; position: absolute;right: 25px;">
+							<li>总计人数</li>
+							<li>在线人数</li>
+						</ul>
+						<div id="lfbu" style="width: 98%;height: 98%;">
+
+                   		</div>
+                   		<!--<div id="lfbuzaixian" style="width: 98%;height: 98%;" class="w_hide">
+
+                   		</div>-->
+                     	<div class="w_fanhui">返回</div>
+					</div>
+				</div>
+				<div class="fl lcen">
+					<div class=" w_bt u_bt" style="float:left; margin-bottom: 10px;">
+						<div id="l24zx" style="width: 98%;height: 98%;">
+						</div>
+						<!--<div class="w_fanhui">返回</div>-->
+					</div>
+					<div class="w_bt u_bt" style="float:left; margin-bottom: 10px;">
+                		<h2 class="fl xc">管理人员年龄/学历/工作岗位</h2>
+						<div style="clear: both;">
+							
+						
+						<div id="w_age2"  style="width:300px;height:230px;float: left;"></div>
+						<div id="w_xueli"  style="width:300px;height:230px;float: left;"></div>
+						<div id="w_work"  style="width:300px;height:230px;float: left;"></div>
+						</div>
+					</div>
+					<div class="w_bt u_bt" style="float:left; margin-bottom: 10px;">
+						<div id="w_main" style="width: 98%;height:98%; margin: 5px auto;">
+						</div>
+						<div style="display: none;">
+							<div id="w_maintt" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt2" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt3" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt4" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt5" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt6" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt7" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt8" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt9" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt10" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt11" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt12" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt13" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt14" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt15" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt16" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt17" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt18" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt19" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt20" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt21" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt22" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+							<div id="w_maintt23" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+
+						</div>
+						<!-- <div class="ezb">
+                    <div class="jinan_ezb"></div>
+                    <div class="qd_ezb"></div>
+                    <div class="zb_ezb"></div>
+                    <div class="zz_ezb"></div>
+                    <div class="dy_ezb"></div>
+                    <div class="yt_ezb"></div>
+                    <div class="wf_ezb"></div>
+                    <div class="jn_ezb"></div>
+                    <div class="tn_ezb"></div>
+                    <div class="wh_ezb"></div>
+                    <div class="rz_ezb"></div>
+                    <div class="lw_ezb"></div>
+                    <div class="lx_ezb"></div>
+                    <div class="dz_ezb"></div>
+                    <div class="lc_ezb"></div>
+                    <div class="bz_ezb"></div>
+                    <div class="hz_ezb"></div>
+                    <div class="jggw_ezb"></div>
+                    <div class="jwgw_ezb"></div>
+                    <div class="gzw_ezb"></div>
+                    <div class="slyt_ezb"></div>
+                    <div class="qlsh_ezb"></div>
+                    <div class="hsj_ezb"></div>
+                </div>
+                <a class="u_fanhui">返回</a> -->
+					</div>
+				</div>
+				<div class="fl lcen">
+					<div class="w_smbg" style="float:left;">
+						<div class="table-list" id="IndexPreview">
+							<div class="overview-card-title-container"><label class="overview-card-title" style="font-size: 18px;color:rgba(255,255,255,0.7) font-weight: bold; font-family: '黑体';">今日流量</label></div>
+							<table cellspacing="0" cellpadding="0" class="list" id="IndexPreviewTableList">
+								<tbody>
+									<tr class="title">
+										<th></th>
+										<th style=" width: 90px;">浏览量(PV)</th>
+										<th style="width: 94px;">访客数(UV)</th>
+										<th>IP数   </th>
+									
+										
+									</tr>
+									<tr class="highlight">
+										<td class="normal">今日</td>
+										<td class="" style="font-weight: 700;">616,590</td>
+										<td class="" style="font-weight: 700;">29,538</td>
+										<td class="" style="font-weight: 700;">17,996</td>
+										
+										
+									</tr>
+									<tr>
+										<td class="normal">昨日</td>
+										<td class="" style="font-weight: 700;">582,722</td>
+										<td class="" style="font-weight: 700;">29,332</td>
+										<td class="" style="font-weight: 700;">18,783</td>
+										
+									
+									</tr>
+									<tr>
+										<td class="normal">预计今日</td>
+										<td class="arrow-up" style="font-weight: 700;">666,290</td>
+										<td class="arrow-up" style="font-weight: 700;">32,187</td>
+										<td class="arrow-up" style="font-weight: 700;">20,282</td>
+										
+									
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="w_smbg" style="float:left;">
+											<div class="w_title cler" style="position: relative;">
+							<h2 class="fl" id="lkls" style=" color: rgba(255,255,255,0.7);">新闻关注TOP10</h2>
+							<ul class="fl cler w_tipbar1"  style="margin-left:75px; position: absolute;right: 25px;">
+								<li class="active_bar">最新信息</li>
+								<li>页面访问</li>
+							</ul>
+						</div>
+						<div id="scrollDiv2" class="wangchao">
+							<ul class="w_newsRanking" id="f_sifgzzc">
+								<li>
+									<span>1</span>聘任制公务员管理规定（试行）
+									<a>245073</a>
+								</li>
+								<li>
+									<span>2</span>互联网新闻信息服务单位内容管理从业人员管理办法
+									<a>225155</a>
+								</li>
+								<li>
+									<span>3</span>宗教事务条例
+									<a>219545</a>
+								</li>
+								<li>
+									<span>4</span>中国共产党章程（2017年修改）
+									<a>198920</a>
+								</li>
+								<li>
+									<span>5</span>关于加强干部选拔任用工作监督的意见
+									<a>178021</a>
+								</li>
+								<li>
+									<span>6</span>山东省省直机关基层党组织党建活动经费管理办法
+									<a>150124</a>
+								</li>
+								<li>
+									<span>7</span>互联网群组信息服务管理规定
+									<a>140540</a>
+								</li>
+								<li>
+									<span>8</span>中央和国家机关基层党组织党建活动经费管理办法
+									<a>138116</a>
+								</li>
+								<li>
+									<span>9</span>党组织可否安排非中共党员人员向党员收取党费？
+									<a>126584</a>
+								</li>
+								<li>
+									<span class="w_spacile">10</span>怎样正确把握党费的使用范围？
+									<a>119325</a>
+								</li>
+								
+							</ul>
+						</div>
+						<div id="scrollDiv1" class="wangchao  w_hide">
+							<div class="w_title cler">
+							<div class="w_visits" id="f_siffwfb">
+								<h4>党建和组织工作宣传网</h4>
+								<div class="progre cler">
+									<div class="w_lineOne w_line"></div>
+									<span> 11662593</span>
+								</div>
+
+								<h4>基层党组织建设网</h4>
+								<div class="progre cler">
+									<div class="w_lineTwo w_line"></div>
+									<span>4037294</span>
+								</div>
+
+								<h4>党员队伍建设网</h4>
+								<div class="progre cler">
+									<div class="w_lineFor w_line"></div>
+									<span>2411380</span>
+								</div>
+
+								<h4>干部工作网</h4>
+								<div class="progre cler">
+									<div class="w_lineFive w_line"></div>
+									<span>1822421</span>
+								</div>
+
+								<h4>第一书记</h4>
+								<div class="progre cler">
+									<div class="w_lineSix w_line"></div>
+									<span>1005705</span>
+								</div>
+							</div>
+						</div>
+						</div>
+						
+					</div>
+					<div class="w_bt" style="float:left; margin-bottom: 10px;position: relative;">
+						<ul class="fl cler w_tipbar1s" id="zinx" style="margin-left:75px; position: absolute; right: 25px;">
+								<li>访问流量</li>
+								<li>七天访问量</li>
+							</ul>
+							<div id="zxts">
+								<div class="w_bt u_bt" id="f_sszx">	
+									</div>
+									<div class="w_bt u_bt hide" id="lqs">
+									</div>
+							</div>
+						
+						</div>
+					<div class="w_bt" style="float:left; margin-bottom: 10px;">
+						<div class="w_bt u_bt" id="" style="float:left; margin-bottom: 15px;">
+	                		<h2 class="fl xc">访客人员学历/年龄/工作岗位</h2>
+							<div style="clear: both;">
+							
+							<div id="w_xuelis" style="width:300px;height:230px;float: left;"></div>
+							<div id="w_age2s"  style="width:300px;height:230px;float: left;"></div>
+							<div id="w_works"  style="width:300px;height:230px;float: left;"></div>
+							</div>
+						</div>
+						</div>
+				</div>
+			    <div class="fl lcen">
+			    	<div class="lecet" style="margin-bottom: 10px; position: relative;">
+			    		<div id="w_ditu" style="width: 98%; height: 98%; z-index: 100;"></div>
+			    		<div id="lkst" style="width:250px; height: 450px; position: absolute; right: 25px;top: 40px; z-index: 10001;"></div>	
+			    	</div>
+			    	<div class="w_bt">
+						<div id="w_mains" style="width: 98%; height: 98%; margin: 5px auto;"></div>
+					</div>
+			    </div>
+			</div>
+		</div>
+		
+		<script src="js/jquery-3.2.1.min.js"></script>
+
+		<script src="js/jquery.waypoints.min.js"></script>
+		<script src="js/jquery.countup.min.js"></script>
+		<script>
+			$('.w_visit').countUp();
+		</script>
+		<script type="text/javascript" src="js/w_all.js"></script>
+		<!--<script src="js/w_js.js"></script>-->
+		<!--<script src="js/zhixue.js"></script>-->
+		<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/4.0.4/echarts-en.common.js"></script>-->
+		<script src="https://cdn.bootcss.com/echarts/4.0.4/echarts-en.min.js"></script>
+
+		<script src="js/jq_scroll.js"></script>
+		<script src="js/leftTime.js"></script>
+		<!--<script src="js/ljs.js"></script>-->
+
+		<!--改数据但是必须清缓存，放弃-->
+		<!--<script src="js/f_update.js"></script>-->
+
+		<script src="js/w_javascript.js"></script>
+		<!--<script src="js/jinan.js"></script>-->
+		<script src="js/w_js/w_js.js"></script>
+		<script src="js/w_js/w_leftjs.js"></script>
+	</body>
+
+</html>
